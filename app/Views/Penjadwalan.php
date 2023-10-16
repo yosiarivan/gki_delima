@@ -1,7 +1,8 @@
 <?= $this->extend('layouts/template.php'); ?>
-
 <?= $this->section('content'); ?>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
 <div class="main-content-container container-fluid px-4">
     <!-- Page Header -->
     <div class="page-header row no-gutters py-4 justify-content-between">
@@ -11,7 +12,7 @@
         </div>
         <div class="col-6 col-md-2">
             <button type="button" class="btn btn-primary btn-block btn-rounded" data-toggle="modal"
-                data-target="#exampleModal">TAMBAH JADWAL
+                data-target="#tambahModal">TAMBAH JADWAL
                 KUNJUNGAN</button>
         </div>
     </div>
@@ -46,14 +47,14 @@
                     </div>
                 </div>
                 <div class="card-body p-4 pb-3">
-                    <table id="example" class="table mb-0 table-striped table-bordered">
+                    <table id="table-penjadwalan" class="table mb-0 table-striped table-bordered">
                         <thead class="bg-light">
                             <tr>
                                 <th scope="col" class="border-0">#</th>
                                 <th scope="col" class="border-0">Tanggal</th>
                                 <th scope="col" class="border-0">Kunjungan</th>
+                                <th scope="col" class="border-0">Tim Pelawat</th>
                                 <th scope="col" class="border-0">Status</th>
-                                <!-- <th scope="col" class="border-0">Kontak</th> -->
                                 <th scope="col" class="border-0">Action</th>
                             </tr>
                         </thead>
@@ -70,9 +71,11 @@
                                         <?= $p['nama_jemaat']; ?>
                                     </td>
                                     <td>
+                                        <?= $p['tim_pelawat']; ?>
+                                    </td>
+                                    <td>
                                         <?= $p['status']; ?>
                                     </td>
-                                    <!-- <td>107-0339</td> -->
                                     <td>
                                         <div class="dropdown">
                                             <button class="btn btn-primary dropdown-toggle" type="button"
@@ -99,94 +102,148 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="tambahModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Tambah Jadwal Kunjungan</h5>
+                    <h5 class="modal-title" id="tambahModalLabel">Tambah Jadwal Kunjungan</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form>
+                        <input type="hidden" id="createdBy" name="createdBy"
+                            value="<?= session()->get('userData')['kd_jemaat']; ?>">
                         <div class="form-group">
                             <label for="message-text" class="col-form-label">Tanggal</label>
-                            <input type="date" class="form-control" name="tanggal">
+                            <input type="date" class="form-control" id="tanggal" name="tanggal">
                         </div>
                         <div class="form-group">
                             <label for="message-text" class="col-form-label">Waktu</label>
-                            <input type="time" class="form-control" name="waktu">
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Tim Pelawat</label>
-                            <select class="form-control" id="tim-pelawat">
-                                <option value="test1">test</option>
-                                <option value="test1">test</option>
-                            </select>
+                            <input type="time" class="form-control" id="waktu" name="waktu">
                         </div>
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Nama Jemaat</label>
-                            <select class="form-control" id="recipient-name">
-                                <option value="test1">test</option>
-                                <option value="test1">test</option>
+                            <select class="form-control select2" id="nama_jemaat" name="nama_jemaat">
+                                <?php foreach ($jemaat as $j): ?>
+                                    <option value="<?= $j['id']; ?>">
+                                        <?= $j['nama']; ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Tim Pelawat</label>
+                            <select class="form-control select2" id="tim_pelawat" name="tim_pelawat">
+                                <?php foreach ($group_pelawat as $gp): ?>
+                                    <option value="<?= $gp['id']; ?>  ">
+                                        <?= $gp['nm_group']; ?>
+                                    </option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="message-text" class="col-form-label">Catatan</label>
-                            <textarea class="form-control" id="message-text"></textarea>
+                            <textarea class="form-control" id="catatan" name="catatan"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Status Kunjungan</label>
-                            <select class="form-control form-select-sm" id="recipient-name">
-                                <option value="test1">Sesuai Jadwal</option>
-                                <option value="test1">Ditunda</option>
+                            <select class="form-control form-select-sm" id="status" name="status">
+                                <option value="1">Sesuai Jadwal</option>
+                                <option value="2">Ditunda</option>
                             </select>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send message</button>
+                    <button type="submit" class="btn btn-primary" id="submit">Tambah Jadwal</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Default Dark Table -->
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
     <script>
-        new DataTable('#example');
-    </script>
-    <script>
-        // Mendapatkan tanggal saat ini
-        const currentDate = new Date();
-        const year = currentDate.getFullYear();
-        const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Ditambah 1 karna bulan dimulai dari 0
-        const day = String(currentDate.getDate()).padStart(2, '0');
-        const formattedDate = `${year}-${month}-${day}`;
+        new DataTable('#table-penjadwalan');
 
-        // Menagtur nilai default untuk elemen input tanggal mulai dan tanggal akhir
-        document.getElementById('startDate').value = formattedDate;
-        document.getElementById('endDate').value = formattedDate;
+        $(document).ready(function () {
+            $('#tambahModal').on('shown.bs.modal', function () {
+                $('.select2').select2();
+            });
+        });
 
-        // Mendapatkan referensi ke form
-        const dateFilterForm = document.getElementById('dateFilterForm');
+        $(document).ready(function () {
+            $('#submit').on('click', function (e) {
+                e.preventDefault(); // Untuk mencegah reload halaman saat submit
+                var createdBy = $('#createdBy').val();
+                var tanggal = $('#tanggal').val();
+                var waktu = $('#waktu').val();
+                var nama_jemaat = $('#nama_jemaat').val();
+                var tim_pelawat = $('#tim_pelawat').val();
+                var catatan = $('#catatan').val();
+                var status = $('#status').val();
 
-        // Menambahkan event listener ke form saat disubmit
-        dateFilterForm.addEventListener('submit', function (event) {
-            event.preventDefault(); // Mencegah form dari pengiriman yang sebenarnya
 
-            // Mendapatkan tanggal mulai dan tanggal akhir dari input form
-            const startDate = document.getElementById('startDate').value;
-            const endDate = document.getElementById('endDate').value;
+                $.ajax({
+                    url: 'penjadwalan/TambahJadwal', // Ganti dengan URL Controller dan method yang sesuai
+                    method: 'POST',
+                    data: {
+                        createdBy: createdBy,
+                        tanggal: tanggal,
+                        waktu: waktu,
+                        nama_jemaat: nama_jemaat,
+                        tim_pelawat: tim_pelawat,
+                        catatan: catatan,
+                        status: status,
 
-            //Action untuk melakukan request ke back end
+                    },
+                    success: function (response) {
+                        alert('Data berhasil disimpan!');
+                        $('#tambahModal').modal('hide'); // Menutup modal setelah data berhasil disimpan
+                    },
+                    error: function (xhr, status, error) {
+                        console.error(error);
+                        alert('Terjadi kesalahan saat menyimpan data.');
+                    }
+                });
+            });
+        });
 
-            //Contoh
-            console.log('Tanggal mulai:', startDate);
-            console.log('Tanggal akhir:', endDate);
-        })
+
+
+        // // Mendapatkan tanggal saat ini
+        // const currentDate = new Date();
+        // const year = currentDate.getFullYear();
+        // const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Ditambah 1 karna bulan dimulai dari 0
+        // const day = String(currentDate.getDate()).padStart(2, '0');
+        // const formattedDate = `${year}-${month}-${day}`;
+
+        // // Menagtur nilai default untuk elemen input tanggal mulai dan tanggal akhir
+        // document.getElementById('startDate').value = formattedDate;
+        // document.getElementById('endDate').value = formattedDate;
+
+        // // Mendapatkan referensi ke form
+        // const dateFilterForm = document.getElementById('dateFilterForm');
+
+        // // Menambahkan event listener ke form saat disubmit
+        // dateFilterForm.addEventListener('submit', function (event) {
+        //     event.preventDefault(); // Mencegah form dari pengiriman yang sebenarnya
+
+        //     // Mendapatkan tanggal mulai dan tanggal akhir dari input form
+        //     const startDate = document.getElementById('startDate').value;
+        //     const endDate = document.getElementById('endDate').value;
+
+        //     //Action untuk melakukan request ke back end
+
+        //     //Contoh
+        //     console.log('Tanggal mulai:', startDate);
+        //     console.log('Tanggal akhir:', endDate);
+        // })
     </script>
     <?= $this->endSection(); ?>

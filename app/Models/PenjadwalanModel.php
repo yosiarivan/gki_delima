@@ -16,8 +16,10 @@ class PenjadwalanModel extends Model
     public function getAllPenjadwalan()
     {
         $result = $this->db->table('tr_jadwal')
-            ->select('tr_jadwal.*, jemaat.nama as nama_jemaat')
+            ->select('tr_jadwal.*, jemaat.nama as nama_jemaat, group_pelawat.nm_group as tim_pelawat')
             ->join('jemaat', 'jemaat.id = tr_jadwal.nama_jemaat', 'inner')
+            ->join('group_pelawat', 'group_pelawat.id = tr_jadwal.tim_pelawat', 'inner')
+            ->orderBy('tr_jadwal.createdOn', 'DESC')
             ->get()
             ->getResultArray();
 
@@ -32,5 +34,18 @@ class PenjadwalanModel extends Model
             $row['status'] = $statusMap[$row['status']];
         }
         return $result;
+    }
+
+    public function simpanData($data)
+    {
+        try {
+            // Melakukan penyimpanan ke database
+            $this->db->table('tr_jadwal')->insert($data);
+            return true;
+        } catch (\Exception $e) {
+            // Jika ada error
+            log_message('error', $e->getMessage());
+            return false;
+        }
     }
 }

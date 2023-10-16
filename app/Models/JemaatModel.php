@@ -16,4 +16,8 @@ class JemaatModel extends Model
     {
         return $this->find($id);
     }
+    public function getAllJemaat()
+    {
+        return $this->findAll();
+    }
 }

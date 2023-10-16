@@ -1,7 +1,7 @@
 <?php
-$session = session();
-$jemaatData = $session->get("jemaatData");
-$namaJemaat = $jemaatData['nama'];
+// $session = session();
+// $jemaatData = $session->get("jemaatData");
+// $namaJemaat = $jemaatData['nama'];
 ?>
 <!doctype html>
 <html class="no-js h-100" lang="en">
@@ -26,6 +26,8 @@ $namaJemaat = $jemaatData['nama'];
         href="<?= base_url('assets/styles/shards-dashboards.1.1.0.min.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/styles/extras.1.1.0.min.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/styles/new-style.css'); ?>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 </head>
@@ -172,7 +174,7 @@ $namaJemaat = $jemaatData['nama'];
                                     <img class="user-avatar rounded-circle mr-2"
                                         src="<?= base_url('assets/images/avatars/0.jpg'); ?>" alt="User Avatar">
                                     <span class="d-none d-md-inline-block">
-                                        <?= $namaJemaat; ?>
+                                        <?= session()->get('jemaatData')['nama']; ?>
                                     </span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-small">
@@ -231,8 +233,8 @@ $namaJemaat = $jemaatData['nama'];
     </div>
     </div>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>

@@ -1,6 +1,6 @@
 <?= $this->extend('layouts/template.php'); ?>
-
 <?= $this->section('content'); ?>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 <div class="main-content-container container-fluid px-4">
     <!-- Page Header -->
     <div class="page-header row no-gutters py-4">
@@ -20,8 +20,8 @@
                         <button class="btn btn-primary my-2 my-sm-0" type="submit">Cari</button>
                     </form>
                 </div>
-                <div class="card-body p-0 pb-3 text-center">
-                    <table class="table mb-0">
+                <div class="card-body p-4 pb-3 text-center">
+                    <table id="table-jemaat" class="table mb-0 table-striped table-bordered">
                         <thead class="bg-light">
                             <tr>
                                 <th scope="col" class="border-0">#</th>
@@ -32,66 +32,36 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Tata Usaha</td>
-                                <td>fajar@gmail.com</td>
-                                <td>083283283232</td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown">
-                                            <i class="material-icons">settings</i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="user-profile-lite.html">
-                                                <i class="material-icons">&#xE7FD;</i> EDIT DATA JEMAAT</a>
-                                            <a class="dropdown-item" href="components-blog-posts.html">
-                                                <i class="material-icons">vertical_split</i> SET LOCATION ON MAP</a>
+                            <?php foreach ($dataJemaat as $no => $jd) { ?>
+                                <tr>
+                                    <td>
+                                        <?= $no + 1; ?>
+                                    </td>
+                                    <td>
+                                        <?= $jd['nama']; ?>
+                                    </td>
+                                    <td>
+                                        <?= $jd['email']; ?>
+                                    </td>
+                                    <td>
+                                        <?= $jd['hp']; ?>
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-toggle="dropdown">
+                                                <i class="material-icons">settings</i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="user-profile-lite.html">
+                                                    <i class="material-icons">&#xE7FD;</i> EDIT DATA JEMAAT</a>
+                                                <a class="dropdown-item" href="components-blog-posts.html">
+                                                    <i class="material-icons">vertical_split</i> SET LOCATION ON MAP</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Pelawat 1</td>
-                                <td>pelawat1@gmail.com</td>
-                                <td>083238232</td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown">
-                                            <i class="material-icons">settings</i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="user-profile-lite.html">
-                                                <i class="material-icons">&#xE7FD;</i> EDIT DATA JEMAAT</a>
-                                            <a class="dropdown-item" href="components-blog-posts.html">
-                                                <i class="material-icons">vertical_split</i> SET LOCATION ON MAP</a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Pelawat 2</td>
-                                <td>pelawat2@gmail.com</td>
-                                <td>083218312312</td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown">
-                                            <i class="material-icons">settings</i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="user-profile-lite.html">
-                                                <i class="material-icons">&#xE7FD;</i> EDIT DATA JEMAAT</a>
-                                            <a class="dropdown-item" href="components-blog-posts.html">
-                                                <i class="material-icons">vertical_split</i> SET LOCATION ON MAP</a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
@@ -99,4 +69,9 @@
         </div>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script>
+    new DataTable('#table-jemaat');
+</script>
 <?= $this->endSection(); ?>
