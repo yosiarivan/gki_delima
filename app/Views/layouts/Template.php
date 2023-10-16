@@ -1,3 +1,8 @@
+<?php
+$session = session();
+$jemaatData = $session->get("jemaatData");
+$namaJemaat = $jemaatData['nama'];
+?>
 <!doctype html>
 <html class="no-js h-100" lang="en">
 
@@ -8,7 +13,7 @@
     <meta name="description"
         content="A high-quality &amp; free Bootstrap admin dashboard template pack that comes with lots of templates and components.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="assets/images/gki-delima-crop.png" type="image/png">
+    <link rel="icon" href="<?= base_url('assets/images/logo-gki.png'); ?> " type="image/png">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet"
@@ -18,10 +23,11 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0"
-        href="assets/styles/shards-dashboards.1.1.0.min.css">
-    <link rel="stylesheet" href="assets/styles/extras.1.1.0.min.css">
-    <link rel="stylesheet" href="assets/styles/new-style.css">
+        href="<?= base_url('assets/styles/shards-dashboards.1.1.0.min.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/styles/extras.1.1.0.min.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/styles/new-style.css'); ?>">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
 </head>
 
 <body class="h-100">
@@ -38,7 +44,7 @@
                         <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
                             <div class="d-table m-auto">
                                 <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;"
-                                    src="assets/images/gki-delima-crop.png" alt="Shards Dashboard">
+                                    src="<?= base_url('assets/images/gki-delima-crop.png'); ?>" alt="GKI Delima">
                                 <span class="d-none d-md-inline ml-1">Perlawatan GKI Delima</span>
                             </div>
                         </a>
@@ -47,54 +53,46 @@
                         </a>
                     </nav>
                 </div>
-                <!-- <form action="#" class="main-sidebar__search w-100 border-right d-sm-flex d-md-none d-lg-none">
-                    <div class="input-group input-group-seamless ml-3">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">
-                                <i class="fas fa-search"></i>
-                            </div>
-                        </div>
-                        <input class="navbar-search form-control" type="text" placeholder="Search for something..."
-                            aria-label="Search">
-                    </div>
-                </form> -->
                 <div class="nav-wrapper">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link <?= ($activePage == 'dashboard') ? 'active' : ''; ?>" href="/dashboard">
+                            <a class="nav-link <?= ($activePage == 'dashboard') ? 'active' : ''; ?>"
+                                href="<?= base_url('/dashboard'); ?>">
                                 <i class="material-icons">edit</i>
                                 <span>Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?= ($activePage == 'penjadwalan') ? 'active' : ''; ?>"
-                                href="/penjadwalan">
+                                href="<?= base_url('/penjadwalan'); ?> ">
                                 <i class="large material-icons">calendar_month</i>
                                 <span>Penjadwalan</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($activePage == 'laporan') ? 'active' : ''; ?>" href="/laporan">
+                            <a class="nav-link <?= ($activePage == 'laporan') ? 'active' : ''; ?>"
+                                href="<?= base_url('laporan'); ?>">
                                 <i class="material-icons">note</i>
                                 <span>Laporan</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?= ($activePage == 'data-jemaat') ? 'active' : ''; ?>"
-                                href="/data-jemaat">
+                                href="<?= base_url('datajemaat'); ?>">
                                 <i class="material-icons">people</i>
                                 <span>Data Jemaat</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($activePage == 'pelawat') ? 'active' : ''; ?>" href="/pelawat">
+                            <a class="nav-link <?= ($activePage == 'pelawat') ? 'active' : ''; ?>"
+                                href="<?= base_url('pelawat'); ?>">
                                 <i class="material-icons">diversity_3</i>
                                 <span>Pelawat</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?= ($activePage == 'requested-update') ? 'active' : ''; ?>"
-                                href="/requested-update">
+                                href="<?= base_url('/requestedupdate'); ?> ">
                                 <i class="material-icons">update</i>
                                 <span>Requested Update</span>
                             </a>
@@ -171,9 +169,11 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#"
                                     role="button" aria-haspopup="true" aria-expanded="false">
-                                    <img class="user-avatar rounded-circle mr-2" src="assets/images/avatars/0.jpg"
-                                        alt="User Avatar">
-                                    <span class="d-none d-md-inline-block">Sierra Brooks</span>
+                                    <img class="user-avatar rounded-circle mr-2"
+                                        src="<?= base_url('assets/images/avatars/0.jpg'); ?>" alt="User Avatar">
+                                    <span class="d-none d-md-inline-block">
+                                        <?= $namaJemaat; ?>
+                                    </span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-small">
                                     <a class="dropdown-item" href="user-profile-lite.html">
@@ -183,7 +183,7 @@
                                     <a class="dropdown-item" href="add-new-post.html">
                                         <i class="material-icons">note_add</i> Add New Post</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item text-danger" href="#">
+                                    <a class="dropdown-item text-danger" href="<?= base_url('/login/logout'); ?>">
                                         <i class="material-icons text-danger">&#xE879;</i> Logout </a>
                                 </div>
                             </li>
@@ -242,9 +242,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
-    <script src="assets/scripts/extras.1.1.0.min.js"></script>
-    <script src="assets/scripts/shards-dashboards.1.1.0.min.js"></script>
-    <script src="assets/scripts/app/app-blog-overview.1.1.0.js"></script>
+    <script src="<?= base_url('assets/scripts/extras.1.1.0.min.js'); ?>"></script>
+    <script src="<?= base_url('assets/scripts/shards-dashboards.1.1.0.min.js'); ?>"></script>
+    <script src="<?= base_url('assets/scripts/app/app-blog-overview.1.1.0.js'); ?>"></script>
 </body>
 
 </html>
