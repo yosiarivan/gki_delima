@@ -18,6 +18,16 @@ class JemaatModel extends Model
     }
     public function getAllJemaat()
     {
-        return $this->findAll();
+        // return $this->findAll();
+
+        $result = $this->db->table('jemaat')
+            ->select('jemaat.*, master_rayon.rayon as rayon, master_lingkungan.lingkungan as lingk')
+            ->join('master_rayon', 'master_rayon.id = jemaat.rayon', 'inner')
+            ->join('master_lingkungan', 'master_lingkungan.id = jemaat.lingk', 'inner')
+            // ->orderBy('tr_jadwal.createdOn', 'DESC')
+            ->get()
+            ->getResultArray();
+
+        return $result;
     }
 }

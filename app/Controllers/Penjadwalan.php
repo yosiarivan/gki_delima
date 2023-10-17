@@ -32,11 +32,53 @@ class Penjadwalan extends BaseController
         if (!$session->has('userData')) {
             return redirect()->to('/login');
         }
-
+        // return $this->response->setJSON($data);
         return view('Penjadwalan.php', $data);
         // var_dump($data['penjadwalan']);
         // return $this->response->setJSON($data);
     }
+
+    public function getAllDataJSON()
+    {
+        $data = [
+            'penjadwalan' => $this->PenjadwalanModel->getAllPenjadwalan(),
+            'group_pelawat' => $this->GroupPelawatModel->getAllGroupPelawat(),
+            'jemaat' => $this->JemaatModel->getAllJemaat(),
+        ];
+
+        return $this->response->setJSON($data);
+    }
+
+    public function postJadwal()
+    {
+        $data = [
+            'penjadwalan' => $this->PenjadwalanModel->getAllPenjadwalan(),
+        ];
+        return $this->response->setJSON($data);
+    }
+
+    // public function postDataServerSide()
+    // {
+    //     $draw = $this->request->getPost('draw');
+    //     $start = $this->request->getPost('start');
+    //     $length = $this->request->getPost('length');
+    //     $search = $this->request->getPost('search')['value'];
+    //     $order = $this->request->getPost('order')[0];
+    //     $columns = $this->request->getPost('columns');
+
+    //     $penjadwalanModel = new PenjadwalanModel();
+
+    //     $data = $penjadwalanModel->getDatatableData($start, $length, $search, $order, $columns);
+
+    //     $response = [
+    //         "draw" => $draw,
+    //         "recordsTotal" => $penjadwalanModel->countAll(),
+    //         "recordsFiltered" => $penjadwalanModel->countFiltered($search),
+    //         "data" => $data
+    //     ];
+
+    //     return $this->response->setJSON($response);
+    // }
 
     public function postTambahJadwal()
     {
@@ -73,6 +115,27 @@ class Penjadwalan extends BaseController
         } else {
             // Data gagal menyimpan
             return $this->response->setJSON(['status' => 'error']);
+        }
+    }
+
+    public function getJadwalById($id)
+    {
+        $jadwal = $this->PenjadwalanModel->find($id);
+        return $this->response->setJSON($jadwal);
+    }
+
+
+    public function postDeleteJadwal()
+    {
+        $id = $this->request->getPost('id');
+        $delete = $this->PenjadwalanModel->deleteJadwal($id);
+
+        if ($delete) {
+            // Jika data berhasil dihapus
+            return redirect()->to('/penjadwalan')->with('success', 'Data berhasil dihapus');
+        } else {
+            // Jika terjadi kesalahan saat menghapus data
+            return redirect()->to('/penjadwalan')->with('error', 'Gagal menghapus data');
         }
     }
 }

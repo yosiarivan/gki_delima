@@ -25,26 +25,38 @@
                         <thead class="bg-light">
                             <tr>
                                 <th scope="col" class="border-0">#</th>
+                                <th scope="col" class="border-0">NOA</th>
                                 <th scope="col" class="border-0">Nama</th>
+                                <th scope="col" class="border-0">Rayon</th>
+                                <th scope="col" class="border-0">Lingkungan</th>
                                 <th scope="col" class="border-0">Email</th>
                                 <th scope="col" class="border-0">Kontak</th>
                                 <th scope="col" class="border-0">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($dataJemaat as $no => $jd) { ?>
+                            <?php foreach ($dataJemaat as $no => $dj) { ?>
                                 <tr>
                                     <td>
                                         <?= $no + 1; ?>
                                     </td>
                                     <td>
-                                        <?= $jd['nama']; ?>
+                                        <?= $dj['noa']; ?>
                                     </td>
                                     <td>
-                                        <?= $jd['email']; ?>
+                                        <?= $dj['nama']; ?>
                                     </td>
                                     <td>
-                                        <?= $jd['hp']; ?>
+                                        <?= $dj['rayon']; ?>
+                                    </td>
+                                    <td>
+                                        <?= $dj['lingk']; ?>
+                                    </td>
+                                    <td>
+                                        <?= $dj['email']; ?>
+                                    </td>
+                                    <td>
+                                        <?= $dj['hp']; ?>
                                     </td>
                                     <td>
                                         <div class="dropdown">

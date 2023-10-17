@@ -1,7 +1,29 @@
 <?= $this->extend('layouts/template.php'); ?>
+
 <?= $this->section('content'); ?>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+<?php if (session()->getFlashdata('success')): ?>
+    <script>
+        Swal.fire({
+            icon: 'success',
+            title: 'Berhasil',
+            text: '<?= session()->getFlashdata('success') ?>',
+            showConfirmButton: false,
+            timer: 1500
+        });
+    </script>
+<?php elseif (session()->getFlashdata('error')): ?>
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Gagal',
+            text: '<?= session()->getFlashdata('error') ?>'
+        });
+    </script>
+<?php endif; ?>
+
 
 <div class="main-content-container container-fluid px-4">
     <!-- Page Header -->
@@ -58,7 +80,7 @@
                                 <th scope="col" class="border-0">Action</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tableBody">
                             <?php foreach ($penjadwalan as $no => $p) { ?>
                                 <tr>
                                     <td>
@@ -83,14 +105,19 @@
                                                 <i class="material-icons">settings</i>
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="user-profile-lite.html">
-                                                    <i class="material-icons">&#xE7FD;</i> Edit Jadwal</a>
+                                                <button class="dropdown-item" data-toggle="modal" data-target="#editModal"
+                                                    data-id="<?= $p['id']; ?>">
+                                                    <i class="material-icons">&#xE7FD;</i> Edit Jadwal
+                                                </button>
                                                 <a class="dropdown-item" href="components-blog-posts.html">
                                                     <i class="material-icons">vertical_split</i>Data Jemaat</a>
                                                 <a class="dropdown-item" href="add-new-post.html">
                                                     <i class="material-icons">note_add</i> Location</a>
                                                 <a class="dropdown-item" href="add-new-post.html">
                                                     <i class="material-icons">note_add</i> History</a>
+                                                <button type="button" class="dropdown-item" href="#"
+                                                    onclick="confirmDelete(<?= $p['id']; ?>)">
+                                                    <i class="material-icons">note_add</i> Hapus</button>
                                             </div>
                                         </div>
                                     </td>
@@ -102,6 +129,8 @@
             </div>
         </div>
     </div>
+
+    <!-- @@ Modal Tambah Jadwal -->
     <div class="modal fade" id="tambahModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -152,6 +181,73 @@
                             <select class="form-control form-select-sm" id="status" name="status">
                                 <option value="1">Sesuai Jadwal</option>
                                 <option value="2">Ditunda</option>
+                                <option value="3">Selesai</option>
+                                <option value="4">Dibatalkan</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" id="submit">Tambah Jadwal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- @@ Modal Edit Jadwal -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tambahModalLabel">Tambah Jadwal Kunjungan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <input type="hidden" id="updatedBy" name="updatedBy"
+                            value="<?= session()->get('userData')['kd_jemaat']; ?>">
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Tanggal</label>
+                            <input type="date" class="form-control" id="editTanggal" name="editTanggal">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Waktu</label>
+                            <input type="time" class="form-control" id="editWaktu" name="editWaktu">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Nama Jemaat</label>
+                            <select class="form-control select2" id="editNama_jemaat" name="editNama_jemaat">
+                                <?php foreach ($jemaat as $j): ?>
+                                    <option value="<?= $j['id']; ?>">
+                                        <?= $j['nama']; ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Tim Pelawat</label>
+                            <select class="form-control select2" id="bakso" name="bakso">
+                                <?php foreach ($group_pelawat as $gp): ?>
+                                    <option value="<?= $gp['id']; ?>  ">
+                                        <?= $gp['nm_group']; ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Catatan</label>
+                            <textarea class="form-control" id="editCatatan" name="editCatatan"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Status Kunjungan</label>
+                            <select class="form-control form-select-sm" id="editStatus" name="editStatus">
+                                <option value="1">Sesuai Jadwal</option>
+                                <option value="2">Ditunda</option>
+                                <option value="3">Selesai</option>
+                                <option value="4">Dibatalkan</option>
                             </select>
                         </div>
                     </form>
@@ -168,15 +264,120 @@
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
         new DataTable('#table-penjadwalan');
+
+        // $(document).ready(function () {
+        //     $('#table-penjadwalan').DataTable({
+        //         "processing": true,
+        //         "serverSide": true,
+        //         "ajax": {
+        //             "url": "<?= base_url('penjadwalan/DataServerSide') ?>",
+        //             "type": "POST"
+        //         },
+        //         "columns": [
+        //             { "data": "id" },
+        //             { "data": "tanggal" }.{ "data": "waktu" },
+        //             { "data": "nama_jemaat" },
+        //             { "data": "tim_pelawat" },
+        //             { "data": "status" },
+        //             {
+        //                 "data": "id",
+        //                 "render": function (data, type, full, meta) {
+        //                     return `
+        //                     <div class="dropdown">
+        //                         <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+        //                             <i class="material-icons">settings</i>
+        //                         </button>
+        //                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        //                             <a class="dropdown-item" href="user-profile-lite.html">
+        //                                 <i class="material-icons">&#xE7FD;</i> Edit Jadwal
+        //                             </a>
+        //                             <a class="dropdown-item" href="components-blog-posts.html">
+        //                                 <i class="material-icons">vertical_split</i>Data Jemaat
+        //                             </a>
+        //                             <a class="dropdown-item" href="add-new-post.html">
+        //                                 <i class="material-icons">note_add</i> Location
+        //                             </a>
+        //                             <a class="dropdown-item" href="add-new-post.html">
+        //                                 <i class="material-icons">note_add</i> History
+        //                             </a>
+        //                             <a class="dropdown-item" href="#" onclick="confirmDelete(${data})">
+        //                                 <i class="material-icons">note_add</i> Hapus
+        //                             </a>
+        //                         </div>
+        //                     </div>
+        //                 `;
+        //                 }
+        //             }
+        //         ]
+        //     });
+        // });
 
         $(document).ready(function () {
             $('#tambahModal').on('shown.bs.modal', function () {
                 $('.select2').select2();
             });
+            $('#editModal').on('shown.bs.modal', function () {
+                $('.select2').select2();
+            });
         });
+
+        // function loadData() {
+        //     $.ajax({
+        //         url: '<?= base_url('penjadwalan/jadwal'); ?>',
+        //         type: 'post',
+        //         dataType: 'json',
+        //         success: function (response) {
+        //             // Proses respons data dari server
+        //             if (response.penjadwalan.length > 0) {
+        //                 // Kosongkan tbody sebelum mengisi dengan data baru
+        //                 $('#tableBody').empty();
+        //                 // Lakukan operasi yang diinginkan dengan data
+        //                 response.penjadwalan.forEach(function (data, index) {
+        //                     var row = `<tr>
+        //                     <td>${index + 1}</td>
+        //                     <td>${data.tanggal}  ${data.waktu}</td>
+        //                     <td>${data.nama_jemaat}</td>
+        //                     <td>${data.tim_pelawat}</td>
+        //                     <td>${data.status}</td>
+        //                     <td>
+        //                     <div class="dropdown">
+        //                                     <button class="btn btn-primary dropdown-toggle" type="button"
+        //                                         id="dropdownMenuButton" data-toggle="dropdown">
+        //                                         <i class="material-icons">settings</i>
+        //                                     </button>
+        //                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        //                                         <a class="dropdown-item" href="user-profile-lite.html">
+        //                                             <i class="material-icons">&#xE7FD;</i> Edit Jadwal</a>
+        //                                         <a class="dropdown-item" href="components-blog-posts.html">
+        //                                             <i class="material-icons">vertical_split</i>Data Jemaat</a>
+        //                                         <a class="dropdown-item" href="add-new-post.html">
+        //                                             <i class="material-icons">note_add</i> Location</a>
+        //                                         <a class="dropdown-item" href="add-new-post.html">
+        //                                             <i class="material-icons">note_add</i> History</a>
+        //                                         <a class="dropdown-item" href="#"
+        //                                             onclick="confirmDelete(${data.id})">
+        //                                             <i class="material-icons">note_add</i> Hapus</a>
+        //                                     </div>
+        //                                 </div>
+        //                     </td>
+        //                 </tr>`;
+        //                     $('#tableBody').append(row);
+        //                 });
+        //             } else {
+        //                 // Tindakan jika tidak ada data
+        //                 $('#tableBody').append('<tr><td colspan="6">Tidak ada data yang ditemukan</td></tr>');
+        //             }
+        //         },
+        //         error: function (error) {
+        //             // Tindakan jika terjadi kesalahan
+        //             console.log(error);
+        //         }
+        //     });
+        // };
 
         $(document).ready(function () {
             $('#submit').on('click', function (e) {
@@ -189,9 +390,8 @@
                 var catatan = $('#catatan').val();
                 var status = $('#status').val();
 
-
                 $.ajax({
-                    url: 'penjadwalan/TambahJadwal', // Ganti dengan URL Controller dan method yang sesuai
+                    url: '<?php echo base_url('penjadwalan/TambahJadwal') ?>', // Ganti dengan URL Controller dan method yang sesuai
                     method: 'POST',
                     data: {
                         createdBy: createdBy,
@@ -204,16 +404,95 @@
 
                     },
                     success: function (response) {
-                        alert('Data berhasil disimpan!');
-                        $('#tambahModal').modal('hide'); // Menutup modal setelah data berhasil disimpan
+                        $('#tambahModal').modal('hide');
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Data berhasil disimpan',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        // location.reload();
+                        loadData();
                     },
                     error: function (xhr, status, error) {
                         console.error(error);
-                        alert('Terjadi kesalahan saat menyimpan data.');
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Data gagal disimpan',
+                            showConfirmButton: true
+                        });
                     }
                 });
             });
         });
+
+        // Fill Edit Form
+        $('#editModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var id = button.data('id');
+
+            $.ajax({
+                url: '<?= base_url('penjadwalan/JadwalById/'); ?>' + id, // Menambahkan ID ke URL
+                method: 'GET',
+                success: function (response) {
+                    $('#editTanggal').val(response.tanggal);
+                    $('#editWaktu').val(response.waktu);
+                    $('#editNama_jemaat').val(response.nama_jemaat);
+                    $('#bakso').val(response.tim_pelawat);
+                    $('#editCatatan').val(response.catatan);
+                    $('#editStatus').val(response.status);
+
+                    // Pemicu pembaruan elemen input untuk memperbarui tampilan
+                    $('#editTanggal').trigger('change');
+                    $('#editWaktu').trigger('change');
+                    $('#editNama_jemaat').trigger('change');
+                    $('#bakso').trigger('change');
+                    $('#editCatatan').trigger('change');
+                    $('#editStatus').trigger('change');
+                },
+                error: function (err) {
+                    console.error('Error:', err);
+                }
+            });
+        });
+
+        function confirmDelete(id) {
+            Swal.fire({
+                title: 'Apakah Anda yakin?',
+                text: "Akan menghapus jadwal ini?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, Hapus!',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Kirim permintaan penghapusan ke server menggunakan AJAX
+                    $.ajax({
+                        type: "POST",
+                        url: "<?= base_url('penjadwalan/DeleteJadwal') ?>",
+                        data: { id: id },
+                        success: function (response) {
+                            Swal.fire(
+                                'Terhapus!',
+                                'Data jadwal telah dihapus.',
+                                'success'
+                            );
+                            // loadData();
+                            location.reload();
+                        },
+                        error: function (error) {
+                            Swal.fire(
+                                'Error!',
+                                'Terjadi kesalahan saat menghapus data.',
+                                'error'
+                            );
+                        }
+                    });
+                }
+            });
+        }
 
 
 
@@ -245,5 +524,7 @@
         //     console.log('Tanggal mulai:', startDate);
         //     console.log('Tanggal akhir:', endDate);
         // })
+
+        loadData();
     </script>
     <?= $this->endSection(); ?>
