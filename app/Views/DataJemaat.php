@@ -1,89 +1,176 @@
 <?= $this->extend('layouts/template.php'); ?>
 <?= $this->section('content'); ?>
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-<div class="main-content-container container-fluid px-4">
-    <!-- Page Header -->
-    <div class="page-header row no-gutters py-4">
-        <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-            <span class="text-uppercase page-subtitle">Overview</span>
-            <h3 class="page-title">Data Jemaat</h3>
-        </div>
+
+<?php if (session()->getFlashdata('success')): ?>
+    <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+        <i class="fa fa-check mx-2"></i>
+        <strong>Success!</strong>
+        <?= session()->getFlashdata('success'); ?>
     </div>
-    <!-- End Page Header -->
-    <!-- Default Light Table -->
-    <div class="row">
-        <div class="col">
-            <div class="card card-small mb-4">
-                <div class="card-header border-bottom">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Cari Jemaat" aria-label="Search">
-                        <button class="btn btn-primary my-2 my-sm-0" type="submit">Cari</button>
-                    </form>
-                </div>
-                <div class="card-body p-4 pb-3 text-center">
-                    <table id="table-jemaat" class="table mb-0 table-striped table-bordered">
-                        <thead class="bg-light">
-                            <tr>
-                                <th scope="col" class="border-0">#</th>
-                                <th scope="col" class="border-0">NOA</th>
-                                <th scope="col" class="border-0">Nama</th>
-                                <th scope="col" class="border-0">Rayon</th>
-                                <th scope="col" class="border-0">Lingkungan</th>
-                                <th scope="col" class="border-0">Email</th>
-                                <th scope="col" class="border-0">Kontak</th>
-                                <th scope="col" class="border-0">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach ($dataJemaat as $no => $dj) { ?>
+<?php endif; ?>
+
+<div class="main-content-container container-fluid px-4">
+    <div class="main-content-container container-fluid px-4">
+        <!-- Page Header -->
+        <div class="page-header row no-gutters py-4">
+            <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                <span class="text-uppercase page-subtitle">Overview</span>
+                <h3 class="page-title">Data Jemaat</h3>
+            </div>
+            <div class="col-12 col-sm-8 text-sm-right mb-0">
+                <a href="<?= base_url('datajemaat/tambahdata'); ?>" class="btn btn-primary">Tambah Data Jemaat</a>
+            </div>
+        </div>
+        <!-- End Page Header -->
+        <!-- Default Light Table -->
+        <div class="row">
+            <div class="col">
+                <div class="card card-small mb-4">
+                    <div class="card-header border-bottom">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Cari Jemaat"
+                                aria-label="Search">
+                            <button class="btn btn-primary my-2 my-sm-0" type="submit">Cari</button>
+                        </form>
+                    </div>
+                    <div class="card-body p-4 pb-3 text-center">
+                        <table id="table-jemaat" class="table mb-0 table-striped table-bordered">
+                            <thead class="bg-light">
                                 <tr>
-                                    <td>
-                                        <?= $no + 1; ?>
-                                    </td>
-                                    <td>
-                                        <?= $dj['noa']; ?>
-                                    </td>
-                                    <td>
-                                        <?= $dj['nama']; ?>
-                                    </td>
-                                    <td>
-                                        <?= $dj['rayon']; ?>
-                                    </td>
-                                    <td>
-                                        <?= $dj['lingk']; ?>
-                                    </td>
-                                    <td>
-                                        <?= $dj['email']; ?>
-                                    </td>
-                                    <td>
-                                        <?= $dj['hp']; ?>
-                                    </td>
-                                    <td>
-                                        <div class="dropdown">
-                                            <button class="btn btn-primary dropdown-toggle" type="button"
-                                                id="dropdownMenuButton" data-toggle="dropdown">
-                                                <i class="material-icons">settings</i>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="user-profile-lite.html">
-                                                    <i class="material-icons">&#xE7FD;</i> EDIT DATA JEMAAT</a>
-                                                <a class="dropdown-item" href="components-blog-posts.html">
-                                                    <i class="material-icons">vertical_split</i> SET LOCATION ON MAP</a>
-                                            </div>
-                                        </div>
-                                    </td>
+                                    <th scope="col" class="border-0">#</th>
+                                    <th scope="col" class="border-0">NOA</th>
+                                    <th scope="col" class="border-0">Nama</th>
+                                    <th scope="col" class="border-0">Rayon</th>
+                                    <th scope="col" class="border-0">Lingkungan</th>
+                                    <th scope="col" class="border-0">Email</th>
+                                    <th scope="col" class="border-0">Kontak</th>
+                                    <th scope="col" class="border-0">Action</th>
                                 </tr>
-                            <?php } ?>
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($dataJemaat as $no => $dj) { ?>
+                                    <tr>
+                                        <td>
+                                            <?= $no + 1; ?>
+                                        </td>
+                                        <td>
+                                            <?= $dj['noa']; ?>
+                                        </td>
+                                        <td>
+                                            <?= $dj['nama']; ?>
+                                        </td>
+                                        <td>
+                                            <?= $dj['rayon']; ?>
+                                        </td>
+                                        <td>
+                                            <?= $dj['lingk']; ?>
+                                        </td>
+                                        <td>
+                                            <?= $dj['email']; ?>
+                                        </td>
+                                        <td>
+                                            <?= $dj['hp']; ?>
+                                        </td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn btn-primary dropdown-toggle" type="button"
+                                                    id="dropdownMenuButton" data-toggle="dropdown">
+                                                    <i class="material-icons">settings</i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="user-profile-lite.html">
+                                                        <i class="material-icons">&#xE7FD;</i> EDIT DATA JEMAAT</a>
+                                                    <button class="dropdown-item" href="#" data-id="<?= $dj['id']; ?>"
+                                                        data-toggle="modal" data-target="#settingRoleModal">
+                                                        <i class="material-icons">&#xE7FD;</i> SETTING ROLE</button>
+                                                    <a class="dropdown-item" href="components-blog-posts.html">
+                                                        <i class="material-icons">vertical_split</i> SET LOCATION ON MAP</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-<script>
-    new DataTable('#table-jemaat');
-</script>
-<?= $this->endSection(); ?>
+    <!-- Modal Settings Role -->
+    <div class="modal fade" id="settingRoleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Setting Role</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Nama : John Doe</p>
+                    <p>NOA : 12345</p>
+                    <div class="form-group">
+                        <label for="noa">NOA</label>
+                        <input type="text" class="form-control" id="noa" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" class="form-control" id="nama" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Role</label>
+                        <select class="form-control" id="role">
+                            <?php foreach ($masterRole as $mRo): ?>
+                                <option value="<?= $mRo['kd_role']; ?>">
+                                    <?= $mRo['role']; ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Show Role</label>
+                        <select class="form-control" id="showrole">
+                            <?php foreach ($masterRole as $mRo): ?>
+                                <option value="<?= $mRo['kd_role']; ?>">
+                                    <?= $mRo['role']; ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        new DataTable('#table-jemaat');
+
+        $('#settingRoleModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var id = button.data('id');
+
+            $.ajax({
+                url: '<?= base_url('datajemaat/CariRoleJemaat'); ?>',
+                data: { id: id },
+                method: 'POST',
+                success: function (response) {
+                    $('#noa').val(response.noa);
+                    $('#nama').val(response.nama);
+                    $('#role').val(response.role);
+                    $('#showrole').val(response.showrole);
+                },
+                error: function (err) {
+                    console.error('Error:', err);
+                }
+            });
+        });
+    </script>
+    <?= $this->endSection(); ?>

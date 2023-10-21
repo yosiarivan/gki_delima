@@ -30,4 +30,32 @@ class JemaatModel extends Model
 
         return $result;
     }
+
+    public function simpanData($data)
+    {
+        try {
+            // Melakukan penyimpanan ke database
+            $this->db->table('jemaat')->insert($data);
+
+            // Mengambil ID yang baru saja diinput
+            $lastIdJemaat = $this->db->insertID();
+            $getLastDataJemaat = $this->db->table('jemaat')
+                ->select('noa')
+                ->where('id', $lastIdJemaat)
+                ->get()
+                ->getRowArray();
+
+            $jemaatData = [
+                'kd_jemaat' => $lastIdJemaat,
+                'password' => $getLastDataJemaat['noa'],
+            ];
+
+            return $jemaatData;
+            // return true;
+        } catch (\Exception $e) {
+            // Jika ada error
+            log_message('error', $e->getMessage());
+            return false;
+        }
+    }
 }

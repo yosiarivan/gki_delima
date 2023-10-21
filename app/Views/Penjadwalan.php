@@ -1,8 +1,8 @@
 <?= $this->extend('layouts/template.php'); ?>
 
 <?= $this->section('content'); ?>
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+<!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"> -->
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" /> -->
 
 <?php if (session()->getFlashdata('success')): ?>
     <script>
@@ -229,7 +229,7 @@
                         </div>
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Tim Pelawat</label>
-                            <select class="form-control select2" id="bakso" name="bakso">
+                            <select class="form-control select2" id="editTim_pelawat" name="editTim_pelawat">
                                 <?php foreach ($group_pelawat as $gp): ?>
                                     <option value="<?= $gp['id']; ?>  ">
                                         <?= $gp['nm_group']; ?>
@@ -260,11 +260,11 @@
         </div>
     </div>
     <!-- End Default Dark Table -->
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.js"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script> -->
+    <!-- <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
 
     <script>
         new DataTable('#table-penjadwalan');
@@ -319,10 +319,7 @@
         $(document).ready(function () {
             $('#tambahModal').on('shown.bs.modal', function () {
                 $('.select2').select2();
-            });
-            $('#editModal').on('shown.bs.modal', function () {
-                $('.select2').select2();
-            });
+            })
         });
 
         // function loadData() {
@@ -411,8 +408,8 @@
                             showConfirmButton: false,
                             timer: 1500
                         });
-                        // location.reload();
-                        loadData();
+                        location.reload();
+                        // loadData();
                     },
                     error: function (xhr, status, error) {
                         console.error(error);
@@ -438,7 +435,7 @@
                     $('#editTanggal').val(response.tanggal);
                     $('#editWaktu').val(response.waktu);
                     $('#editNama_jemaat').val(response.nama_jemaat);
-                    $('#bakso').val(response.tim_pelawat);
+                    $('#editTim_pelawat').val(response.tim_pelawat);
                     $('#editCatatan').val(response.catatan);
                     $('#editStatus').val(response.status);
 
@@ -446,7 +443,7 @@
                     $('#editTanggal').trigger('change');
                     $('#editWaktu').trigger('change');
                     $('#editNama_jemaat').trigger('change');
-                    $('#bakso').trigger('change');
+                    $('#editTim_pelawat').trigger('change');
                     $('#editCatatan').trigger('change');
                     $('#editStatus').trigger('change');
                 },
@@ -525,6 +522,6 @@
         //     console.log('Tanggal akhir:', endDate);
         // })
 
-        loadData();
+        // loadData();
     </script>
     <?= $this->endSection(); ?>

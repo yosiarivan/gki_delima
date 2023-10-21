@@ -20,4 +20,27 @@ class UserModel extends Model
             ->get()
             ->getRowArray();
     }
+    public function simpanData($userData)
+    {
+        try {
+            // Melakukan penyimpanan ke database
+            $this->db->table('tr_user')->insert($userData);
+
+            return true;
+            // return true;
+        } catch (\Exception $e) {
+            // Jika ada error
+            log_message('error', $e->getMessage());
+            return false;
+        }
+    }
+
+    public function getRoleById($id)
+    {
+        return $this->select('role, show_role')
+            ->where('kd_jemaat', $id)
+            ->get()
+            ->getRowArray();
+    }
+
 }

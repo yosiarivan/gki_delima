@@ -1,0 +1,410 @@
+INFO - 2023-10-21 16:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 16:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 16:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 16:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 16:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 17:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-21 18:56:25 --> mysqli_sql_exception: Unknown column 'pendidikan' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `je...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `je...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `je...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `je...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\JemaatModel.php(38): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\DataJemaat.php(72): App\Models\JemaatModel->simpanData(Array)
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\DataJemaat->postTambahJemaat()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-21 18:56:26 --> Unknown column 'pendidikan' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jemaat` (`noa`, `nokk`, `noa2`, `rayon`, `lingk`, `stanggota`, `ketanggota`, `tglaktif`, `tglakhir`, `nama`, `nickname`, `gender`, `tmplhr`, `tgllhr`, `goldar`, `tglnikah`, `pendidikan`, `pekerjaan`, `talenta`, `talenta_ll`, `ortu1`, `ortu2`, `pasangan`, `alamat1`, `rt`, `kodepos`, `lurah`, `propinsi`, `kota`, `camat`, `telp`, `hp`, `email`, `pdtanak`, `tglanak`, `grjanak`, `pdtdewasa`, `tgldewasa`, `grjdewasa`, `pdtsidi`, `tglsidi`, `grjsidi`) VALUES (:noa:, :nokk:, :noa2:, :rayon:, :lingk:, :stanggota:, :ketanggota:, :tglaktif:, :tglakhir:, :nama:, :nickname:, :gender:, :tmplhr:, :tgllhr:, :goldar:, :tglnikah:, :pendidikan:, :pekerjaan:, :talenta:, :talenta_ll:, :ortu1:, :ortu2:, :pasangan:, :alamat1:, :rt:, :kodepos:, :lurah:, :propinsi:, :kota:, :camat:, :telp:, :hp:, :email:, :pdtanak:, :tglanak:, :grjanak:, :pdtdewasa:, :tgldewasa:, :grjdewasa:, :pdtsidi:, :tglsidi:, :grjsidi:)', [...], false)
+ 2 APPPATH\Models\JemaatModel.php(38): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\DataJemaat.php(72): App\Models\JemaatModel->simpanData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postTambahJemaat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-21 19:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-21 19:41:03 --> mysqli_sql_exception: Unknown column 'noaa' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `je...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `je...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `je...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `je...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\JemaatModel.php(38): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\DataJemaat.php(77): App\Models\JemaatModel->simpanData(Array)
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\DataJemaat->postTambahJemaat()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-21 19:41:03 --> Unknown column 'noaa' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jemaat` (`noaa`, `nokk`, `noa2`, `rayon`, `lingk`, `stanggota`, `ketanggota`, `tglaktif`, `tglakhir`, `nama`, `nickname`, `gender`, `tmplhr`, `tgllhr`, `goldar`, `tglnikah`, `pdidikan`, `pekerjaan`, `talenta`, `talenta_ll`, `ortu1`, `ortu2`, `pasangan`, `alamat1`, `rt`, `kodepos`, `lurah`, `propinsi`, `kota`, `camat`, `telp`, `hp`, `email`, `pdtanak`, `tglanak`, `grjanak`, `pdtdewasa`, `tgldewasa`, `grjdewasa`, `pdtsidi`, `tglsidi`, `grjsidi`, `stnikah`) VALUES (:noaa:, :nokk:, :noa2:, :rayon:, :lingk:, :stanggota:, :ketanggota:, :tglaktif:, :tglakhir:, :nama:, :nickname:, :gender:, :tmplhr:, :tgllhr:, :goldar:, :tglnikah:, :pdidikan:, :pekerjaan:, :talenta:, :talenta_ll:, :ortu1:, :ortu2:, :pasangan:, :alamat1:, :rt:, :kodepos:, :lurah:, :propinsi:, :kota:, :camat:, :telp:, :hp:, :email:, :pdtanak:, :tglanak:, :grjanak:, :pdtdewasa:, :tgldewasa:, :grjdewasa:, :pdtsidi:, :tglsidi:, :grjsidi:, :stnikah:)', [...], false)
+ 2 APPPATH\Models\JemaatModel.php(38): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\DataJemaat.php(77): App\Models\JemaatModel->simpanData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postTambahJemaat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-21 19:42:24 --> mysqli_sql_exception: Unknown column 'noaa' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `je...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `je...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `je...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `je...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\JemaatModel.php(38): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\DataJemaat.php(77): App\Models\JemaatModel->simpanData(Array)
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\DataJemaat->postTambahJemaat()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-21 19:42:24 --> Unknown column 'noaa' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jemaat` (`noaa`, `nokk`, `noa2`, `rayon`, `lingk`, `stanggota`, `ketanggota`, `tglaktif`, `tglakhir`, `nama`, `nickname`, `gender`, `tmplhr`, `tgllhr`, `goldar`, `tglnikah`, `pdidikan`, `pekerjaan`, `talenta`, `talenta_ll`, `ortu1`, `ortu2`, `pasangan`, `alamat1`, `rt`, `kodepos`, `lurah`, `propinsi`, `kota`, `camat`, `telp`, `hp`, `email`, `pdtanak`, `tglanak`, `grjanak`, `pdtdewasa`, `tgldewasa`, `grjdewasa`, `pdtsidi`, `tglsidi`, `grjsidi`, `stnikah`) VALUES (:noaa:, :nokk:, :noa2:, :rayon:, :lingk:, :stanggota:, :ketanggota:, :tglaktif:, :tglakhir:, :nama:, :nickname:, :gender:, :tmplhr:, :tgllhr:, :goldar:, :tglnikah:, :pdidikan:, :pekerjaan:, :talenta:, :talenta_ll:, :ortu1:, :ortu2:, :pasangan:, :alamat1:, :rt:, :kodepos:, :lurah:, :propinsi:, :kota:, :camat:, :telp:, :hp:, :email:, :pdtanak:, :tglanak:, :grjanak:, :pdtdewasa:, :tgldewasa:, :grjdewasa:, :pdtsidi:, :tglsidi:, :grjsidi:, :stnikah:)', [...], false)
+ 2 APPPATH\Models\JemaatModel.php(38): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\DataJemaat.php(77): App\Models\JemaatModel->simpanData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postTambahJemaat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-21 19:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-21 19:42:45 --> mysqli_sql_exception: Unknown column 'noaa' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `je...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `je...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `je...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `je...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\JemaatModel.php(38): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\DataJemaat.php(77): App\Models\JemaatModel->simpanData(Array)
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\DataJemaat->postTambahJemaat()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-21 19:42:45 --> Unknown column 'noaa' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jemaat` (`noaa`, `nokk`, `noa2`, `rayon`, `lingk`, `stanggota`, `ketanggota`, `tglaktif`, `tglakhir`, `nama`, `nickname`, `gender`, `tmplhr`, `tgllhr`, `goldar`, `tglnikah`, `pdidikan`, `pekerjaan`, `talenta`, `talenta_ll`, `ortu1`, `ortu2`, `pasangan`, `alamat1`, `rt`, `kodepos`, `lurah`, `propinsi`, `kota`, `camat`, `telp`, `hp`, `email`, `pdtanak`, `tglanak`, `grjanak`, `pdtdewasa`, `tgldewasa`, `grjdewasa`, `pdtsidi`, `tglsidi`, `grjsidi`, `stnikah`) VALUES (:noaa:, :nokk:, :noa2:, :rayon:, :lingk:, :stanggota:, :ketanggota:, :tglaktif:, :tglakhir:, :nama:, :nickname:, :gender:, :tmplhr:, :tgllhr:, :goldar:, :tglnikah:, :pdidikan:, :pekerjaan:, :talenta:, :talenta_ll:, :ortu1:, :ortu2:, :pasangan:, :alamat1:, :rt:, :kodepos:, :lurah:, :propinsi:, :kota:, :camat:, :telp:, :hp:, :email:, :pdtanak:, :tglanak:, :grjanak:, :pdtdewasa:, :tgldewasa:, :grjdewasa:, :pdtsidi:, :tglsidi:, :grjsidi:, :stnikah:)', [...], false)
+ 2 APPPATH\Models\JemaatModel.php(38): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\DataJemaat.php(77): App\Models\JemaatModel->simpanData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postTambahJemaat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-21 19:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-21 19:42:56 --> mysqli_sql_exception: Unknown column 'noaa' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `je...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `je...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `je...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `je...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\JemaatModel.php(38): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\DataJemaat.php(77): App\Models\JemaatModel->simpanData(Array)
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\DataJemaat->postTambahJemaat()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-21 19:42:56 --> Unknown column 'noaa' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jemaat` (`noaa`, `nokk`, `noa2`, `rayon`, `lingk`, `stanggota`, `ketanggota`, `tglaktif`, `tglakhir`, `nama`, `nickname`, `gender`, `tmplhr`, `tgllhr`, `goldar`, `tglnikah`, `pdidikan`, `pekerjaan`, `talenta`, `talenta_ll`, `ortu1`, `ortu2`, `pasangan`, `alamat1`, `rt`, `kodepos`, `lurah`, `propinsi`, `kota`, `camat`, `telp`, `hp`, `email`, `pdtanak`, `tglanak`, `grjanak`, `pdtdewasa`, `tgldewasa`, `grjdewasa`, `pdtsidi`, `tglsidi`, `grjsidi`, `stnikah`) VALUES (:noaa:, :nokk:, :noa2:, :rayon:, :lingk:, :stanggota:, :ketanggota:, :tglaktif:, :tglakhir:, :nama:, :nickname:, :gender:, :tmplhr:, :tgllhr:, :goldar:, :tglnikah:, :pdidikan:, :pekerjaan:, :talenta:, :talenta_ll:, :ortu1:, :ortu2:, :pasangan:, :alamat1:, :rt:, :kodepos:, :lurah:, :propinsi:, :kota:, :camat:, :telp:, :hp:, :email:, :pdtanak:, :tglanak:, :grjanak:, :pdtdewasa:, :tgldewasa:, :grjdewasa:, :pdtsidi:, :tglsidi:, :grjsidi:, :stnikah:)', [...], false)
+ 2 APPPATH\Models\JemaatModel.php(38): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\DataJemaat.php(77): App\Models\JemaatModel->simpanData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postTambahJemaat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-21 19:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 19:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-21 20:37:40 --> Cannot use empty array elements in arrays
+in APPPATH\Models\JemaatModel.php on line 50.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-21 20:38:21 --> Cannot use empty array elements in arrays
+in APPPATH\Models\JemaatModel.php on line 50.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-21 20:38:44 --> Cannot use empty array elements in arrays
+in APPPATH\Models\JemaatModel.php on line 50.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-21 20:39:05 --> Cannot use empty array elements in arrays
+in APPPATH\Models\JemaatModel.php on line 50.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-21 20:39:14 --> Cannot use empty array elements in arrays
+in APPPATH\Models\JemaatModel.php on line 50.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-10-21 20:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 20:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-21 21:03:18 --> mysqli_sql_exception: Unknown column 'kd_jemaat' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `je...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `je...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `je...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `je...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\UserModel.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\DataJemaat.php(90): App\Models\UserModel->simpanData(Array)
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\DataJemaat->postTambahJemaat()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-21 21:03:18 --> Unknown column 'kd_jemaat' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jemaat` (`kd_jemaat`, `password`) VALUES (:kd_jemaat:, :password:)', [...], false)
+ 2 APPPATH\Models\UserModel.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\DataJemaat.php(90): App\Models\UserModel->simpanData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postTambahJemaat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-21 21:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-21 21:45:54 --> Class "app\Models\Master_Role" not found
+in APPPATH\Controllers\DataJemaat.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\DataJemaat->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-21 21:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 21:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-21 21:58:15 --> Too few arguments to function App\Controllers\DataJemaat::postCariRoleJemaat(), 0 passed in C:\xampp\htdocs\gki_delima\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\DataJemaat.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postCariRoleJemaat()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-21 21:59:06 --> Too few arguments to function App\Controllers\DataJemaat::postCariRoleJemaat(), 0 passed in C:\xampp\htdocs\gki_delima\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\DataJemaat.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postCariRoleJemaat()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-21 22:01:18 --> Call to undefined method App\Models\UserModel::getRowArray
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Models\UserModel.php(40): CodeIgniter\Model->__call('getRowArray', [])
+ 2 APPPATH\Controllers\DataJemaat.php(140): App\Models\UserModel->getRoleById('1')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postCariRoleJemaat()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-21 22:01:42 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gki_delima\app\Models\UserModel.php(40): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\gki_delima\app\Controllers\DataJemaat.php(140): App\Models\UserModel->getRoleById('1')
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\DataJemaat->postCariRoleJemaat()
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+#9 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-21 22:01:42 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tr_user`
+WHERE `id` = :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\UserModel.php(40): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\DataJemaat.php(140): App\Models\UserModel->getRoleById('1')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postCariRoleJemaat()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-21 22:01:55 --> Undefined variable $id
+in APPPATH\Models\UserModel.php on line 40.
+ 1 APPPATH\Models\UserModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\gki_delima\\app\\Models\\UserModel.php', 40)
+ 2 APPPATH\Controllers\DataJemaat.php(140): App\Models\UserModel->getRoleById('1')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postCariRoleJemaat()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-21 22:02:07 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gki_delima\app\Models\UserModel.php(40): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\gki_delima\app\Controllers\DataJemaat.php(140): App\Models\UserModel->getRoleById('1')
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\DataJemaat->postCariRoleJemaat()
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+#9 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-21 22:02:07 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tr_user`
+WHERE `id` = :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\UserModel.php(40): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\DataJemaat.php(140): App\Models\UserModel->getRoleById('1')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postCariRoleJemaat()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-21 22:04:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DataJemaat.php on line 144.
+ 1 APPPATH\Controllers\DataJemaat.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\DataJemaat.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postCariRoleJemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-21 22:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 22:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 22:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 22:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 22:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 22:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-21 22:13:17 --> Undefined array key "noa"
+in APPPATH\Controllers\DataJemaat.php on line 145.
+ 1 APPPATH\Controllers\DataJemaat.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "noa"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\DataJemaat.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postCariRoleJemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-21 22:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-21 22:14:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DataJemaat.php on line 147.
+ 1 APPPATH\Controllers\DataJemaat.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\DataJemaat.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postCariRoleJemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-21 22:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 22:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 22:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 22:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-21 22:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
