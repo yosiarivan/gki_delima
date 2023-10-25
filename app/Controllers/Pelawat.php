@@ -133,11 +133,14 @@ class Pelawat extends BaseController
         $nama_group = $this->request->getVar('nama_group');
         $nama_pelawat = $this->request->getVar('nama_pelawat');
 
+        $session = session();
+        $updatedBy = $session->get('userData')['kd_jemaat'];
+
         if (!empty($nama_group) && is_array($nama_pelawat) && count($nama_pelawat) > 0) {
             $groupPelawat = [
                 'nm_group' => $nama_group,
                 'status' => '1',
-                'updatedBy' => '2',
+                'updatedBy' => $updatedBy,
                 'updatedOn' => date('Y-m-d H:i:s')
             ];
             $groupPelawatResponse = $this->GroupPelawatModel->updateGroup($id_group, $groupPelawat);

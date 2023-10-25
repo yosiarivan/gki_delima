@@ -183,8 +183,7 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <input type="hidden" id="updatedBy" name="updatedBy"
-                            value="<?= session()->get('userData')['kd_jemaat']; ?>">
+                        <input type="hidden" id="editId" name="editd">
                         <div class="form-group">
                             <label for="message-text" class="col-form-label">Tanggal</label>
                             <input type="date" class="form-control" id="editTanggal" name="editTanggal">
@@ -235,12 +234,6 @@
             </div>
         </div>
     </div>
-    <!-- End Default Dark Table -->
-    <!-- <script src="https://code.jquery.com/jquery-3.7.0.js"></script> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script> -->
-    <!-- <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
 
     <script>
         new DataTable('#table-penjadwalan');
@@ -300,13 +293,6 @@
         //     });
         // });
 
-        // $(document).ready(function () {
-        //     $('#tambahModal').on('shown.bs.modal', function () {
-        //         $('.select2').select2();
-        //     })
-        // });
-
-
         // Tambah Modal
         $(document).ready(function () {
             $('#submitTambah').on('click', function (e) {
@@ -333,23 +319,37 @@
 
                     },
                     success: function (response) {
-                        $('#tambahModal').modal('hide');
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Data berhasil disimpan',
-                            showConfirmButton: false,
-                            timer: 1500
+                        const swalWithBootstrapButtons = Swal.mixin({
+                            customClass: {
+                                confirmButton: 'btn btn-success mx-2',
+                                cancelButton: 'btn btn-danger',
+                            },
+                            buttonsStyling: false
                         });
-                        location.reload();
-                        // loadData();
+
+                        swalWithBootstrapButtons.fire(
+                            'Terhapus!',
+                            'Data Jadwal berhasil ditambah.',
+                            'success'
+                        ).then(() => {
+                            location.reload();
+                        });
+
                     },
                     error: function (xhr, status, error) {
-                        console.error(error);
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Data gagal disimpan',
-                            showConfirmButton: true
+                        const swalWithBootstrapButtons = Swal.mixin({
+                            customClass: {
+                                confirmButton: 'btn btn-success mx-2',
+                                cancelButton: 'btn btn-danger'
+                            },
+                            buttonsStyling: false
                         });
+
+                        swalWithBootstrapButtons.fire(
+                            'Error!',
+                            'Terjadi kesalahan saat menambah data.',
+                            'error'
+                        );
                     }
                 });
             });
@@ -364,24 +364,77 @@
                 url: '<?= base_url('penjadwalan/JadwalById/'); ?>' + id, // Menambahkan ID ke URL
                 method: 'GET',
                 success: function (response) {
+                    $('#editId').val(response.id);
                     $('#editTanggal').val(response.tanggal);
                     $('#editWaktu').val(response.waktu);
                     $('#editNama_jemaat').val(response.nama_jemaat);
                     $('#editTim_pelawat').val(response.tim_pelawat);
                     $('#editCatatan').val(response.catatan);
                     $('#editStatus').val(response.status);
-
-                    // Pemicu pembaruan elemen input untuk memperbarui tampilan
-                    $('#editTanggal').trigger('change');
-                    $('#editWaktu').trigger('change');
-                    $('#editNama_jemaat').trigger('change');
-                    $('#editTim_pelawat').trigger('change');
-                    $('#editCatatan').trigger('change');
-                    $('#editStatus').trigger('change');
                 },
                 error: function (err) {
                     console.error('Error:', err);
                 }
+            });
+        });
+
+        // Submit Edit From
+        $(document).ready(function () {
+            $("#submitEdit").on('click', function () {
+                var id = $("#editId").val(); // Isi dengan nilai id yang akan diedit;
+                var tanggal = $("#editTanggal").val();
+                var waktu = $("#editWaktu").val();
+                var nama_jemaat = $("#editNama_jemaat").val();
+                var tim_pelawat = $("#editTim_pelawat").val();
+                var catatan = $("#editCatatan").val();
+                var status = $("#editStatus").val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "<?= base_url('penjadwalan/UpdateJadwal') ?>", // Ganti dengan URL yang sesuai
+                    data: {
+                        id: id,
+                        tanggal: tanggal,
+                        waktu: waktu,
+                        nama_jemaat: nama_jemaat,
+                        tim_pelawat: tim_pelawat,
+                        catatan: catatan,
+                        status: status
+                    },
+                    success: function (response) {
+                        const swalWithBootstrapButtons = Swal.mixin({
+                            customClass: {
+                                confirmButton: 'btn btn-success mx-2',
+                                cancelButton: 'btn btn-danger'
+                            },
+                            buttonsStyling: false
+                        });
+
+                        swalWithBootstrapButtons.fire(
+                            'Terhapus!',
+                            'Data Jadwal telah diperbarui.',
+                            'success'
+                        ).then(() => {
+                            location.reload();
+                        });
+
+                    },
+                    error: function (xhr, status, error) {
+                        const swalWithBootstrapButtons = Swal.mixin({
+                            customClass: {
+                                confirmButton: 'btn btn-success mx-2',
+                                cancelButton: 'btn btn-danger'
+                            },
+                            buttonsStyling: false
+                        });
+
+                        swalWithBootstrapButtons.fire(
+                            'Error!',
+                            'Terjadi kesalahan saat update data.',
+                            'error'
+                        );
+                    }
+                });
             });
         });
 
@@ -404,16 +457,33 @@
                         url: "<?= base_url('penjadwalan/DeleteJadwal') ?>",
                         data: { id: id },
                         success: function (response) {
-                            Swal.fire(
+                            const swalWithBootstrapButtons = Swal.mixin({
+                                customClass: {
+                                    confirmButton: 'btn btn-success mx-2',
+                                    cancelButton: 'btn btn-danger'
+                                },
+                                buttonsStyling: false
+                            });
+
+                            swalWithBootstrapButtons.fire(
                                 'Terhapus!',
-                                'Data jadwal telah dihapus.',
+                                'Data Jadwal berhasil dihapus.',
                                 'success'
-                            );
-                            // loadData();
-                            location.reload();
+                            ).then(() => {
+                                location.reload();
+                            });
+
                         },
                         error: function (error) {
-                            Swal.fire(
+                            const swalWithBootstrapButtons = Swal.mixin({
+                                customClass: {
+                                    confirmButton: 'btn btn-success mx-2',
+                                    cancelButton: 'btn btn-danger'
+                                },
+                                buttonsStyling: false
+                            });
+
+                            swalWithBootstrapButtons.fire(
                                 'Error!',
                                 'Terjadi kesalahan saat menghapus data.',
                                 'error'
@@ -422,7 +492,8 @@
                     });
                 }
             });
-        }
+        };
+
 
 
 

@@ -88,7 +88,7 @@
                                                         <i class="material-icons">&#xE7FD;</i> SETTING ROLE</a>
                                                     <a class="dropdown-item" href="components-blog-posts.html">
                                                         <i class="material-icons">vertical_split</i> SET LOCATION ON MAP</a>
-                                                    <a class="dropdown-item" href=""
+                                                    <a class="dropdown-item" href="#"
                                                         onclick="confirmDelete(<?= $dj['id']; ?>)">
                                                         <i class="material-icons">&#xE7FD;</i> HAPUS JEMAAT</a>
                                                 </div>
@@ -194,26 +194,41 @@
                     show_role: show_role
                 },
                 success: function (response) {
-                    $('#settingRole').modal('hide');
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Data berhasil disimpan',
-                        showConfirmButton: false,
-                        timer: 1500
+                    const swalWithBootstrapButtons = Swal.mixin({
+                        customClass: {
+                            confirmButton: 'btn btn-success mx-2',
+                            cancelButton: 'btn btn-danger'
+                        },
+                        buttonsStyling: false
                     });
-                    location.reload();
+
+                    swalWithBootstrapButtons.fire(
+                        'Terhapus!',
+                        'Data Role telah diperbarui.',
+                        'success'
+                    ).then(() => {
+                        location.reload();
+                    });
+
                 },
                 error: function (xhr, status, error) {
-                    Swal.fire(
+                    const swalWithBootstrapButtons = Swal.mixin({
+                        customClass: {
+                            confirmButton: 'btn btn-success mx-2',
+                            cancelButton: 'btn btn-danger'
+                        },
+                        buttonsStyling: false
+                    });
+
+                    swalWithBootstrapButtons.fire(
                         'Error!',
-                        'Terjadi kesalahan saat menghapus data.',
+                        'Terjadi kesalahan saat update data.',
                         'error'
                     );
                 }
             });
         });
 
-        // Confirm delete
         function confirmDelete(id) {
             Swal.fire({
                 title: 'Apakah Anda yakin?',
@@ -231,15 +246,33 @@
                         url: "<?= base_url('datajemaat/DeleteJemaat') ?>",
                         data: { id: id },
                         success: function (response) {
-                            Swal.fire(
+                            const swalWithBootstrapButtons = Swal.mixin({
+                                customClass: {
+                                    confirmButton: 'btn btn-success mx-2',
+                                    cancelButton: 'btn btn-danger'
+                                },
+                                buttonsStyling: false
+                            });
+
+                            swalWithBootstrapButtons.fire(
                                 'Terhapus!',
-                                'Data jadwal telah dihapus.',
+                                'Data Jemaat berhasil dihapus.',
                                 'success'
-                            );
-                            location.reload();
+                            ).then(() => {
+                                location.reload();
+                            });
+
                         },
                         error: function (error) {
-                            Swal.fire(
+                            const swalWithBootstrapButtons = Swal.mixin({
+                                customClass: {
+                                    confirmButton: 'btn btn-success mx-2',
+                                    cancelButton: 'btn btn-danger'
+                                },
+                                buttonsStyling: false
+                            });
+
+                            swalWithBootstrapButtons.fire(
                                 'Error!',
                                 'Terjadi kesalahan saat menghapus data.',
                                 'error'
@@ -249,8 +282,5 @@
                 }
             });
         }
-
-
-
     </script>
     <?= $this->endSection(); ?>

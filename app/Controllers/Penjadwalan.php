@@ -124,6 +124,39 @@ class Penjadwalan extends BaseController
         return $this->response->setJSON($jadwal);
     }
 
+    public function postUpdateJadwal()
+    {
+        $id = $this->request->getPost('id');
+        $tanggal = $this->request->getPost('tanggal');
+        $waktu = $this->request->getPost('waktu');
+        $nama_jemaat = $this->request->getPost('nama_jemaat');
+        $tim_pelawat = $this->request->getPost('tim_pelawat');
+        $catatan = $this->request->getPost('catatan');
+        $status = $this->request->getPost('status');
+
+        $session = session();
+        $updatedBy = $session->get('userData')['kd_jemaat'];
+
+        $data = [
+            'tanggal' => $tanggal,
+            'waktu' => $waktu,
+            'nama_jemaat' => $nama_jemaat,
+            'tim_pelawat' => $tim_pelawat,
+            'catatan' => $catatan,
+            'status' => $status,
+            'updatedBy' => $updatedBy,
+            'updatedOn' => date('Y-m-d H:i:s')
+        ];
+
+        $modelJadwalResponse = $this->PenjadwalanModel->updateJadwal($id, $data);
+
+        if ($modelJadwalResponse) {
+            $this->response->setJSON(['status' => 'success']);
+        } else {
+            $this->response->setJSON(['status' => 'error']);
+        }
+    }
+
 
     public function postDeleteJadwal()
     {

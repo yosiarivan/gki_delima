@@ -55,6 +55,12 @@ class PenjadwalanModel extends Model
         }
     }
 
+    public function updateJadwal($id, $data)
+    {
+        $this->db->table('tr_jadwal')->where('id', $id)->update($data);
+        return true;
+    }
+
     public function deleteJadwal($id)
     {
         return $this->where('id', $id)->delete();

@@ -280,22 +280,37 @@
                     nama_pelawat: nama_pelawat
                 },
                 success: function (response) {
-                    $('#tambahGroup').modal('hide');
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Data berhasil disimpan',
-                        showConfirmButton: false,
-                        timer: 1500
+                    const swalWithBootstrapButtons = Swal.mixin({
+                        customClass: {
+                            confirmButton: 'btn btn-success mx-2',
+                            cancelButton: 'btn btn-danger'
+                        },
+                        buttonsStyling: false
                     });
-                    location.reload();
+
+                    swalWithBootstrapButtons.fire(
+                        'Terhapus!',
+                        'Data Group berhasil ditambah.',
+                        'success'
+                    ).then(() => {
+                        location.reload();
+                    });
+
                 },
                 error: function (xhr, status, error) {
-                    console.error(error);
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Data gagal disimpan',
-                        showConfirmButton: true
+                    const swalWithBootstrapButtons = Swal.mixin({
+                        customClass: {
+                            confirmButton: 'btn btn-success mx-2',
+                            cancelButton: 'btn btn-danger'
+                        },
+                        buttonsStyling: false
                     });
+
+                    swalWithBootstrapButtons.fire(
+                        'Error!',
+                        'Terjadi kesalahan saat menambah data.',
+                        'error'
+                    );
                 }
             });
 
@@ -311,22 +326,37 @@
                     kode_pelawat: kode_pelawat
                 },
                 success: function (response) {
-                    $('#tambahPelawat').modal('hide');
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Data berhasil disimpan',
-                        showConfirmButton: false,
-                        timer: 1500
+                    const swalWithBootstrapButtons = Swal.mixin({
+                        customClass: {
+                            confirmButton: 'btn btn-success mx-2',
+                            cancelButton: 'btn btn-danger'
+                        },
+                        buttonsStyling: false
                     });
-                    location.reload();
+
+                    swalWithBootstrapButtons.fire(
+                        'Terhapus!',
+                        'Data Pelawat berhasil ditambah.',
+                        'success'
+                    ).then(() => {
+                        location.reload();
+                    });
+
                 },
                 error: function (xhr, status, error) {
-                    console.error(error);
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Data gagal disimpan',
-                        showConfirmButton: true
+                    const swalWithBootstrapButtons = Swal.mixin({
+                        customClass: {
+                            confirmButton: 'btn btn-success mx-2',
+                            cancelButton: 'btn btn-danger'
+                        },
+                        buttonsStyling: false
                     });
+
+                    swalWithBootstrapButtons.fire(
+                        'Error!',
+                        'Terjadi kesalahan saat menambah data.',
+                        'error'
+                    );
                 }
             });
 
@@ -385,12 +415,37 @@
                     nama_pelawat: nama_pelawat
                 },
                 success: function (response) {
-                    // Tindakan setelah berhasil mengirim data
-                    console.log(response);
-                    location.reload();
+                    const swalWithBootstrapButtons = Swal.mixin({
+                        customClass: {
+                            confirmButton: 'btn btn-success mx-2',
+                            cancelButton: 'btn btn-danger'
+                        },
+                        buttonsStyling: false
+                    });
+
+                    swalWithBootstrapButtons.fire(
+                        'Terhapus!',
+                        'Data Group berhasil diperbarui.',
+                        'success'
+                    ).then(() => {
+                        location.reload();
+                    });
+
                 },
                 error: function (xhr, status, error) {
-                    console.error(error);
+                    const swalWithBootstrapButtons = Swal.mixin({
+                        customClass: {
+                            confirmButton: 'btn btn-success mx-2',
+                            cancelButton: 'btn btn-danger'
+                        },
+                        buttonsStyling: false
+                    });
+
+                    swalWithBootstrapButtons.fire(
+                        'Error!',
+                        'Terjadi kesalahan saat update data.',
+                        'error'
+                    );
                 }
             });
         });
@@ -413,15 +468,33 @@
                     url: "<?= base_url('pelawat/DeleteGroup') ?>",
                     data: { id_group: id_group },
                     success: function (response) {
-                        Swal.fire(
+                        const swalWithBootstrapButtons = Swal.mixin({
+                            customClass: {
+                                confirmButton: 'btn btn-success mx-2',
+                                cancelButton: 'btn btn-danger'
+                            },
+                            buttonsStyling: false
+                        });
+
+                        swalWithBootstrapButtons.fire(
                             'Terhapus!',
-                            'Data Group telah dihapus.',
+                            'Data Group berhasil dihapus.',
                             'success'
-                        );
-                        location.reload();
+                        ).then(() => {
+                            location.reload();
+                        });
+
                     },
                     error: function (error) {
-                        Swal.fire(
+                        const swalWithBootstrapButtons = Swal.mixin({
+                            customClass: {
+                                confirmButton: 'btn btn-success mx-2',
+                                cancelButton: 'btn btn-danger'
+                            },
+                            buttonsStyling: false
+                        });
+
+                        swalWithBootstrapButtons.fire(
                             'Error!',
                             'Terjadi kesalahan saat menghapus data.',
                             'error'
@@ -449,15 +522,33 @@
                     url: "<?= base_url('pelawat/DeletePelawat') ?>",
                     data: { kd_jemaat: kd_jemaat },
                     success: function (response) {
-                        Swal.fire(
+                        const swalWithBootstrapButtons = Swal.mixin({
+                            customClass: {
+                                confirmButton: 'btn btn-success mx-2',
+                                cancelButton: 'btn btn-danger'
+                            },
+                            buttonsStyling: false
+                        });
+
+                        swalWithBootstrapButtons.fire(
                             'Terhapus!',
-                            'Jemaat ini sudah bukan Pelawat.',
+                            'Data Pelawat berhasil dihapus.',
                             'success'
-                        );
-                        location.reload();
+                        ).then(() => {
+                            location.reload();
+                        });
+
                     },
                     error: function (error) {
-                        Swal.fire(
+                        const swalWithBootstrapButtons = Swal.mixin({
+                            customClass: {
+                                confirmButton: 'btn btn-success mx-2',
+                                cancelButton: 'btn btn-danger'
+                            },
+                            buttonsStyling: false
+                        });
+
+                        swalWithBootstrapButtons.fire(
                             'Error!',
                             'Terjadi kesalahan saat menghapus data.',
                             'error'
