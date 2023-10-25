@@ -35,6 +35,12 @@ class PenjadwalanModel extends Model
         }
         return $result;
     }
+    public function getJadwalById($id)
+    {
+        return $this->where('id', $id)
+            ->get()
+            ->getRowArray();
+    }
 
     public function simpanData($data)
     {

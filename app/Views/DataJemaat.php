@@ -83,11 +83,14 @@
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                     <a class="dropdown-item" href="user-profile-lite.html">
                                                         <i class="material-icons">&#xE7FD;</i> EDIT DATA JEMAAT</a>
-                                                    <button class="dropdown-item" href="#" data-id="<?= $dj['id']; ?>"
+                                                    <a class="dropdown-item" href="" data-id="<?= $dj['id']; ?>"
                                                         data-toggle="modal" data-target="#settingRoleModal">
-                                                        <i class="material-icons">&#xE7FD;</i> SETTING ROLE</button>
+                                                        <i class="material-icons">&#xE7FD;</i> SETTING ROLE</a>
                                                     <a class="dropdown-item" href="components-blog-posts.html">
                                                         <i class="material-icons">vertical_split</i> SET LOCATION ON MAP</a>
+                                                    <a class="dropdown-item" href=""
+                                                        onclick="confirmDelete(<?= $dj['id']; ?>)">
+                                                        <i class="material-icons">&#xE7FD;</i> HAPUS JEMAAT</a>
                                                 </div>
                                             </div>
                                         </td>
@@ -112,8 +115,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Nama : John Doe</p>
-                    <p>NOA : 12345</p>
+                    <input type="text" class="form-control" id="id" hidden>
                     <div class="form-group">
                         <label for="noa">NOA</label>
                         <input type="text" class="form-control" id="noa" disabled>
@@ -134,7 +136,7 @@
                     </div>
                     <div class="form-group">
                         <label for="role">Show Role</label>
-                        <select class="form-control" id="showrole">
+                        <select class="form-control" id="show_role">
                             <?php foreach ($masterRole as $mRo): ?>
                                 <option value="<?= $mRo['kd_role']; ?>">
                                     <?= $mRo['role']; ?>
@@ -145,7 +147,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Update</button>
+                    <button type="submit" class="btn btn-primary" id="submitSettingRole"
+                        onclick="submitSettingRole()">Update</button>
                 </div>
             </div>
         </div>
@@ -153,6 +156,7 @@
     <script>
         new DataTable('#table-jemaat');
 
+        // Fill setting role modal
         $('#settingRoleModal').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget);
             var id = button.data('id');
@@ -160,17 +164,93 @@
             $.ajax({
                 url: '<?= base_url('datajemaat/CariRoleJemaat'); ?>',
                 data: { id: id },
-                method: 'POST',
+                method: 'GET',
                 success: function (response) {
+                    $('#id').val(id);
                     $('#noa').val(response.noa);
                     $('#nama').val(response.nama);
                     $('#role').val(response.role);
-                    $('#showrole').val(response.showrole);
+                    $('#show_role').val(response.show_role);
                 },
                 error: function (err) {
                     console.error('Error:', err);
                 }
             });
         });
+
+        // Update setting role method
+        $('#submitSettingRole').on('click', function (e) {
+            e.preventDefault();
+            var id = $('#id').val();
+            var role = $('#role').val();
+            var show_role = $('#show_role').val();
+
+            $.ajax({
+                type: "POST",
+                url: "<?= base_url('datajemaat/SettingRole'); ?>",
+                data: {
+                    id: id,
+                    role: role,
+                    show_role: show_role
+                },
+                success: function (response) {
+                    $('#settingRole').modal('hide');
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Data berhasil disimpan',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                    location.reload();
+                },
+                error: function (xhr, status, error) {
+                    Swal.fire(
+                        'Error!',
+                        'Terjadi kesalahan saat menghapus data.',
+                        'error'
+                    );
+                }
+            });
+        });
+
+        // Confirm delete
+        function confirmDelete(id) {
+            Swal.fire({
+                title: 'Apakah Anda yakin?',
+                text: "Akan menghapus data Jemaat ini?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, Hapus!',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        type: "POST",
+                        url: "<?= base_url('datajemaat/DeleteJemaat') ?>",
+                        data: { id: id },
+                        success: function (response) {
+                            Swal.fire(
+                                'Terhapus!',
+                                'Data jadwal telah dihapus.',
+                                'success'
+                            );
+                            location.reload();
+                        },
+                        error: function (error) {
+                            Swal.fire(
+                                'Error!',
+                                'Terjadi kesalahan saat menghapus data.',
+                                'error'
+                            );
+                        }
+                    });
+                }
+            });
+        }
+
+
+
     </script>
     <?= $this->endSection(); ?>

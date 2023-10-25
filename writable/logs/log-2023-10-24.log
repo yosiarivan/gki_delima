@@ -1,0 +1,1067 @@
+INFO - 2023-10-24 08:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 08:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 08:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 08:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 08:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 08:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 08:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 08:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 08:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 08:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 08:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 08:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 10:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 10:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 10:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 10:45:00 --> Data updated for kd_jemaat: 25
+INFO - 2023-10-24 10:46:51 --> Data updated for kd_jemaat: 23
+INFO - 2023-10-24 10:46:51 --> Data updated for kd_jemaat: 24
+INFO - 2023-10-24 10:46:51 --> Data updated for kd_jemaat: 25
+INFO - 2023-10-24 10:47:34 --> Data updated for kd_jemaat: 12
+INFO - 2023-10-24 10:47:34 --> Data updated for kd_jemaat: 10
+INFO - 2023-10-24 10:48:49 --> Data updated for kd_jemaat: 23
+INFO - 2023-10-24 10:49:24 --> Data updated for kd_jemaat: 23
+INFO - 2023-10-24 10:51:18 --> Data updated for kd_jemaat: 23
+INFO - 2023-10-24 10:51:18 --> Data updated for kd_jemaat: 24
+INFO - 2023-10-24 10:51:18 --> Data updated for kd_jemaat: 25
+INFO - 2023-10-24 11:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 11:27:01 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Pelawat.php on line 93.
+ 1 APPPATH\Controllers\Pelawat.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Pelawat.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postTambahPelawat()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 11:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:28:31 --> Data updated for kd_jemaat: 27
+INFO - 2023-10-24 11:28:31 --> Data updated for kd_jemaat: 29
+INFO - 2023-10-24 11:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:29:30 --> Data updated for kd_jemaat: 119
+INFO - 2023-10-24 11:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 11:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 13:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 13:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 13:15:12 --> Too few arguments to function App\Controllers\Pelawat::getDataGroupById(), 0 passed in C:\xampp\htdocs\gki_delima\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Pelawat.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 13:18:20 --> Too few arguments to function App\Controllers\Pelawat::getDataGroupById(), 0 passed in C:\xampp\htdocs\gki_delima\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Pelawat.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 13:20:38 --> Too few arguments to function App\Controllers\Pelawat::getDataGroupById(), 0 passed in C:\xampp\htdocs\gki_delima\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Pelawat.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 13:22:15 --> Too few arguments to function App\Controllers\Pelawat::getDataGroupById(), 0 passed in C:\xampp\htdocs\gki_delima\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Pelawat.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 13:24:14 --> Too few arguments to function App\Controllers\Pelawat::getDataGroupById(), 0 passed in C:\xampp\htdocs\gki_delima\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Pelawat.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 13:31:51 --> mysqli_sql_exception: Unknown column 'nm_group' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatDetailModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(110): App\Models\GroupPelawatDetailModel->getGroupById(NULL)
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 13:31:51 --> Unknown column 'nm_group' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `nm_group`
+FROM `group_pelawat_detail`
+WHERE `id_group` IS NULL', [], false)
+ 2 APPPATH\Models\GroupPelawatDetailModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Pelawat.php(110): App\Models\GroupPelawatDetailModel->getGroupById(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 13:36:07 --> mysqli_sql_exception: Unknown column 'nm_group' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_grou...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_grou...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_grou...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_grou...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatDetailModel.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(110): App\Models\GroupPelawatDetailModel->getGroupById(NULL)
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 13:36:07 --> Unknown column 'nm_group' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_group`, `nm_group`
+FROM `group_pelawat_detail`
+WHERE `id_group` IS NULL', [], false)
+ 2 APPPATH\Models\GroupPelawatDetailModel.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Pelawat.php(110): App\Models\GroupPelawatDetailModel->getGroupById(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 13:40:39 --> Too few arguments to function App\Controllers\Pelawat::getDataGroupById(), 0 passed in C:\xampp\htdocs\gki_delima\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Pelawat.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 13:40:49 --> Too few arguments to function App\Controllers\Pelawat::getDataGroupById(), 0 passed in C:\xampp\htdocs\gki_delima\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Pelawat.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 13:53:45 --> Undefined array key "id_group"
+in APPPATH\Controllers\Pelawat.php on line 114.
+ 1 APPPATH\Controllers\Pelawat.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_group"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Pelawat.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById('29')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 13:55:47 --> Undefined array key "id_group"
+in APPPATH\Controllers\Pelawat.php on line 114.
+ 1 APPPATH\Controllers\Pelawat.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_group"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Pelawat.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById('29')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 13:58:54 --> Undefined array key "id_group"
+in APPPATH\Controllers\Pelawat.php on line 114.
+ 1 APPPATH\Controllers\Pelawat.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_group"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Pelawat.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById('29')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 13:59:03 --> Undefined array key "nm_group"
+in APPPATH\Controllers\Pelawat.php on line 116.
+ 1 APPPATH\Controllers\Pelawat.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nm_group"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Pelawat.php', 116)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById('29')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 14:00:15 --> Undefined array key "id_group"
+in APPPATH\Controllers\Pelawat.php on line 114.
+ 1 APPPATH\Controllers\Pelawat.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_group"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Pelawat.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataGroupById('29')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 14:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 14:38:52 --> Too few arguments to function App\Controllers\Pelawat::postDataGroupById(), 0 passed in C:\xampp\htdocs\gki_delima\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Pelawat.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postDataGroupById()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 14:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 14:46:30 --> Undefined array key "nm_group"
+in APPPATH\Controllers\Pelawat.php on line 115.
+ 1 APPPATH\Controllers\Pelawat.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nm_group"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Pelawat.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postDataGroupById()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 14:48:15 --> Undefined array key "nm_group"
+in APPPATH\Controllers\Pelawat.php on line 114.
+ 1 APPPATH\Controllers\Pelawat.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nm_group"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Pelawat.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postDataGroupById()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 14:50:58 --> Undefined array key "nama_pelawat"
+in APPPATH\Controllers\Pelawat.php on line 115.
+ 1 APPPATH\Controllers\Pelawat.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_pelawat"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Pelawat.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postDataGroupById()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 14:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 15:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 15:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 15:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 16:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 16:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 16:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 16:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 16:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 16:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 16:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 16:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 16:53:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 16:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 16:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:09:19 --> Data updated for kd_jemaat: 117
+INFO - 2023-10-24 17:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 17:12:36 --> Undefined variable $p
+in APPPATH\Views\Pelawat.php on line 65.
+ 1 APPPATH\Views\Pelawat.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $p', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Pelawat.php', 65)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Pelawat.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Pelawat.php', [], true)
+ 5 APPPATH\Controllers\Pelawat.php(32): view('Pelawat.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 17:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 17:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 19:07:55 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1724.
+ 1 SYSTEMPATH\BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\GroupPelawatModel.php(36): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Pelawat.php(135): App\Models\GroupPelawatModel->updateGroup('29', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 19:11:08 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1724.
+ 1 SYSTEMPATH\BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\GroupPelawatModel.php(36): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Pelawat.php(136): App\Models\GroupPelawatModel->updateGroup('29', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 19:11:11 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1724.
+ 1 SYSTEMPATH\BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\GroupPelawatModel.php(36): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Pelawat.php(136): App\Models\GroupPelawatModel->updateGroup('29', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 19:14:47 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tr_user...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tr_user...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tr_user...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tr_user...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(136): App\Models\GroupPelawatModel->updateGroup('29', Array)
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 19:14:48 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tr_user` SET `nm_group` = :nm_group:, `status` = :status:, `updatedBy` = :updatedBy:, `updatedOn` = :updatedOn:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Pelawat.php(136): App\Models\GroupPelawatModel->updateGroup('29', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 19:16:16 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tr_user...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tr_user...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tr_user...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tr_user...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(136): App\Models\GroupPelawatModel->updateGroup('29', Array)
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 19:16:16 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tr_user` SET `nm_group` = :nm_group:, `status` = :status:, `updatedBy` = :updatedBy:, `updatedOn` = :updatedOn:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Pelawat.php(136): App\Models\GroupPelawatModel->updateGroup('29', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 19:30:31 --> Call to a member function where() on null
+in APPPATH\Models\GroupPelawatDetailModel.php on line 92.
+ 1 APPPATH\Controllers\Pelawat.php(143): App\Models\GroupPelawatDetailModel->updateGroupDetail([...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 19:32:00 --> mysqli_sql_exception: Unknown column 'group_pelawat_detail' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatDetailModel.php(94): CodeIgniter\Database\BaseBuilder->update('group_pelawat_d...', Array)
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(143): App\Models\GroupPelawatDetailModel->updateGroupDetail(Array)
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 19:32:00 --> Unknown column 'group_pelawat_detail' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat_detail` SET `group_pelawat_detail` = :group_pelawat_detail:
+WHERE `id_group` = :id_group:
+AND `kd_pelawat` = :kd_pelawat:', [...], false)
+ 2 APPPATH\Models\GroupPelawatDetailModel.php(94): CodeIgniter\Database\BaseBuilder->update('group_pelawat_detail', [...])
+ 3 APPPATH\Controllers\Pelawat.php(143): App\Models\GroupPelawatDetailModel->updateGroupDetail([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 19:41:53 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 939.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('id_group', '29', false, 'AND ', null)
+ 2 APPPATH\Models\GroupPelawatDetailModel.php(96): CodeIgniter\Database\BaseBuilder->whereIn('id_group', '29')
+ 3 APPPATH\Controllers\Pelawat.php(143): App\Models\GroupPelawatDetailModel->updateGroupDetail([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 19:45:59 --> Call to undefined method App\Models\GroupPelawatDetailModel::updated
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Models\GroupPelawatDetailModel.php(91): CodeIgniter\Model->__call('updated', [...])
+ 2 APPPATH\Controllers\Pelawat.php(143): App\Models\GroupPelawatDetailModel->updateGroupDetail([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 19:46:08 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1750.
+ 1 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray('3', 'update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], '3')
+ 3 APPPATH\Models\GroupPelawatDetailModel.php(91): CodeIgniter\Model->update('kd_pelawat', '3')
+ 4 APPPATH\Controllers\Pelawat.php(143): App\Models\GroupPelawatDetailModel->updateGroupDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 19:50:44 --> foreach() argument must be of type array|object, string given
+in APPPATH\Models\GroupPelawatDetailModel.php on line 90.
+ 1 APPPATH\Models\GroupPelawatDetailModel.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gki_delima\\app\\Models\\GroupPelawatDetailModel.php', 90)
+ 2 APPPATH\Controllers\Pelawat.php(143): App\Models\GroupPelawatDetailModel->updateGroupDetail([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 19:56:00 --> Undefined array key "$kd_pelawat"
+in APPPATH\Models\GroupPelawatDetailModel.php on line 94.
+ 1 APPPATH\Models\GroupPelawatDetailModel.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "$kd_pelawat"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Models\\GroupPelawatDetailModel.php', 94)
+ 2 APPPATH\Controllers\Pelawat.php(143): App\Models\GroupPelawatDetailModel->updateGroupDetail([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroup()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 20:11:30 --> Undefined array key "id"
+in APPPATH\Models\GroupPelawatDetailModel.php on line 31.
+ 1 APPPATH\Models\GroupPelawatDetailModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Models\\GroupPelawatDetailModel.php', 31)
+ 2 APPPATH\Controllers\Pelawat.php(44): App\Models\GroupPelawatDetailModel->getAllDetailGroup()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getGrouped()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 20:16:17 --> Array to string conversion
+in APPPATH\Views\Pelawat.php on line 54.
+ 1 APPPATH\Views\Pelawat.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Pelawat.php', 54)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Pelawat.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Pelawat.php', [], true)
+ 5 APPPATH\Controllers\Pelawat.php(32): view('Pelawat.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 20:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 20:59:49 --> Cannot access offset of type string on string
+in APPPATH\Views\Pelawat.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Pelawat.php', [], true)
+ 4 APPPATH\Controllers\Pelawat.php(32): view('Pelawat.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getIndex()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 21:00:06 --> Undefined array key "id_group"
+in APPPATH\Views\Pelawat.php on line 65.
+ 1 APPPATH\Views\Pelawat.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_group"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Pelawat.php', 65)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Pelawat.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Pelawat.php', [], true)
+ 5 APPPATH\Controllers\Pelawat.php(32): view('Pelawat.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 21:01:56 --> mysqli_sql_exception: Unknown column 'group_pelawat.id_group' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatDetailModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(44): App\Models\GroupPelawatDetailModel->getAllDetailGroup()
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->getGrouped()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 21:01:56 --> Unknown column 'group_pelawat.id_group' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `group_pelawat`.`id_group`, `group_pelawat`.`nm_group`, `jemaat`.`nama`, `group_pelawat_detail`.`id`
+FROM `group_pelawat_detail`
+JOIN `group_pelawat` ON `group_pelawat`.`id` = `group_pelawat_detail`.`id_group`
+JOIN `jemaat` ON `jemaat`.`id` = `group_pelawat_detail`.`kd_pelawat`', [], false)
+ 2 APPPATH\Models\GroupPelawatDetailModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Pelawat.php(44): App\Models\GroupPelawatDetailModel->getAllDetailGroup()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getGrouped()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 21:04:07 --> Undefined array key "id"
+in APPPATH\Models\GroupPelawatDetailModel.php on line 31.
+ 1 APPPATH\Models\GroupPelawatDetailModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Models\\GroupPelawatDetailModel.php', 31)
+ 2 APPPATH\Controllers\Pelawat.php(44): App\Models\GroupPelawatDetailModel->getAllDetailGroup()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getGrouped()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-10-24 21:05:32 --> Cannot access offset of type string on string
+in APPPATH\Views\Pelawat.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Pelawat.php', [], true)
+ 4 APPPATH\Controllers\Pelawat.php(32): view('Pelawat.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getIndex()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 21:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 21:25:16 --> Call to undefined method App\Models\UserModel::deletePelawat
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Pelawat.php(184): CodeIgniter\Model->__call('deletePelawat', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postDeletePelawat()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 21:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 21:25:32 --> Call to undefined method App\Models\UserModel::deletePelawat
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Pelawat.php(184): CodeIgniter\Model->__call('deletePelawat', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postDeletePelawat()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 21:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 21:26:02 --> Call to undefined method App\Models\UserModel::deletePelawat
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Pelawat.php(184): CodeIgniter\Model->__call('deletePelawat', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postDeletePelawat()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 21:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 21:26:32 --> Call to undefined method App\Models\UserModel::updatePelawat
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Pelawat.php(184): CodeIgniter\Model->__call('updatePelawat', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postDeletePelawat()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 21:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 21:26:39 --> Call to undefined method App\Models\UserModel::updatePelawat
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Pelawat.php(184): CodeIgniter\Model->__call('updatePelawat', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postDeletePelawat()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 21:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 21:29:03 --> Call to undefined method App\Models\UserModel::updatRole
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Pelawat.php(184): CodeIgniter\Model->__call('updatRole', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postDeletePelawat()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 21:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 21:30:46 --> Call to undefined method App\Models\UserModel::updatRole
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Pelawat.php(184): CodeIgniter\Model->__call('updatRole', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postDeletePelawat()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 21:31:12 --> Data updated for kd_jemaat: 117
+INFO - 2023-10-24 21:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:31:42 --> Data updated for kd_jemaat: 119
+INFO - 2023-10-24 21:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-24 23:16:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`pagi` = ''
+WHERE `id` = '27'' at line 1 in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udah pagi')
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udah pagi')
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 23:16:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`pagi` = ''
+WHERE `id` = '27'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat` SET `udah` `pagi` = :udah pagi:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udah pagi')
+ 3 APPPATH\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udah pagi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 23:17:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`pagi` = ''
+WHERE `id` = '27'' at line 1 in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udah pagi')
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udah pagi')
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 23:17:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`pagi` = ''
+WHERE `id` = '27'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat` SET `udah` `pagi` = :udah pagi:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udah pagi')
+ 3 APPPATH\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udah pagi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 23:17:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`pagi` = ''
+WHERE `id` = '27'' at line 1 in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udah pagi')
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udah pagi')
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 23:17:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`pagi` = ''
+WHERE `id` = '27'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat` SET `udah` `pagi` = :udah pagi:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udah pagi')
+ 3 APPPATH\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udah pagi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 23:17:44 --> mysqli_sql_exception: Unknown column 'udahpagi' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 23:17:44 --> Unknown column 'udahpagi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat` SET `udahpagi` = :udahpagi:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+ 3 APPPATH\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 23:18:29 --> mysqli_sql_exception: Unknown column 'udahpagi' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 23:18:29 --> Unknown column 'udahpagi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat` SET `udahpagi` = :udahpagi:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+ 3 APPPATH\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 23:18:34 --> mysqli_sql_exception: Unknown column 'udahpagi' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 23:18:34 --> Unknown column 'udahpagi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat` SET `udahpagi` = :udahpagi:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+ 3 APPPATH\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 23:18:57 --> mysqli_sql_exception: Unknown column 'udahpagi' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 23:18:57 --> Unknown column 'udahpagi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat` SET `udahpagi` = :udahpagi:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+ 3 APPPATH\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 23:18:58 --> mysqli_sql_exception: Unknown column 'udahpagi' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 23:18:58 --> Unknown column 'udahpagi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat` SET `udahpagi` = :udahpagi:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+ 3 APPPATH\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 23:18:59 --> mysqli_sql_exception: Unknown column 'udahpagi' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 23:18:59 --> Unknown column 'udahpagi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat` SET `udahpagi` = :udahpagi:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+ 3 APPPATH\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 23:19:28 --> mysqli_sql_exception: Unknown column 'udahpagi' in 'where clause' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('nm_group', 'udahpagi')
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 23:19:28 --> Unknown column 'udahpagi' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat` SET `nm_group` = :nm_group:
+WHERE `id` = :id:
+AND `udahpagi` IS NULL', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('nm_group', 'udahpagi')
+ 3 APPPATH\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 23:22:54 --> mysqli_sql_exception: Unknown column 'udahpagi' in 'where clause' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('nm_group', 'udahpagi')
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 23:22:54 --> Unknown column 'udahpagi' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat` SET `nm_group` = :nm_group:
+WHERE `id` = :id:
+AND `udahpagi` IS NULL', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('nm_group', 'udahpagi')
+ 3 APPPATH\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 23:23:15 --> mysqli_sql_exception: Unknown column 'udahpagi' in 'where clause' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('nm_group', 'udahpagi')
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 23:23:15 --> Unknown column 'udahpagi' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat` SET `nm_group` = :nm_group:
+WHERE `id` = :id:
+AND `udahpagi` IS NULL', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('nm_group', 'udahpagi')
+ 3 APPPATH\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+ERROR - 2023-10-24 23:24:43 --> mysqli_sql_exception: Unknown column 'udahpagi' in 'field list' in C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gki_delima\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `group_p...', 0)
+#1 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `group_p...')
+#2 C:\xampp\htdocs\gki_delima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `group_p...')
+#3 C:\xampp\htdocs\gki_delima\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_p...', Array, false)
+#4 C:\xampp\htdocs\gki_delima\app\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+#5 C:\xampp\htdocs\gki_delima\app\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+#6 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+#7 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+#8 C:\xampp\htdocs\gki_delima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gki_delima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gki_delima\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-24 23:24:43 --> Unknown column 'udahpagi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `group_pelawat` SET `udahpagi` = :udahpagi:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\GroupPelawatModel.php(38): CodeIgniter\Database\BaseBuilder->update('udahpagi')
+ 3 APPPATH\Controllers\Pelawat.php(199): App\Models\GroupPelawatModel->updateGroup('27', 'udahpagi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->postUpdateGroupData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-10-24 23:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

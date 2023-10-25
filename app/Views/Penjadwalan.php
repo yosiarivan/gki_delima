@@ -1,30 +1,6 @@
 <?= $this->extend('layouts/template.php'); ?>
 
 <?= $this->section('content'); ?>
-<!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"> -->
-<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" /> -->
-
-<?php if (session()->getFlashdata('success')): ?>
-    <script>
-        Swal.fire({
-            icon: 'success',
-            title: 'Berhasil',
-            text: '<?= session()->getFlashdata('success') ?>',
-            showConfirmButton: false,
-            timer: 1500
-        });
-    </script>
-<?php elseif (session()->getFlashdata('error')): ?>
-    <script>
-        Swal.fire({
-            icon: 'error',
-            title: 'Gagal',
-            text: '<?= session()->getFlashdata('error') ?>'
-        });
-    </script>
-<?php endif; ?>
-
-
 <div class="main-content-container container-fluid px-4">
     <!-- Page Header -->
     <div class="page-header row no-gutters py-4 justify-content-between">
@@ -105,19 +81,18 @@
                                                 <i class="material-icons">settings</i>
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <button class="dropdown-item" data-toggle="modal" data-target="#editModal"
-                                                    data-id="<?= $p['id']; ?>">
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                    data-target="#editModal" data-id="<?= $p['id']; ?>">
                                                     <i class="material-icons">&#xE7FD;</i> Edit Jadwal
-                                                </button>
+                                                </a>
                                                 <a class="dropdown-item" href="components-blog-posts.html">
                                                     <i class="material-icons">vertical_split</i>Data Jemaat</a>
                                                 <a class="dropdown-item" href="add-new-post.html">
                                                     <i class="material-icons">note_add</i> Location</a>
                                                 <a class="dropdown-item" href="add-new-post.html">
                                                     <i class="material-icons">note_add</i> History</a>
-                                                <button type="button" class="dropdown-item" href="#"
-                                                    onclick="confirmDelete(<?= $p['id']; ?>)">
-                                                    <i class="material-icons">note_add</i> Hapus</button>
+                                                <a class="dropdown-item" href="#" onclick="confirmDelete(<?= $p['id']; ?>)">
+                                                    <i class="material-icons">note_add</i> Hapus</a>
                                             </div>
                                         </div>
                                     </td>
@@ -154,7 +129,7 @@
                         </div>
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Nama Jemaat</label>
-                            <select class="form-control select2" id="nama_jemaat" name="nama_jemaat">
+                            <select class="form-control select2" id="nama_jemaat" name="nama_jemaat" MultiSelectTag>
                                 <?php foreach ($jemaat as $j): ?>
                                     <option value="<?= $j['id']; ?>">
                                         <?= $j['nama']; ?>
@@ -164,7 +139,8 @@
                         </div>
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Tim Pelawat</label>
-                            <select class="form-control select2" id="tim_pelawat" name="tim_pelawat">
+                            <select class="form-control select2" id="tim_pelawat" name="tim_pelawat"
+                                data-live-search="true">
                                 <?php foreach ($group_pelawat as $gp): ?>
                                     <option value="<?= $gp['id']; ?>  ">
                                         <?= $gp['nm_group']; ?>
@@ -189,7 +165,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary" id="submit">Tambah Jadwal</button>
+                    <button type="submit" class="btn btn-primary" id="submitTambah">Tambah Jadwal</button>
                 </div>
             </div>
         </div>
@@ -200,7 +176,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="tambahModalLabel">Tambah Jadwal Kunjungan</h5>
+                    <h5 class="modal-title" id="tambahModalLabel">Edit Jadwal Kunjungan</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -231,7 +207,7 @@
                             <label for="recipient-name" class="col-form-label">Tim Pelawat</label>
                             <select class="form-control select2" id="editTim_pelawat" name="editTim_pelawat">
                                 <?php foreach ($group_pelawat as $gp): ?>
-                                    <option value="<?= $gp['id']; ?>  ">
+                                    <option value="<?= $gp['id']; ?>">
                                         <?= $gp['nm_group']; ?>
                                     </option>
                                 <?php endforeach; ?>
@@ -254,7 +230,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary" id="submit">Tambah Jadwal</button>
+                    <button type="submit" class="btn btn-primary" id="submitEdit">Edit Jadwal</button>
                 </div>
             </div>
         </div>
@@ -268,6 +244,14 @@
 
     <script>
         new DataTable('#table-penjadwalan');
+        $(document).ready(function () {
+            $('#tambahModal').on('shown.bs.modal', function () {
+                $('.select2').select2(); // Ganti .select2 dengan kelas yang sesuai dari elemen select Anda.
+            });
+            $('#editModal').on('shown.bs.modal', function () {
+                $('.select2').select2(); // Ganti .select2 dengan kelas yang sesuai dari elemen select Anda.
+            });
+        });
 
         // $(document).ready(function () {
         //     $('#table-penjadwalan').DataTable({
@@ -316,68 +300,16 @@
         //     });
         // });
 
-        $(document).ready(function () {
-            $('#tambahModal').on('shown.bs.modal', function () {
-                $('.select2').select2();
-            })
-        });
+        // $(document).ready(function () {
+        //     $('#tambahModal').on('shown.bs.modal', function () {
+        //         $('.select2').select2();
+        //     })
+        // });
 
-        // function loadData() {
-        //     $.ajax({
-        //         url: '<?= base_url('penjadwalan/jadwal'); ?>',
-        //         type: 'post',
-        //         dataType: 'json',
-        //         success: function (response) {
-        //             // Proses respons data dari server
-        //             if (response.penjadwalan.length > 0) {
-        //                 // Kosongkan tbody sebelum mengisi dengan data baru
-        //                 $('#tableBody').empty();
-        //                 // Lakukan operasi yang diinginkan dengan data
-        //                 response.penjadwalan.forEach(function (data, index) {
-        //                     var row = `<tr>
-        //                     <td>${index + 1}</td>
-        //                     <td>${data.tanggal}  ${data.waktu}</td>
-        //                     <td>${data.nama_jemaat}</td>
-        //                     <td>${data.tim_pelawat}</td>
-        //                     <td>${data.status}</td>
-        //                     <td>
-        //                     <div class="dropdown">
-        //                                     <button class="btn btn-primary dropdown-toggle" type="button"
-        //                                         id="dropdownMenuButton" data-toggle="dropdown">
-        //                                         <i class="material-icons">settings</i>
-        //                                     </button>
-        //                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        //                                         <a class="dropdown-item" href="user-profile-lite.html">
-        //                                             <i class="material-icons">&#xE7FD;</i> Edit Jadwal</a>
-        //                                         <a class="dropdown-item" href="components-blog-posts.html">
-        //                                             <i class="material-icons">vertical_split</i>Data Jemaat</a>
-        //                                         <a class="dropdown-item" href="add-new-post.html">
-        //                                             <i class="material-icons">note_add</i> Location</a>
-        //                                         <a class="dropdown-item" href="add-new-post.html">
-        //                                             <i class="material-icons">note_add</i> History</a>
-        //                                         <a class="dropdown-item" href="#"
-        //                                             onclick="confirmDelete(${data.id})">
-        //                                             <i class="material-icons">note_add</i> Hapus</a>
-        //                                     </div>
-        //                                 </div>
-        //                     </td>
-        //                 </tr>`;
-        //                     $('#tableBody').append(row);
-        //                 });
-        //             } else {
-        //                 // Tindakan jika tidak ada data
-        //                 $('#tableBody').append('<tr><td colspan="6">Tidak ada data yang ditemukan</td></tr>');
-        //             }
-        //         },
-        //         error: function (error) {
-        //             // Tindakan jika terjadi kesalahan
-        //             console.log(error);
-        //         }
-        //     });
-        // };
 
+        // Tambah Modal
         $(document).ready(function () {
-            $('#submit').on('click', function (e) {
+            $('#submitTambah').on('click', function (e) {
                 e.preventDefault(); // Untuk mencegah reload halaman saat submit
                 var createdBy = $('#createdBy').val();
                 var tanggal = $('#tanggal').val();
@@ -453,6 +385,7 @@
             });
         });
 
+        // Confirm delete
         function confirmDelete(id) {
             Swal.fire({
                 title: 'Apakah Anda yakin?',

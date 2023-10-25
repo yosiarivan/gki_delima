@@ -133,7 +133,7 @@ class DataJemaat extends BaseController
         return $this->response->setJSON($dataKecamatan);
     }
 
-    public function postCariRoleJemaat()
+    public function getCariRoleJemaat()
     {
         $id = $this->request->getVar('id');
         // Mengambil data berdasarkan $id dari database
@@ -141,15 +141,52 @@ class DataJemaat extends BaseController
         $dataJemaat = $this->JemaatModel->getJemaatById($id);
 
         // Mengonversi data menjadi array asosiatif
-        $response = array(
+        $response = [
             'noa' => $dataJemaat['noa'],
             'nama' => $dataJemaat['nama'],
             'role' => $dataUser['role'],
-            'showrole' => $dataUser['show_role']
-        );
-
+            'show_role' => $dataUser['show_role']
+        ];
         // Mengembalikan data dalam format JSON
         return $this->response->setJSON($response);
+    }
+
+    public function postSettingRole()
+    {
+        $kd_jemaat = $this->request->getVar('id');
+        $role = $this->request->getVar('role');
+        $show_role = $this->request->getVar('show_role');
+
+        $session = session();
+        $updatedBy = $session->get('userData')['kd_jemaat'];
+
+        $data = [
+            'role' => $role,
+            'show_role' => $show_role,
+            'updatedOn' => date('Y-m-d H:i:s'),
+            'updatedBy' => $updatedBy,
+        ];
+
+        $modelResponse = $this->UserModel->updateRole($kd_jemaat, $data);
+
+        if ($modelResponse) {
+            return $this->response->setJSON(['status' => 'success']);
+        } else {
+            return $this->response->setJSON(['status' => 'error']);
+        }
+    }
+
+    public function postDeleteJemaat()
+    {
+        $id = $this->request->getVar('id');
+        $modalResponse = $this->JemaatModel->deleteJemaat($id);
+
+        if ($modalResponse) {
+            return $this->response->setJSON(['status' => 'success']);
+        } else {
+            return $this->response->setJSON(['status' => 'error']);
+        }
+
     }
 
 

@@ -120,7 +120,7 @@ class Penjadwalan extends BaseController
 
     public function getJadwalById($id)
     {
-        $jadwal = $this->PenjadwalanModel->find($id);
+        $jadwal = $this->PenjadwalanModel->getJadwalById($id);
         return $this->response->setJSON($jadwal);
     }
 

@@ -58,4 +58,23 @@ class JemaatModel extends Model
             return false;
         }
     }
+
+    public function deleteJemaat($id)
+    {
+        try {
+            // Melakukan penyimpanan ke database
+            return $this->where('id', $id)->delete();
+            return true;
+        } catch (\Exception $e) {
+            // Jika ada error
+            log_message('error', $e->getMessage());
+            return false;
+        }
+
+    }
+
+    public function groupPelawat()
+    {
+        return $this->belongsToMany(GroupPelawatModel::class, 'group_detail_pelawat');
+    }
 }

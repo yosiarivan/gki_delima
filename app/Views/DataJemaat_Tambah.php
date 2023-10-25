@@ -396,6 +396,7 @@
     </div> -->
     </div>
     <script>
+        $('.select2').select2();
         $(document).ready(function () {
             $('#selectProvinsi').change(function () {
                 var idProvinsi = $(this).val();

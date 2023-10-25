@@ -11,10 +11,42 @@ class GroupPelawatModel extends Model
     protected $primaryKey = 'id';
     // protected $returnType = 'array';
 
-    protected $allowedFields = ['nm_group'];
+    protected $allowedFields = ['id', 'nm_group', 'status', 'createdBy', 'createdOn', 'updatedBy', 'updatedOn'];
 
     public function getAllGroupPelawat()
     {
         return $this->findAll();
+    }
+
+    public function jemaatPelawat()
+    {
+        return $this->belongsToMany(JemaatModel::class, 'group_detail_pelawat');
+    }
+
+    public function simpanGroup($groupPelawat)
+    {
+        $this->insert($groupPelawat);
+        $newGroupId = $this->getInsertID();
+
+        return $newGroupId;
+
+    }
+    public function updateGroup($id_group, $nm_group)
+    {
+        $builder = $this->db->table('group_pelawat');
+        $builder->where('id', $id_group);
+        $builder->set('nm_group', $nm_group);
+        $builder->update();
+
+        return true;
+    }
+
+    public function deleteGroup($id_group)
+    {
+        $builder = $this->db->table('group_pelawat');
+        $builder->where('id', $id_group);
+        $builder->delete();
+
+        return true;
     }
 }
