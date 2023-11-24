@@ -9,9 +9,175 @@
                 <span class="text-uppercase page-subtitle">Overview</span>
                 <h3 class="page-title">Pelawat</h3>
             </div>
-            <!-- <div class="col-12 col-sm-8 text-sm-right mb-0">
-                <a href="<?= base_url('datajemaat/tambahdata'); ?>" class="btn btn-primary">Tambah Data Jemaat</a>
-            </div> -->
+        </div>
+        <!-- End Page Header -->
+        <!-- Default Light Table -->
+        <div class="row">
+            <div class="col">
+                <div class="card card-small mb-4">
+                    <div class="container mt-5">
+                        <ul class="nav nav-tabs nav-fill" id="myTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab"
+                                    aria-controls="tab1" aria-selected="true">#1 Daftar Group Pelawat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab"
+                                    aria-controls="tab2" aria-selected="false">
+                                    #2 Daftar Pelawat
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content mt-2">
+                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                                <div class="card-body p-4 pb-3 text-center">
+                                    <div class="card-header border-bottom">
+                                        <div class="container mt-1">
+                                            <div class="row gx-5">
+                                                <div class="col-sm-6 col-md-9 text-center">
+                                                    <h5 class="m-0">#1 Daftar Group Pelawat</h5>
+                                                </div>
+                                                <div class="col-6 col-md-3 text-center">
+                                                    <button class="btn btn-primary" data-toggle="modal"
+                                                        data-target="#tambahGroup">Tambah Group Pelawat</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-4 pb-3 text-center">
+                                        <!-- TABEL GROUP -->
+                                        <table id="table-group" class="table mb-0 table-striped table-bordered">
+                                            <thead class="bg-light">
+                                                <tr>
+                                                    <th scope="col" class="border-0">#</th>
+                                                    <th scope="col" class="border-0">Nama Group</th>
+                                                    <th scope="col" class="border-0">Pelawat</th>
+                                                    <th scope="col" class="border-0">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php foreach ($groupedPelawatDetail as $no => $gPD) { ?>
+                                                    <tr>
+                                                        <td>
+                                                            <?= $no + 1; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?= $gPD['nm_group']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?= $gPD['tim_pelawat']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-primary dropdown-toggle"
+                                                                    type="button" id="dropdownMenuButton"
+                                                                    data-toggle="dropdown">
+                                                                    <i class="material-icons">settings</i>
+                                                                </button>
+                                                                <div class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton">
+                                                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                                                        data-target="#editGroupModal"
+                                                                        data-id="<?= $gPD['id']; ?>"
+                                                                        data-nm-group="<?= $gPD['nm_group']; ?>">
+                                                                        <i class="material-icons">&#xE7FD;</i> Edit Group
+                                                                    </a>
+                                                                    <a class="dropdown-item" href="#"
+                                                                        onclick="confirmDeleteGroup(<?= $gPD['id']; ?>)">
+                                                                        <i class="material-icons"><span
+                                                                                class="material-icons-outlined">
+                                                                                delete_outline
+                                                                            </span></i>Delete Group</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                <?php } ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                                <div class="card-body p-4 pb-3 text-center">
+                                    <div class="card-header border-bottom">
+                                        <div class="container mt-1">
+                                            <div class="row gx-5">
+                                                <div class="col-sm-6 col-md-9 text-center">
+                                                    <h5 class="m-0">#2 Daftar Pelawat</h5>
+                                                </div>
+                                                <div class="col-6 col-md-3 text-center">
+                                                    <button class="btn btn-primary" data-toggle="modal"
+                                                        data-target="#tambahPelawat">Tambah
+                                                        Pelawat</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-4 pb-3 text-center">
+                                        <!-- TABEL PELAWAT -->
+                                        <table id="table-pelawat" class="table mb-0 table-striped table-bordered">
+                                            <thead class="bg-light">
+                                                <tr>
+                                                    <th scope="col" class="border-0">#</th>
+                                                    <th scope="col" class="border-0">Nama Pelawat</th>
+                                                    <th scope="col" class="border-0">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php foreach ($userTp as $no => $uTp) { ?>
+                                                    <tr>
+                                                        <td>
+                                                            <?= $no + 1; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?= $uTp['nama']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-primary dropdown-toggle"
+                                                                    type="button" id="dropdownMenuButton"
+                                                                    data-toggle="dropdown">
+                                                                    <i class="material-icons">settings</i>
+                                                                </button>
+                                                                <div class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton">
+                                                                    <a class="dropdown-item" href="javascript:void(0);"
+                                                                        onclick="openWhatsApp('<?= $uTp['phone']; ?>')">
+                                                                        <i class="material-icons">message</i> Whatsapp
+                                                                        Pelawat
+                                                                    </a>
+                                                                    <a class="dropdown-item" href=""
+                                                                        onclick="confirmDeletePelawat(<?= $uTp['id']; ?>)">
+                                                                        <i class="material-icons">delete_outline</i>Delete
+                                                                        Pelawat</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                <?php } ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-content-container container-fluid px-4">
+    <div class="main-content-container container-fluid px-4">
+        <!-- Page Header -->
+        <div class="page-header row no-gutters py-4">
+            <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                <span class="text-uppercase page-subtitle">Overview</span>
+                <h3 class="page-title">Pelawat</h3>
+            </div>
         </div>
         <!-- End Page Header -->
         <!-- Default Light Table -->
@@ -50,9 +216,7 @@
                                             <?= $gPD['nm_group']; ?>
                                         </td>
                                         <td>
-                                            <?php foreach ($gPD['nama_pelawat'] as $namaPelawat) { ?>
-                                                <?= $namaPelawat; ?>,
-                                            <?php } ?>
+                                            <?= $gPD['tim_pelawat']; ?>
                                         </td>
                                         <td>
                                             <div class="dropdown">
@@ -62,11 +226,12 @@
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
-                                                        data-target="#editGroupModal" data-id="<?= $gPD['id_group']; ?>">
+                                                        data-target="#editGroupModal" data-id="<?= $gPD['id']; ?>"
+                                                        data-nm-group="<?= $gPD['nm_group']; ?>">
                                                         <i class="material-icons">&#xE7FD;</i> Edit Group
                                                     </a>
                                                     <a class="dropdown-item" href="#"
-                                                        onclick="confirmDeleteGroup(<?= $gPD['id_group']; ?>)">
+                                                        onclick="confirmDeleteGroup(<?= $gPD['id']; ?>)">
                                                         <i class="material-icons"><span class="material-icons-outlined">
                                                                 delete_outline
                                                             </span></i>Delete Group</a>
@@ -119,10 +284,12 @@
                                                     <i class="material-icons">settings</i>
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="user-profile-lite.html">
-                                                        <i class="material-icons">message</i>Whatsapp Pelawat</a>
+                                                    <a class="dropdown-item" href="javascript:void(0);"
+                                                        onclick="openWhatsApp('<?= $uTp['phone']; ?>')">
+                                                        <i class="material-icons">message</i> Whatsapp Pelawat
+                                                    </a>
                                                     <a class="dropdown-item" href=""
-                                                        onclick="confirmDeletePelawat(<?= $uTp['kd_jemaat']; ?>)">
+                                                        onclick="confirmDeletePelawat(<?= $uTp['id']; ?>)">
                                                         <i class="material-icons">delete_outline</i>Delete Pelawat</a>
                                                 </div>
                                             </div>
@@ -158,7 +325,7 @@
                         <label for="kd_pelawat">Pelawat</label>
                         <select id="nama_pelawat" class="form-control select2" name="pelawat[]" multiple="multiple">
                             <?php foreach ($userTp as $uTp): ?>
-                                <option value="<?= $uTp['kd_jemaat']; ?>">
+                                <option value="<?= $uTp['id']; ?>">
                                     <?= $uTp['nama']; ?>
                                 </option>
                             <?php endforeach; ?>
@@ -196,7 +363,7 @@
                         <select id="editNama_pelawat" class="form-control select2" name="editNama_pelawat[]"
                             multiple="multiple">
                             <?php foreach ($userTp as $uTp): ?>
-                                <option value="<?= $uTp['kd_jemaat']; ?>">
+                                <option value="<?= $uTp['id']; ?>">
                                     <?= $uTp['nama']; ?>
                                 </option>
                             <?php endforeach; ?>
@@ -234,10 +401,10 @@
                 <form>
                     <div class="form-group">
                         <label for="kd_pelawat">Pelawat</label>
-                        <select id="kode_pelawat" class="form-control select2" name="kode_pelawat[]"
-                            multiple="multiple">
+                        <select id="kode_pelawat" class="form-control select2" name="kode_pelawat">
                             <?php foreach ($userJemaat as $uJ): ?>
-                                <option value="<?= $uJ['kd_jemaat']; ?>">
+                                <option value="<?= $uJ['id']; ?>">
+                                    <?= $uJ['id']; ?>
                                     <?= $uJ['nama']; ?>
                                 </option>
                             <?php endforeach; ?>
@@ -274,7 +441,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "<?= base_url('pelawat/TambahGroup'); ?>",
+                url: "<?= base_url('pelawat/TambahGroupApi'); ?>",
                 data: {
                     nama_group: nama_group,
                     nama_pelawat: nama_pelawat
@@ -289,7 +456,7 @@
                     });
 
                     swalWithBootstrapButtons.fire(
-                        'Terhapus!',
+                        'Berhasil!',
                         'Data Group berhasil ditambah.',
                         'success'
                     ).then(() => {
@@ -313,7 +480,6 @@
                     );
                 }
             });
-
         });
 
         $('#submitPelawat').on('click', function () {
@@ -321,7 +487,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "<?= base_url('pelawat/TambahPelawat'); ?>",
+                url: "<?= base_url('pelawat/TambahPelawatToApi'); ?>",
                 data: {
                     kode_pelawat: kode_pelawat
                 },
@@ -335,7 +501,7 @@
                     });
 
                     swalWithBootstrapButtons.fire(
-                        'Terhapus!',
+                        'Berhasil!',
                         'Data Pelawat berhasil ditambah.',
                         'success'
                     ).then(() => {
@@ -366,23 +532,24 @@
         $('#editGroupModal').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget);
             var id = button.data('id');
+            var nm_group = button.data('nm-group');
             var selectElement = $('#editNama_pelawat');
-
+            console.log(nm_group);
             // Simpan opsi bawaan sebelum membersihkan
             var defaultOptions = selectElement.html();
 
             $.ajax({
-                type: "GET",
-                url: "<?= base_url('pelawat/DataGroupById'); ?>",
+                type: "POST",
+                url: "<?= base_url('pelawat/DataGroupApi'); ?>",
                 data: { id: id },
                 success: function (response) {
                     // Isi formulir dengan data yang diterima
-                    $('#editId_Group').val(response.id_group);
-                    $('#editNama_group').val(response.nm_group);
+                    $('#editId_Group').val(id);
+                    $('#editNama_group').val(nm_group);
 
                     // Tambahkan opsi yang baru setelah mengosongkan opsi sebelumnya
-                    $.each(response.nama_pelawat, function (index, value) {
-                        var option = new Option(value.nama, value.kd_pelawat, true, true);
+                    $.each(response, function (index, value) {
+                        var option = new Option(value.nama, value.id, true, true);
                         selectElement.append(option);
                     });
 
@@ -406,9 +573,10 @@
             var nama_group = $('#editNama_group').val();
             var nama_pelawat = $('#editNama_pelawat').val();
 
+            // console.log(nama_pelawat);
             $.ajax({
                 type: "POST",
-                url: "<?= base_url('pelawat/UpdateGroupData'); ?>",
+                url: "<?= base_url('pelawat/EditDataGroupApi'); ?>",
                 data: {
                     id_group: id_group,
                     nama_group: nama_group,
@@ -424,12 +592,13 @@
                     });
 
                     swalWithBootstrapButtons.fire(
-                        'Terhapus!',
+                        'Berhasil!',
                         'Data Group berhasil diperbarui.',
                         'success'
                     ).then(() => {
                         location.reload();
                     });
+
 
                 },
                 error: function (xhr, status, error) {
@@ -448,6 +617,7 @@
                     );
                 }
             });
+            // console.log(data);
         });
     });
     // Confirm delete
@@ -465,7 +635,7 @@
             if (result.isConfirmed) {
                 $.ajax({
                     type: "POST",
-                    url: "<?= base_url('pelawat/DeleteGroup') ?>",
+                    url: "<?= base_url('pelawat/DeleteGroupToApi') ?>",
                     data: { id_group: id_group },
                     success: function (response) {
                         const swalWithBootstrapButtons = Swal.mixin({
@@ -477,7 +647,7 @@
                         });
 
                         swalWithBootstrapButtons.fire(
-                            'Terhapus!',
+                            'Berhasil!',
                             'Data Group berhasil dihapus.',
                             'success'
                         ).then(() => {
@@ -519,7 +689,7 @@
             if (result.isConfirmed) {
                 $.ajax({
                     type: "POST",
-                    url: "<?= base_url('pelawat/DeletePelawat') ?>",
+                    url: "<?= base_url('pelawat/DeletePelawatToApi') ?>",
                     data: { kd_jemaat: kd_jemaat },
                     success: function (response) {
                         const swalWithBootstrapButtons = Swal.mixin({
@@ -531,7 +701,7 @@
                         });
 
                         swalWithBootstrapButtons.fire(
-                            'Terhapus!',
+                            'Berhasil!',
                             'Data Pelawat berhasil dihapus.',
                             'success'
                         ).then(() => {
@@ -557,6 +727,20 @@
                 });
             }
         });
+    }
+
+    function openWhatsApp(nomorJemaat) {
+        // Pastikan nomorJemaat tidak kosong atau undefined
+        if (nomorJemaat) {
+            // Format nomor sesuai dengan standar URL wa.me
+            var nomorWhatsApp = 'https://wa.me/' + nomorJemaat;
+
+            // Buka tautan WhatsApp dalam tab baru
+            window.open(nomorWhatsApp, '_blank');
+        } else {
+            // Handle jika nomor tidak tersedia
+            console.error('Nomor Jemaat tidak tersedia.');
+        }
     }
 
 </script>

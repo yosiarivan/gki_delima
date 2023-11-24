@@ -49,4 +49,22 @@ class GroupPelawatModel extends Model
 
         return true;
     }
+
+    public function getDataFromApi($url, $api_key)
+    {
+        $client = \Config\Services::curlrequest();
+        $response = $client->request('GET', $url, [
+            'headers' => [
+                'Authorization' => 'Bearer ' . $api_key,
+            ],
+        ]);
+
+        $statusCode = $response->getStatusCode(); // Mengganti ini dengan $response->getResponseCode()
+
+        if ($statusCode == 200) {
+            return $response->getBody();
+        } else {
+            return null; // Atau tangani kesalahan sesuai kebutuhan Anda
+        }
+    }
 }

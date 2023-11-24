@@ -64,7 +64,7 @@ class JemaatModel extends Model
         try {
             // Melakukan penyimpanan ke database
             return $this->where('id', $id)->delete();
-            return true;
+            // return true;
         } catch (\Exception $e) {
             // Jika ada error
             log_message('error', $e->getMessage());

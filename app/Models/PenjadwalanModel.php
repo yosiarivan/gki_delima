@@ -57,13 +57,30 @@ class PenjadwalanModel extends Model
 
     public function updateJadwal($id, $data)
     {
-        $this->db->table('tr_jadwal')->where('id', $id)->update($data);
-        return true;
+        try {
+            // Melakukan penyimpanan ke database
+            $this->db->table('tr_jadwal')->where('id', $id)->update($data);
+            return true;
+        } catch (\Exception $e) {
+            // Jika ada error
+            log_message('error', $e->getMessage());
+            return false;
+        }
+        // $this->db->table('tr_jadwal')->where('id', $id)->update($data);
+        // return true;
     }
 
     public function deleteJadwal($id)
     {
-        return $this->where('id', $id)->delete();
+        try {
+            // Melakukan penyimpanan ke database
+            return $this->where('id', $id)->delete();
+        } catch (\Exception $e) {
+            // Jika ada error
+            log_message('error', $e->getMessage());
+            return false;
+        }
+        // return $this->where('id', $id)->delete();
     }
 
     // public function getDatatableData($start, $length, $search, $order, $columns)

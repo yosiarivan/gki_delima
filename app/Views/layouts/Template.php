@@ -93,42 +93,42 @@
                 <div class="nav-wrapper">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link <?= ($activePage == 'dashboard') ? 'active' : ''; ?>"
+                            <a class="nav-link <?= (isset($activePage) && $activePage == 'dashboard') ? 'active' : ''; ?>"
                                 href="<?= base_url('/dashboard'); ?>">
                                 <i class="material-icons">edit</i>
                                 <span>Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($activePage == 'penjadwalan') ? 'active' : ''; ?>"
+                            <a class="nav-link <?= (isset($activePage) && $activePage == 'penjadwalan') ? 'active' : ''; ?>"
                                 href="<?= base_url('/penjadwalan'); ?> ">
                                 <i class="large material-icons">calendar_month</i>
                                 <span>Penjadwalan</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($activePage == 'laporan') ? 'active' : ''; ?>"
+                            <a class="nav-link <?= (isset($activePage) && $activePage == 'laporan') ? 'active' : ''; ?>"
                                 href="<?= base_url('laporan'); ?>">
                                 <i class="material-icons">note</i>
                                 <span>Laporan</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($activePage == 'data-jemaat') ? 'active' : ''; ?>"
+                            <a class="nav-link <?= (isset($activePage) && $activePage == 'data-jemaat') ? 'active' : ''; ?>"
                                 href="<?= base_url('datajemaat'); ?>">
                                 <i class="material-icons">people</i>
                                 <span>Data Jemaat</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($activePage == 'pelawat') ? 'active' : ''; ?>"
+                            <a class="nav-link <?= (isset($activePage) && $activePage == 'pelawat') ? 'active' : ''; ?>"
                                 href="<?= base_url('pelawat'); ?>">
                                 <i class="material-icons">diversity_3</i>
                                 <span>Pelawat</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($activePage == 'requested-update') ? 'active' : ''; ?>"
+                            <a class="nav-link <?= (isset($activePage) && $activePage == 'requested-update') ? 'active' : ''; ?>"
                                 href="<?= base_url('/requestedupdate'); ?> ">
                                 <i class="material-icons">update</i>
                                 <span>Requested Update</span>
@@ -208,12 +208,13 @@
                                     role="button" aria-haspopup="true" aria-expanded="false">
                                     <img class="user-avatar rounded-circle mr-2"
                                         src="<?= base_url('assets/images/avatars/0.jpg'); ?>" alt="User Avatar">
-                                    <span class="d-none d-md-inline-block">
-                                        <?= session()->get('jemaatData')['nama']; ?>
+                                    <span class="d-none d-md-inline-block" style="font-size: larger;">
+                                        <?= session()->get('sessionUser')['nama']; ?>
                                     </span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-small">
-                                    <a class="dropdown-item" href="user-profile-lite.html">
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#changePasswordModal">
                                         <i class="material-icons">&#xE7FD;</i> Profile</a>
                                     <a class="dropdown-item" href="components-blog-posts.html">
                                         <i class="material-icons">vertical_split</i> Blog Posts</a>
@@ -237,7 +238,52 @@
                 </div>
                 <!-- / .main-navbar -->
                 <!-- Content -->
+                <!-- Change Password Modal -->
+                <div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog"
+                    aria-labelledby="changePasswordModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="changePasswordModalLabel">Change Password</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="text">
+                                    NAMA :
+                                    <p class="badge bg-primary">
+                                        <?= session()->get('sessionUser')['nama']; ?>
+                                    </p>
+                                </div>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="oldPassword">Password Lama</label>
+                                        <input type="password" class="form-control" id="oldPassword"
+                                            placeholder="Password Lama" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="newPassword">Password Baru</label>
+                                        <input type="password" class="form-control" id="newPassword"
+                                            placeholder="Password Baru" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirmPassword">Konfirmasi Password Baru</label>
+                                        <input type="password" class="form-control" id="confirmPassword"
+                                            placeholder="Konfirmasi Password Baru" required>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" id="submitChangePassword" class="btn btn-primary">Save
+                                    changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <?= $this->renderSection('content'); ?>
+            </main>
         </div>
     </div>
     <footer class="main-footer d-flex p-2 px-3 bg-white border-top">
@@ -265,7 +311,84 @@
     </main>
     </div>
     </div>
-
 </body>
+<script>
+    $('#submitChangePassword').on('click', function () {
+        var old_pass = $('#oldPassword').val();
+        var new_pass = $('#newPassword').val();
+        var renew_pass = $('#confirmPassword').val();
+
+        // Validasi input
+        if (!old_pass || !new_pass || !renew_pass) {
+            // Menampilkan notifikasi SweetAlert jika ada data yang belum diisi
+            Swal.fire({
+                icon: 'error',
+                title: 'Error!',
+                text: 'Semua data harus diisi.',
+                customClass: {
+                    confirmButton: 'btn btn-success mx-2',
+                    cancelButton: 'btn btn-danger'
+                },
+                buttonsStyling: false
+            });
+            return; // Menghentikan eksekusi jika ada data yang belum diisi
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "<?= base_url('login/ChangePassword'); ?>",
+            data: {
+                old_pass: old_pass,
+                new_pass: new_pass,
+                renew_pass: renew_pass
+            },
+            success: function (response) {
+                const swalWithBootstrapButtons = Swal.mixin({
+                    customClass: {
+                        confirmButton: 'btn btn-success mx-2',
+                        cancelButton: 'btn btn-danger'
+                    },
+                    buttonsStyling: false
+                });
+
+                swalWithBootstrapButtons.fire(
+                    'Berhasil!',
+                    'Password berhasil diubah.',
+                    'success'
+                ).then(() => {
+                    $('#changePasswordModal').modal('hide');
+                });
+            },
+            error: function (xhr, status, error) {
+                const swalWithBootstrapButtons = Swal.mixin({
+                    customClass: {
+                        confirmButton: 'btn btn-success mx-2',
+                        cancelButton: 'btn btn-danger'
+                    },
+                    buttonsStyling: false
+                });
+
+                if (xhr.status === 400) {
+                    // Jika status 400, password tidak sama
+                    swalWithBootstrapButtons.fire(
+                        'Error!',
+                        'Password baru dan konfirmasi password tidak sama. Coba cek kembali.',
+                        'error'
+                    );
+                } else {
+                    // Jika status bukan 400, terjadi kesalahan lainnya
+                    swalWithBootstrapButtons.fire(
+                        'Error!',
+                        'Terjadi kesalahan saat mengubah password.',
+                        'error'
+                    );
+                }
+            }
+        });
+    });
+
+
+
+</script>
 
 </html>

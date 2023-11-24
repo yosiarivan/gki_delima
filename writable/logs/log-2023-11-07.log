@@ -1,0 +1,325 @@
+INFO - 2023-11-07 11:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 11:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 11:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 11:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 11:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 11:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-07 11:56:40 --> Call to undefined method App\Models\GroupPelawatDetailModel::getDataFromApi
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Pelawat.php(235): CodeIgniter\Model->__call('getDataFromApi', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataFromApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-11-07 12:23:12 --> Call to undefined method App\Models\GroupPelawatModel::requestApi
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Pelawat.php(234): CodeIgniter\Model->__call('requestApi', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getDataFromApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-11-07 12:39:24 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\Pelawat.php on line 107.
+ 1 APPPATH\Views\Pelawat.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Pelawat.php', 107)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Pelawat.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Pelawat.php', [], true)
+ 5 APPPATH\Controllers\Pelawat.php(36): view('Pelawat.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-11-07 12:41:43 --> Undefined array key "kd_jemaat"
+in APPPATH\Views\Pelawat.php on line 125.
+ 1 APPPATH\Views\Pelawat.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kd_jemaat"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Pelawat.php', 125)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Pelawat.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Pelawat.php', [], true)
+ 5 APPPATH\Controllers\Pelawat.php(36): view('Pelawat.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+CRITICAL - 2023-11-07 12:43:51 --> Undefined array key "kd_jemaat"
+in APPPATH\Views\Pelawat.php on line 161.
+ 1 APPPATH\Views\Pelawat.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kd_jemaat"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Pelawat.php', 161)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Pelawat.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Pelawat.php', [], true)
+ 5 APPPATH\Controllers\Pelawat.php(36): view('Pelawat.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelawat->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelawat))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\gki_delima\\public\\index.php')
+INFO - 2023-11-07 12:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 13:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 13:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 13:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 13:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 13:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 13:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 13:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 13:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 13:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 13:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 13:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 13:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 13:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-07 13:23:57 --> strlen(): Argument #1 ($string) must be of type string, array given
+in SYSTEMPATH\HTTP\CURLRequest.php on line 452.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(452): strlen([...])
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(377): CodeIgniter\HTTP\CURLRequest->applyMethod('POST', [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Models\Api_Model.php(33): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 APPPATH\Controllers\Login.php(94): App\Models\Api_Model->requestApi('POST', 'login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLoginLagi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 13:24:21 --> strlen(): Argument #1 ($string) must be of type string, array given
+in SYSTEMPATH\HTTP\CURLRequest.php on line 452.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(452): strlen([...])
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(377): CodeIgniter\HTTP\CURLRequest->applyMethod('POST', [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Models\Api_Model.php(33): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 APPPATH\Controllers\Login.php(94): App\Models\Api_Model->requestApi('POST', 'login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLoginLagi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 13:25:23 --> strlen(): Argument #1 ($string) must be of type string, array given
+in SYSTEMPATH\HTTP\CURLRequest.php on line 452.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(452): strlen([...])
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(377): CodeIgniter\HTTP\CURLRequest->applyMethod('POST', [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Models\Api_Model.php(33): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 APPPATH\Controllers\Login.php(94): App\Models\Api_Model->requestApi('POST', 'login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLoginLagi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 13:31:07 --> strlen(): Argument #1 ($string) must be of type string, array given
+in SYSTEMPATH\HTTP\CURLRequest.php on line 452.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(452): strlen([...])
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(377): CodeIgniter\HTTP\CURLRequest->applyMethod('POST', [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Models\Api_Model.php(33): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 APPPATH\Controllers\Login.php(94): App\Models\Api_Model->requestApi('POST', 'login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLoginLagi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 13:31:42 --> strlen(): Argument #1 ($string) must be of type string, array given
+in SYSTEMPATH\HTTP\CURLRequest.php on line 452.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(452): strlen([...])
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(377): CodeIgniter\HTTP\CURLRequest->applyMethod('POST', [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Models\Api_Model.php(33): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 APPPATH\Controllers\Login.php(94): App\Models\Api_Model->requestApi('POST', 'login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLoginLagi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 13:36:01 --> strlen(): Argument #1 ($string) must be of type string, array given
+in SYSTEMPATH\HTTP\CURLRequest.php on line 452.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(452): strlen([...])
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(377): CodeIgniter\HTTP\CURLRequest->applyMethod('POST', [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Models\Api_Model.php(33): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 APPPATH\Controllers\Login.php(94): App\Models\Api_Model->requestApi('POST', 'login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLoginLagi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 13:36:10 --> strlen(): Argument #1 ($string) must be of type string, array given
+in SYSTEMPATH\HTTP\CURLRequest.php on line 452.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(452): strlen([...])
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(377): CodeIgniter\HTTP\CURLRequest->applyMethod('POST', [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Models\Api_Model.php(33): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 APPPATH\Controllers\Login.php(94): App\Models\Api_Model->requestApi('POST', 'login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLoginLagi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 13:36:20 --> strlen(): Argument #1 ($string) must be of type string, array given
+in SYSTEMPATH\HTTP\CURLRequest.php on line 452.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(452): strlen([...])
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(377): CodeIgniter\HTTP\CURLRequest->applyMethod('POST', [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Models\Api_Model.php(33): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 APPPATH\Controllers\Login.php(94): App\Models\Api_Model->requestApi('POST', 'login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLoginLagi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 13:36:34 --> strlen(): Argument #1 ($string) must be of type string, array given
+in SYSTEMPATH\HTTP\CURLRequest.php on line 452.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(452): strlen([...])
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(377): CodeIgniter\HTTP\CURLRequest->applyMethod('POST', [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Models\Api_Model.php(33): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 APPPATH\Controllers\Login.php(94): App\Models\Api_Model->requestApi('POST', 'login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLoginLagi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 13:38:27 --> strlen(): Argument #1 ($string) must be of type string, array given
+in SYSTEMPATH\HTTP\CURLRequest.php on line 452.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(452): strlen([...])
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(377): CodeIgniter\HTTP\CURLRequest->applyMethod('POST', [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Models\Api_Model.php(33): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 APPPATH\Controllers\Login.php(94): App\Models\Api_Model->requestApi('POST', 'login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLoginLagi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-07 14:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 14:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 14:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 14:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 14:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 18:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 19:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-07 19:38:03 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Login.php(91): CodeIgniter\Model->__call('response', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLoginSS()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 19:49:51 --> Array to string conversion
+in APPPATH\Controllers\Login.php on line 114.
+ 1 APPPATH\Controllers\Login.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Login.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-07 20:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-07 20:03:50 --> Trying to access array offset on value of type null
+in APPPATH\Views\layouts\Template.php on line 212.
+ 1 APPPATH\Views\layouts\Template.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php', 212)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layouts/template.php', [], true)
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Dashboard.php', [], true)
+ 6 APPPATH\Controllers\Dashboard.php(19): view('Dashboard.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->getIndex()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-07 20:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-07 20:05:57 --> Trying to access array offset on value of type null
+in APPPATH\Views\Penjadwalan.php on line 121.
+ 1 APPPATH\Views\Penjadwalan.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Penjadwalan.php', 121)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\Penjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Penjadwalan.php', [], true)
+ 5 APPPATH\Controllers\Penjadwalan.php(40): view('Penjadwalan.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-07 20:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 20:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 21:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

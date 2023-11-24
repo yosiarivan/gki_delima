@@ -13,6 +13,7 @@ use App\Models\Master_Talenta_ll;
 use App\Models\WilayahModel;
 use App\Models\UserModel;
 use App\Models\Master_Role;
+use App\Models\Api_Model;
 
 class DataJemaat extends BaseController
 {
@@ -27,6 +28,7 @@ class DataJemaat extends BaseController
     protected $WilayahModel;
     protected $UserModel;
     protected $Master_Role;
+    protected $Api_Model;
     public function __construct()
     {
         $this->JemaatModel = new JemaatModel();
@@ -40,13 +42,15 @@ class DataJemaat extends BaseController
         $this->WilayahModel = new WilayahModel();
         $this->UserModel = new UserModel();
         $this->Master_Role = new Master_Role();
+        $this->Api_Model = new Api_Model();
     }
     public function getIndex()
     {
         $data = [
             'activePage' => 'data-jemaat',
-            'dataJemaat' => $this->JemaatModel->getAllJemaat(),
+            // 'dataJemaat' => $this->JemaatModel->getAllJemaat(),
             'masterRole' => $this->Master_Role->getAllRole(),
+            'dataJemaat' => $this->Api_Model->requestApi('GET', 'getJemaat')
         ];
         return view('DataJemaat.php', $data);
     }
@@ -65,6 +69,16 @@ class DataJemaat extends BaseController
             'wilayah_provinsi' => $this->WilayahModel->getAllProvinsi(),
         ];
         return view('DataJemaat_Tambah.php', $data);
+    }
+
+    public function postAvailableRole()
+    {
+        $endpoint = 'getAvailableRole';
+        $data = array(
+            'id' => $this->request->getVar('id'),
+        );
+        $response = $this->Api_Model->postToApi($endpoint, $data);
+        return $this->response->setJSON($response);
     }
 
     public function postTambahJemaat()
@@ -179,9 +193,9 @@ class DataJemaat extends BaseController
     public function postDeleteJemaat()
     {
         $id = $this->request->getVar('id');
-        $modalResponse = $this->JemaatModel->deleteJemaat($id);
+        $modelResponse = $this->JemaatModel->deleteJemaat($id);
 
-        if ($modalResponse) {
+        if ($modelResponse) {
             return $this->response->setJSON(['status' => 'success']);
         } else {
             return $this->response->setJSON(['status' => 'error']);

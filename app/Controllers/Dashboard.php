@@ -12,7 +12,7 @@ class Dashboard extends BaseController
         ];
         // Memeriksa apakah ada sesi pengguna yang aktif
         $session = session();
-        if (!$session->has('userData')) {
+        if (!$session->has('sessionUser')) {
             // Tidak ada sesi pengguna yang aktif, arahkan ke halaman login atau tampilan lain
             return redirect()->to('/login');
         }

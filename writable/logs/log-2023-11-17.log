@@ -1,0 +1,152 @@
+INFO - 2023-11-17 06:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 06:38:18 --> 7 : Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('7', 'Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Controllers\Login.php(100): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-17 06:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 06:38:28 --> 7 : Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('7', 'Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Controllers\Login.php(100): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 06:38:54 --> 7 : Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('7', 'Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Controllers\Login.php(100): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-17 06:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 06:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 06:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 06:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 06:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 06:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 06:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 08:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 08:57:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\layouts\Template.php on line 212.
+ 1 APPPATH\Views\layouts\Template.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php', 212)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layouts/template.php', [], true)
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('DataJemaat.php', [], true)
+ 6 APPPATH\Controllers\DataJemaat.php(55): view('DataJemaat.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->getIndex()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-17 08:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 08:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 08:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 08:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 09:32:57 --> 7 : Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('7', 'Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/getDataJemaat')
+ 4 APPPATH\Models\Api_Model.php(51): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/getDataJemaat', [...])
+ 5 APPPATH\Controllers\Penjadwalan.php(145): App\Models\Api_Model->postToApi('getDataJemaat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postDataJemaatApi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 09:32:59 --> 7 : Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('7', 'Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/getDataJemaat')
+ 4 APPPATH\Models\Api_Model.php(51): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/getDataJemaat', [...])
+ 5 APPPATH\Controllers\Penjadwalan.php(145): App\Models\Api_Model->postToApi('getDataJemaat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postDataJemaatApi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 09:33:00 --> 7 : Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('7', 'Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/getDataJemaat')
+ 4 APPPATH\Models\Api_Model.php(51): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/getDataJemaat', [...])
+ 5 APPPATH\Controllers\Penjadwalan.php(145): App\Models\Api_Model->postToApi('getDataJemaat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postDataJemaatApi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 09:33:03 --> 7 : Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('7', 'Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/getDataJemaat')
+ 4 APPPATH\Models\Api_Model.php(51): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/getDataJemaat', [...])
+ 5 APPPATH\Controllers\Penjadwalan.php(145): App\Models\Api_Model->postToApi('getDataJemaat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postDataJemaatApi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 09:33:07 --> 7 : Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('7', 'Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/getDataJemaat')
+ 4 APPPATH\Models\Api_Model.php(51): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/getDataJemaat', [...])
+ 5 APPPATH\Controllers\Penjadwalan.php(145): App\Models\Api_Model->postToApi('getDataJemaat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postDataJemaatApi()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 09:33:11 --> 7 : Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('7', 'Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://103.83.7.7/gki_api/public/api/jemaat/getJemaat')
+ 4 APPPATH\Models\Api_Model.php(67): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://103.83.7.7/gki_api/public/api/jemaat/getJemaat', [...])
+ 5 APPPATH\Controllers\Penjadwalan.php(33): App\Models\Api_Model->getToApi('getJemaat')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 09:33:20 --> 7 : Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('7', 'Failed to connect to 103.83.7.7 port 80 after 0 ms: Host unreachable')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://103.83.7.7/gki_api/public/api/jemaat/getJemaat')
+ 4 APPPATH\Models\Api_Model.php(67): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://103.83.7.7/gki_api/public/api/jemaat/getJemaat', [...])
+ 5 APPPATH\Controllers\Penjadwalan.php(33): App\Models\Api_Model->getToApi('getJemaat')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-17 09:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 09:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
