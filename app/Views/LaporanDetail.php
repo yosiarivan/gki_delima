@@ -23,10 +23,11 @@
                     <div class="container mt-4 mb-4">
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <button type="button" class="btn btn-primary btn-block">Back</button>
+                                <button type="button" class="btn btn-primary btn-block btn-lg"
+                                    onclick="window.close();">Back</button>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <button class="btn btn-success btn-block download-btn"
+                                <button class="btn btn-success btn-block btn-lg download-btn"
                                     data-laporan="<?= $detailLaporan->path_pdf; ?>">Download</button>
                             </div>
                         </div>
@@ -41,7 +42,16 @@
                                 <br></br>
                                 <img src="http://103.83.7.7/gki_api/public/uploads/<?= $detailLaporan->path; ?>"
                                     id="fotoHasilKunjungan" style="max-width: 80%; height: auto;">
+                                <hr>
+
+                                <button type="button" class="btn btn-primary btn-block btn-lg"
+                                    onclick="window.close();">Back</button>
+
+                                <br>
+                                <button class="btn btn-success btn-block btn-lg download-btn"
+                                    data-laporan="<?= $detailLaporan->path_pdf; ?>">Download</button>
                             </div>
+
                         </div>
                         <!-- Formulir di sebelah kanan (col-md-8 untuk ukuran desktop, col-12 untuk ukuran mobile) -->
                         <div class="col-md-8 col-12">
@@ -49,18 +59,18 @@
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Rayon</label>
                                     <input type="text" class="form-control" id="rayon" name="rayon"
-                                        value="<?= $detailLaporan->rayon; ?>">
+                                        value="<?= $detailLaporan->rayon; ?>" disabled>
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Metode Perlawatan</label>
                                     <input type="text" class="form-control" id="metode" name="metode"
-                                        value="<?= $detailLaporan->metode; ?>">
+                                        value="<?= $detailLaporan->metode; ?>" disabled>
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Informasi Tambahan
                                         Jemaat</label>
                                     <input type="text" class="form-control" id="info_tambah" name="info_tambah"
-                                        value="<?= $detailLaporan->info_tambah; ?>"></input>
+                                        value="<?= $detailLaporan->info_tambah; ?>" disabled></input>
                                 </div>
                                 <hr>
                                 <h4>Permasalahan</h4>
@@ -68,50 +78,50 @@
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Masalah Ekonomi</label>
                                     <input type="text" class="form-control" id="mas_eko" name="mas_eko"
-                                        value="<?= $detailLaporan->mas_eko; ?>">
+                                        value="<?= $detailLaporan->mas_eko; ?>" disabled>
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Masalah Keluarga (Hubungan
                                         Suami-Istri)</label>
                                     <input type="text" class="form-control" id="mas_suami_istri" name="mas_suami_istri"
-                                        value="<?= $detailLaporan->mas_suami_istri; ?>">
+                                        value="<?= $detailLaporan->mas_suami_istri; ?>" disabled>
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Masalah Keluarga (Hubungan
                                         Orangtua-Anak)</label>
                                     <input type="text" class="form-control" id="mas_ortu_anak" name="mas_ortu_anak"
-                                        value="<?= $detailLaporan->mas_ortu_anak; ?>">
+                                        value="<?= $detailLaporan->mas_ortu_anak; ?>" disabled>
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Masalah Keluarga
                                         Lainnya</label>
                                     <input type="text" class="form-control" id="mas_kel_lain" name="mas_kel_lain"
-                                        value="<?= $detailLaporan->mas_kel_lain; ?>">
+                                        value="<?= $detailLaporan->mas_kel_lain; ?>" disabled>
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Masalah Kesehatan</label>
                                     <input type="text" class="form-control" id="mas_kes" name="mas_kes"
-                                        value="<?= $detailLaporan->mas_kes; ?>">
+                                        value="<?= $detailLaporan->mas_kes; ?>" disabled>
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Masalah Hubungan Sosial</label>
                                     <input type="text" class="form-control" id="mas_hub_sos" name="mas_hub_sos"
-                                        value="<?= $detailLaporan->mas_hub_sos; ?>">
+                                        value="<?= $detailLaporan->mas_hub_sos; ?>" disabled>
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Masalah Spiritual</label>
                                     <input type="text" class="form-control" id="mas_spi" name="mas_spi"
-                                        value="<?= $detailLaporan->mas_spi; ?>">
+                                        value="<?= $detailLaporan->mas_spi; ?>" disabled>
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Masalah Lainnya</label>
                                     <input type="text" class="form-control" id="mas_lain" name="mas_lain"
-                                        value="<?= $detailLaporan->mas_lain; ?>">
+                                        value="<?= $detailLaporan->mas_lain; ?>" disabled>
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Rincian Permasalahan</label>
-                                    <textarea class="form-control" id="rincian_mas"
-                                        name="rincian_mas"><?= $detailLaporan->rincian_mas; ?></textarea>
+                                    <textarea class="form-control" id="rincian_mas" name="rincian_mas"
+                                        disabled><?= $detailLaporan->rincian_mas; ?></textarea>
                                 </div>
                                 <hr>
                                 <h4>Kesimpulan</h4>
@@ -144,6 +154,11 @@
                                             <?= ($detailLaporan->rutin == 0) ? 'checked' : ''; ?>>
                                         <label for="rutin-tidak">Tidak</label>
                                     </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Bantuan</label>
+                                    <textarea id="bantuan" class="form-control"
+                                        disabled><?= $detailLaporan->bantuan; ?></textarea>
                                 </div>
                             </form>
                         </div>

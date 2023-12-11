@@ -167,38 +167,21 @@
                                     aria-expanded="false">
                                     <div class="nav-link-icon__wrapper">
                                         <i class="material-icons">&#xE7F4;</i>
-                                        <span class="badge badge-pill badge-danger">2</span>
+                                        <span class="badge badge-pill badge-danger" id="notif-badges"></span>
                                     </div>
                                 </a>
-                                <div class="dropdown-menu dropdown-menu-small" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#">
-                                        <div class="notification__icon-wrapper">
-                                            <div class="notification__icon">
-                                                <i class="material-icons">&#xE6E1;</i>
-                                            </div>
-                                        </div>
+                                <div class="dropdown-menu dropdown-menu-small" aria-labelledby="dropdownMenuLink"
+                                    id="container-notifications">
+                                    <!-- <a class="dropdown-item" href="#">
                                         <div class="notification__content">
-                                            <span class="notification__category">Analytics</span>
-                                            <p>Your website’s active users count increased by
-                                                <span class="text-success text-semibold">28%</span> in the last week.
-                                                Great job!
+                                            <span class="notification__category">Request Data Jemaat</span>
+                                            <p>Ada request data jemaat terbaru dari
+                                                <span class="text-success text-semibold" id="nama-jemaat">Mail</span>
                                             </p>
+                                            <span id="timestamp">23-12-2023</span>
                                         </div>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <div class="notification__icon-wrapper">
-                                            <div class="notification__icon">
-                                                <i class="material-icons">&#xE8D1;</i>
-                                            </div>
-                                        </div>
-                                        <div class="notification__content">
-                                            <span class="notification__category">Sales</span>
-                                            <p>Last week your store’s sales count decreased by
-                                                <span class="text-danger text-semibold">5.52%</span>. It could have been
-                                                worse!
-                                            </p>
-                                        </div>
-                                    </a>
+                                    </a> -->
+
                                     <a class="dropdown-item notification__all text-center" href="#"> View all
                                         Notifications </a>
                                 </div>
@@ -215,11 +198,7 @@
                                 <div class="dropdown-menu dropdown-menu-small">
                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                         data-target="#changePasswordModal">
-                                        <i class="material-icons">&#xE7FD;</i> Profile</a>
-                                    <a class="dropdown-item" href="components-blog-posts.html">
-                                        <i class="material-icons">vertical_split</i> Blog Posts</a>
-                                    <a class="dropdown-item" href="add-new-post.html">
-                                        <i class="material-icons">note_add</i> Add New Post</a>
+                                        <i class="material-icons">&#xE7FD;</i> Change Password</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item text-danger" href="<?= base_url('/login/logout'); ?>">
                                         <i class="material-icons text-danger">&#xE879;</i> Logout </a>
@@ -313,6 +292,35 @@
     </div>
 </body>
 <script>
+    $(document).ready(function () {
+        $.ajax({
+            type: "GET",
+            url: "<?= base_url('dashboard/Notifications'); ?>",
+            dataType: 'JSON',
+            success: function (response) {
+                var htmlContent = '';
+                if (response.countData == 0) {
+                    htmlContent = '<p class="dropdown-item notification__category text-center">Tidak ada notifikasi</p>'
+                } else {
+                    $.each(response.dataFilter, function (index, item) {
+                        htmlContent += '<a class="dropdown-item" href="<?= base_url('requestedupdate'); ?>">';
+                        htmlContent += '    <div class="notification__content">';
+                        htmlContent += '        <span class="notification__category">Request Data Jemaat</span>';
+                        htmlContent += '        <p>Ada request data jemaat terbaru dari';
+                        htmlContent += '            <span class="text-success text-semibold" id="nama-jemaat">' + item.nama + '</span>';
+                        htmlContent += '        </p>';
+                        htmlContent += '        <span class="notification__category" id="timestamp">' + item.timestamp + '</span>';
+                        htmlContent += '    </div>';
+                        htmlContent += '</a>';
+                    });
+                    $('#notif-badges').html(response.countData);
+                }
+                $('#container-notifications').html(htmlContent);
+
+
+            }
+        });
+    });
     $('#submitChangePassword').on('click', function () {
         var old_pass = $('#oldPassword').val();
         var new_pass = $('#newPassword').val();

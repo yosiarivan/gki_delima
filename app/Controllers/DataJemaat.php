@@ -49,8 +49,16 @@ class DataJemaat extends BaseController
         $data = [
             'activePage' => 'data-jemaat',
             // 'dataJemaat' => $this->JemaatModel->getAllJemaat(),
-            'masterRole' => $this->Master_Role->getAllRole(),
-            'dataJemaat' => $this->Api_Model->requestApi('GET', 'getJemaat')
+            'masterRole' => $this->Api_Model->getToApi(''),
+            'dataJemaat' => $this->Api_Model->requestApi('GET', 'getJemaat'),
+            'dom_propinsi' => $this->Api_Model->getToApi($endpoint = 'getPropinsi'),
+            'master_rayon' => $this->Api_Model->getToApi($endpoint = 'getRayon'),
+            'master_lingkungan' => $this->Api_Model->getToApi($endpoint = 'getLingkungan'),
+            'master_stanggota' => $this->Api_Model->getToApi($endpoint = 'getStatusAnggota'),
+            'master_gender' => $this->Api_Model->getToApi($endpoint = 'getGender'),
+            'master_pekerjaan' => $this->Api_Model->getToApi($endpoint = 'getPekerjaan'),
+            'master_talenta' => $this->Api_Model->getToApi($endpoint = 'getTalenta'),
+            'master_talentaLL' => $this->Api_Model->getToApi($endpoint = 'getTalentaLL'),
         ];
         return view('DataJemaat.php', $data);
     }
@@ -69,6 +77,14 @@ class DataJemaat extends BaseController
             'wilayah_provinsi' => $this->WilayahModel->getAllProvinsi(),
         ];
         return view('DataJemaat_Tambah.php', $data);
+    }
+
+    public function postEditJemaatApi()
+    {
+        $endpoint = 'updateDataJemaat';
+        $data = $this->request->getPost();
+        $response = $this->Api_Model->postToApi($endpoint, $data);
+        return $this->response->setJSON($response);
     }
 
     public function postAvailableRole()

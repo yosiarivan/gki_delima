@@ -1,0 +1,667 @@
+INFO - 2023-11-26 08:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-26 08:24:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\layouts\Template.php on line 212.
+ 1 APPPATH\Views\layouts\Template.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php', 212)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layouts/template.php', [], true)
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Laporan.php', [], true)
+ 6 APPPATH\Controllers\Laporan.php(20): view('Laporan.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->getIndex()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-26 17:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-26 17:23:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\layouts\Template.php on line 212.
+ 1 APPPATH\Views\layouts\Template.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php', 212)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layouts/template.php', [], true)
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Laporan.php', [], true)
+ 6 APPPATH\Controllers\Laporan.php(20): view('Laporan.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->getIndex()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-26 17:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 17:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 17:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 17:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 17:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 17:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 18:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 18:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 18:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 18:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 18:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 18:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 18:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 18:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-26 18:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-26 18:43:51 --> Array to string conversion
+in SYSTEMPATH\HTTP\CURLRequest.php on line 685.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gki_delima\\system\\HTTP\\CURLRequest.php', 685)
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(685): curl_setopt_array(Object(CurlHandle), [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback')
+ 5 APPPATH\Models\Api_Model.php(61): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback', [...])
+ 6 APPPATH\Controllers\Penjadwalan.php(176): App\Models\Api_Model->postToApiFile('updateFeedback', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:43:57 --> Array to string conversion
+in SYSTEMPATH\HTTP\CURLRequest.php on line 685.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gki_delima\\system\\HTTP\\CURLRequest.php', 685)
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(685): curl_setopt_array(Object(CurlHandle), [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback')
+ 5 APPPATH\Models\Api_Model.php(61): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback', [...])
+ 6 APPPATH\Controllers\Penjadwalan.php(176): App\Models\Api_Model->postToApiFile('updateFeedback', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:44:17 --> Array to string conversion
+in SYSTEMPATH\HTTP\CURLRequest.php on line 685.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gki_delima\\system\\HTTP\\CURLRequest.php', 685)
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(685): curl_setopt_array(Object(CurlHandle), [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback')
+ 5 APPPATH\Models\Api_Model.php(61): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback', [...])
+ 6 APPPATH\Controllers\Penjadwalan.php(176): App\Models\Api_Model->postToApiFile('updateFeedback', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:44:17 --> Array to string conversion
+in SYSTEMPATH\HTTP\CURLRequest.php on line 685.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gki_delima\\system\\HTTP\\CURLRequest.php', 685)
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(685): curl_setopt_array(Object(CurlHandle), [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback')
+ 5 APPPATH\Models\Api_Model.php(61): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback', [...])
+ 6 APPPATH\Controllers\Penjadwalan.php(176): App\Models\Api_Model->postToApiFile('updateFeedback', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:44:17 --> Array to string conversion
+in SYSTEMPATH\HTTP\CURLRequest.php on line 685.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gki_delima\\system\\HTTP\\CURLRequest.php', 685)
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(685): curl_setopt_array(Object(CurlHandle), [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback')
+ 5 APPPATH\Models\Api_Model.php(61): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback', [...])
+ 6 APPPATH\Controllers\Penjadwalan.php(176): App\Models\Api_Model->postToApiFile('updateFeedback', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:44:17 --> Array to string conversion
+in SYSTEMPATH\HTTP\CURLRequest.php on line 685.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gki_delima\\system\\HTTP\\CURLRequest.php', 685)
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(685): curl_setopt_array(Object(CurlHandle), [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback')
+ 5 APPPATH\Models\Api_Model.php(61): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback', [...])
+ 6 APPPATH\Controllers\Penjadwalan.php(176): App\Models\Api_Model->postToApiFile('updateFeedback', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:44:18 --> Array to string conversion
+in SYSTEMPATH\HTTP\CURLRequest.php on line 685.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gki_delima\\system\\HTTP\\CURLRequest.php', 685)
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(685): curl_setopt_array(Object(CurlHandle), [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback')
+ 5 APPPATH\Models\Api_Model.php(61): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback', [...])
+ 6 APPPATH\Controllers\Penjadwalan.php(176): App\Models\Api_Model->postToApiFile('updateFeedback', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:44:18 --> Array to string conversion
+in SYSTEMPATH\HTTP\CURLRequest.php on line 685.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gki_delima\\system\\HTTP\\CURLRequest.php', 685)
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(685): curl_setopt_array(Object(CurlHandle), [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback')
+ 5 APPPATH\Models\Api_Model.php(61): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback', [...])
+ 6 APPPATH\Controllers\Penjadwalan.php(176): App\Models\Api_Model->postToApiFile('updateFeedback', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:52:45 --> Array to string conversion
+in APPPATH\Controllers\Penjadwalan.php on line 181.
+ 1 APPPATH\Controllers\Penjadwalan.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 181)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:52:48 --> Array to string conversion
+in APPPATH\Controllers\Penjadwalan.php on line 181.
+ 1 APPPATH\Controllers\Penjadwalan.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 181)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:53:07 --> fopen(): Argument #1 ($filename) must be of type string, array given
+in APPPATH\Models\Api_Model.php on line 79.
+ 1 APPPATH\Models\Api_Model.php(79): fopen([...], 'r')
+ 2 APPPATH\Controllers\Penjadwalan.php(179): App\Models\Api_Model->postToApiWithFile('updateFeedback', [...], 'photo', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:53:25 --> fopen(): Argument #1 ($filename) must be of type string, array given
+in APPPATH\Models\Api_Model.php on line 79.
+ 1 APPPATH\Models\Api_Model.php(79): fopen([...], 'r')
+ 2 APPPATH\Controllers\Penjadwalan.php(179): App\Models\Api_Model->postToApiWithFile('updateFeedback', [...], 'photo', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:53:39 --> fopen(): Argument #1 ($filename) must be of type string, array given
+in APPPATH\Models\Api_Model.php on line 79.
+ 1 APPPATH\Models\Api_Model.php(79): fopen([...], 'r')
+ 2 APPPATH\Controllers\Penjadwalan.php(179): App\Models\Api_Model->postToApiWithFile('updateFeedback', [...], 'photo', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-26 18:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-26 18:54:08 --> fopen(): Argument #1 ($filename) must be of type string, array given
+in APPPATH\Models\Api_Model.php on line 79.
+ 1 APPPATH\Models\Api_Model.php(79): fopen([...], 'r')
+ 2 APPPATH\Controllers\Penjadwalan.php(179): App\Models\Api_Model->postToApiWithFile('updateFeedback', [...], 'photo', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:54:16 --> fopen(): Argument #1 ($filename) must be of type string, array given
+in APPPATH\Models\Api_Model.php on line 79.
+ 1 APPPATH\Models\Api_Model.php(79): fopen([...], 'r')
+ 2 APPPATH\Controllers\Penjadwalan.php(179): App\Models\Api_Model->postToApiWithFile('updateFeedback', [...], 'photo', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:54:16 --> fopen(): Argument #1 ($filename) must be of type string, array given
+in APPPATH\Models\Api_Model.php on line 79.
+ 1 APPPATH\Models\Api_Model.php(79): fopen([...], 'r')
+ 2 APPPATH\Controllers\Penjadwalan.php(179): App\Models\Api_Model->postToApiWithFile('updateFeedback', [...], 'photo', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:54:16 --> fopen(): Argument #1 ($filename) must be of type string, array given
+in APPPATH\Models\Api_Model.php on line 79.
+ 1 APPPATH\Models\Api_Model.php(79): fopen([...], 'r')
+ 2 APPPATH\Controllers\Penjadwalan.php(179): App\Models\Api_Model->postToApiWithFile('updateFeedback', [...], 'photo', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:54:17 --> fopen(): Argument #1 ($filename) must be of type string, array given
+in APPPATH\Models\Api_Model.php on line 79.
+ 1 APPPATH\Models\Api_Model.php(79): fopen([...], 'r')
+ 2 APPPATH\Controllers\Penjadwalan.php(179): App\Models\Api_Model->postToApiWithFile('updateFeedback', [...], 'photo', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:54:17 --> fopen(): Argument #1 ($filename) must be of type string, array given
+in APPPATH\Models\Api_Model.php on line 79.
+ 1 APPPATH\Models\Api_Model.php(79): fopen([...], 'r')
+ 2 APPPATH\Controllers\Penjadwalan.php(179): App\Models\Api_Model->postToApiWithFile('updateFeedback', [...], 'photo', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:54:17 --> fopen(): Argument #1 ($filename) must be of type string, array given
+in APPPATH\Models\Api_Model.php on line 79.
+ 1 APPPATH\Models\Api_Model.php(79): fopen([...], 'r')
+ 2 APPPATH\Controllers\Penjadwalan.php(179): App\Models\Api_Model->postToApiWithFile('updateFeedback', [...], 'photo', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-26 20:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-26 21:15:04 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:15:11 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:15:15 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:15:15 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:15:15 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:15:15 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:15:15 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:16:15 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:16:23 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:16:25 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:17:43 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:17:56 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:18:12 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:22:31 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 175.
+ 1 APPPATH\Controllers\Penjadwalan.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:22:52 --> Object of class CodeIgniter\HTTP\Response could not be converted to string
+in APPPATH\Controllers\Penjadwalan.php on line 197.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-26 21:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-26 21:25:11 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 177.
+ 1 APPPATH\Controllers\Penjadwalan.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-26 21:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-26 21:26:05 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 177.
+ 1 APPPATH\Controllers\Penjadwalan.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-26 21:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-26 21:27:11 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 177.
+ 1 APPPATH\Controllers\Penjadwalan.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:27:45 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 177.
+ 1 APPPATH\Controllers\Penjadwalan.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:28:29 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 177.
+ 1 APPPATH\Controllers\Penjadwalan.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-26 21:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-26 21:28:55 --> Undefined array key "full_path"
+in APPPATH\Controllers\Penjadwalan.php on line 177.
+ 1 APPPATH\Controllers\Penjadwalan.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "full_path"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:16 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:19 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:29 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:30 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:30 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:30 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:30 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:30 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:30 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:30 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:31 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:31 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:36 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:47 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:47 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:48 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:48 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:48 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:48 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:35:48 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:36:01 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:36:02 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:36:02 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:36:02 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:36:02 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:36:10 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:38:59 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:42:31 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:42:46 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:46:42 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:46:46 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:48:01 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 21:48:04 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('penjadwalan/updateFeedbackApi', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-26 21:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-26 23:49:35 --> Array to string conversion
+in APPPATH\Controllers\Penjadwalan.php on line 243.
+ 1 APPPATH\Controllers\Penjadwalan.php(243): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\Penjadwalan.php', 243)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 23:50:11 --> Call to undefined function App\Controllers\curl_post()
+in APPPATH\Controllers\Penjadwalan.php on line 243.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 23:50:16 --> Call to undefined function App\Controllers\curl_post()
+in APPPATH\Controllers\Penjadwalan.php on line 243.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Penjadwalan->postUpdateFeedbackApi()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjadwalan))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,11 @@
+CRITICAL - 2023-11-28 17:06:57 --> 28 : Failed to connect to 103.83.7.7 port 80 after 21035 ms: Timed out
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Failed to connect to 103.83.7.7 port 80 after 21035 ms: Timed out')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://103.83.7.7/gki_api/public/api/jemaat/getLaporan')
+ 4 APPPATH\Models\Api_Model.php(102): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://103.83.7.7/gki_api/public/api/jemaat/getLaporan', [...])
+ 5 APPPATH\Controllers\Laporan.php(18): App\Models\Api_Model->getToApi('getLaporan')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

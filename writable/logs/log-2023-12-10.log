@@ -1,0 +1,610 @@
+CRITICAL - 2023-12-10 10:17:20 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 71.
+ 1 APPPATH\Controllers\RequestedUpdate.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 71)
+ 2 APPPATH\Controllers\RequestedUpdate.php(46): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:17:24 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 71.
+ 1 APPPATH\Controllers\RequestedUpdate.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 71)
+ 2 APPPATH\Controllers\RequestedUpdate.php(46): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:17:41 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 71.
+ 1 APPPATH\Controllers\RequestedUpdate.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 71)
+ 2 APPPATH\Controllers\RequestedUpdate.php(46): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:18:26 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 71.
+ 1 APPPATH\Controllers\RequestedUpdate.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 71)
+ 2 APPPATH\Controllers\RequestedUpdate.php(46): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:18:27 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 71.
+ 1 APPPATH\Controllers\RequestedUpdate.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 71)
+ 2 APPPATH\Controllers\RequestedUpdate.php(46): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:18:41 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 71.
+ 1 APPPATH\Controllers\RequestedUpdate.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 71)
+ 2 APPPATH\Controllers\RequestedUpdate.php(46): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:19:26 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 71.
+ 1 APPPATH\Controllers\RequestedUpdate.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 71)
+ 2 APPPATH\Controllers\RequestedUpdate.php(46): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:38:08 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 73.
+ 1 APPPATH\Controllers\RequestedUpdate.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 73)
+ 2 APPPATH\Controllers\RequestedUpdate.php(46): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:38:35 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 73.
+ 1 APPPATH\Controllers\RequestedUpdate.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 73)
+ 2 APPPATH\Controllers\RequestedUpdate.php(46): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:09:42 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 86.
+ 1 APPPATH\Controllers\RequestedUpdate.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 86)
+ 2 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:09:52 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 86.
+ 1 APPPATH\Controllers\RequestedUpdate.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 86)
+ 2 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:10:03 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 86.
+ 1 APPPATH\Controllers\RequestedUpdate.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 86)
+ 2 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:10:21 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 87.
+ 1 APPPATH\Controllers\RequestedUpdate.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 87)
+ 2 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:10:42 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 87.
+ 1 APPPATH\Controllers\RequestedUpdate.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 87)
+ 2 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:10:52 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 87.
+ 1 APPPATH\Controllers\RequestedUpdate.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 87)
+ 2 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:11:01 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 87.
+ 1 APPPATH\Controllers\RequestedUpdate.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 87)
+ 2 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:11:14 --> Undefined array key 0
+in APPPATH\Controllers\RequestedUpdate.php on line 87.
+ 1 APPPATH\Controllers\RequestedUpdate.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 87)
+ 2 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:19:01 --> Undefined variable $result
+in APPPATH\Controllers\RequestedUpdate.php on line 98.
+ 1 APPPATH\Controllers\RequestedUpdate.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 98)
+ 2 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:37:03 --> Cannot access offset of type string on string
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:37:19 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:37:45 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:38:21 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:39:31 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:40:37 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:40:39 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:40:52 --> Undefined array key "old"
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "old"', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 70)
+ 2 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:41:54 --> Cannot access offset of type string on string
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:43:51 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:43:53 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:44:15 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:44:17 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:44:25 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:44:27 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:46:07 --> json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(70): json_decode([...])
+ 2 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:47:43 --> json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(70): json_decode([...])
+ 2 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:48:54 --> json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\RequestedUpdate.php on line 70.
+ 1 APPPATH\Controllers\RequestedUpdate.php(70): json_decode([...])
+ 2 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:49:31 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 71.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:54:39 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\RequestedUpdate.php on line 71.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareKolom([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 12:39:44 --> Cannot access offset of type string on string
+in APPPATH\Controllers\RequestedUpdate.php on line 81.
+ 1 APPPATH\Controllers\RequestedUpdate.php(52): App\Controllers\RequestedUpdate->compare([...], 'pekerjaan', 'getComparePekerjaan')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 12:40:26 --> Cannot access offset of type string on string
+in APPPATH\Controllers\RequestedUpdate.php on line 81.
+ 1 APPPATH\Controllers\RequestedUpdate.php(52): App\Controllers\RequestedUpdate->compare([...], 'pekerjaan', 'getComparePekerjaan')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 12:40:39 --> Cannot access offset of type string on string
+in APPPATH\Controllers\RequestedUpdate.php on line 81.
+ 1 APPPATH\Controllers\RequestedUpdate.php(52): App\Controllers\RequestedUpdate->compare([...], 'pekerjaan', 'getComparePekerjaan')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 12:41:43 --> Cannot access offset of type string on string
+in APPPATH\Controllers\RequestedUpdate.php on line 81.
+ 1 APPPATH\Controllers\RequestedUpdate.php(52): App\Controllers\RequestedUpdate->compareData([...], 'pekerjaan', 'getComparePekerjaan')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 12:42:16 --> Cannot access offset of type string on string
+in APPPATH\Controllers\RequestedUpdate.php on line 81.
+ 1 APPPATH\Controllers\RequestedUpdate.php(52): App\Controllers\RequestedUpdate->compareData([...], 'pekerjaan', 'getComparePekerjaan')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 12:45:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\layouts\Template.php on line 195.
+ 1 APPPATH\Views\layouts\Template.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php', 195)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layouts/template.php', [], true)
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('RequestedUpdate.php', [], true)
+ 6 APPPATH\Controllers\RequestedUpdate.php(20): view('RequestedUpdate.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->getIndex()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 12:45:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\layouts\Template.php on line 195.
+ 1 APPPATH\Views\layouts\Template.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php', 195)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layouts/template.php', [], true)
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('RequestedUpdate.php', [], true)
+ 6 APPPATH\Controllers\RequestedUpdate.php(20): view('RequestedUpdate.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->getIndex()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 12:58:33 --> Cannot access offset of type string on string
+in APPPATH\Controllers\RequestedUpdate.php on line 82.
+ 1 APPPATH\Controllers\RequestedUpdate.php(52): App\Controllers\RequestedUpdate->compareData([...], 'pekerjaan', 'getComparePekerjaan')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 12:58:37 --> Cannot access offset of type string on string
+in APPPATH\Controllers\RequestedUpdate.php on line 82.
+ 1 APPPATH\Controllers\RequestedUpdate.php(52): App\Controllers\RequestedUpdate->compareData([...], 'pekerjaan', 'getComparePekerjaan')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 12:59:07 --> Cannot access offset of type string on string
+in APPPATH\Controllers\RequestedUpdate.php on line 82.
+ 1 APPPATH\Controllers\RequestedUpdate.php(52): App\Controllers\RequestedUpdate->compareData([...], 'pekerjaan', 'getComparePekerjaan')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 13:02:04 --> Undefined variable $dataOldNamed
+in APPPATH\Controllers\RequestedUpdate.php on line 58.
+ 1 APPPATH\Controllers\RequestedUpdate.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataOldNamed', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 13:02:10 --> Undefined variable $dataOldNamed
+in APPPATH\Controllers\RequestedUpdate.php on line 58.
+ 1 APPPATH\Controllers\RequestedUpdate.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataOldNamed', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 13:05:09 --> Undefined variable $dataOldNamed
+in APPPATH\Controllers\RequestedUpdate.php on line 61.
+ 1 APPPATH\Controllers\RequestedUpdate.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataOldNamed', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 13:10:59 --> Undefined variable $dataOldNamed
+in APPPATH\Controllers\RequestedUpdate.php on line 57.
+ 1 APPPATH\Controllers\RequestedUpdate.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataOldNamed', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 13:11:01 --> Undefined variable $dataOldNamed
+in APPPATH\Controllers\RequestedUpdate.php on line 57.
+ 1 APPPATH\Controllers\RequestedUpdate.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataOldNamed', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 13:12:18 --> Undefined variable $dataOldNamed
+in APPPATH\Controllers\RequestedUpdate.php on line 57.
+ 1 APPPATH\Controllers\RequestedUpdate.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataOldNamed', 'C:\\xampp\\htdocs\\gki_delima\\app\\Controllers\\RequestedUpdate.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 13:17:34 --> Cannot access offset of type string on string
+in APPPATH\Controllers\RequestedUpdate.php on line 90.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareData([...], [...], 'pekerjaan', 'getComparePekerjaan')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 13:20:47 --> Cannot access offset of type string on string
+in APPPATH\Controllers\RequestedUpdate.php on line 90.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareData([...], [...], 'pekerjaan', 'getComparePekerjaan')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 13:20:49 --> Cannot access offset of type string on string
+in APPPATH\Controllers\RequestedUpdate.php on line 90.
+ 1 APPPATH\Controllers\RequestedUpdate.php(50): App\Controllers\RequestedUpdate->compareData([...], [...], 'pekerjaan', 'getComparePekerjaan')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RequestedUpdate->postCompareDataReqApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestedUpdate))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 13:37:23 --> Undefined variable $master_rayon
+in APPPATH\Views\DataJemaat.php on line 211.
+ 1 APPPATH\Views\DataJemaat.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $master_rayon', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\DataJemaat.php', 211)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\DataJemaat.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('DataJemaat.php', [], true)
+ 5 APPPATH\Controllers\DataJemaat.php(52): view('DataJemaat.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 13:37:28 --> Undefined variable $master_rayon
+in APPPATH\Views\DataJemaat.php on line 211.
+ 1 APPPATH\Views\DataJemaat.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $master_rayon', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\DataJemaat.php', 211)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\DataJemaat.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('DataJemaat.php', [], true)
+ 5 APPPATH\Controllers\DataJemaat.php(52): view('DataJemaat.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 13:37:43 --> Undefined variable $master_rayon
+in APPPATH\Views\DataJemaat.php on line 211.
+ 1 APPPATH\Views\DataJemaat.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $master_rayon', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\DataJemaat.php', 211)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\DataJemaat.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('DataJemaat.php', [], true)
+ 5 APPPATH\Controllers\DataJemaat.php(52): view('DataJemaat.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-10 13:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 13:38:05 --> Undefined variable $master_rayon
+in APPPATH\Views\DataJemaat.php on line 211.
+ 1 APPPATH\Views\DataJemaat.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $master_rayon', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\DataJemaat.php', 211)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\DataJemaat.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('DataJemaat.php', [], true)
+ 5 APPPATH\Controllers\DataJemaat.php(52): view('DataJemaat.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-10 13:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 14:55:24 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Controllers\DataJemaat.php on line 85.
+ 1 APPPATH\Controllers\DataJemaat.php(85): json_decode(null, true)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postEditJemaatApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-10 14:55:28 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Controllers\DataJemaat.php on line 85.
+ 1 APPPATH\Controllers\DataJemaat.php(85): json_decode(null, true)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postEditJemaatApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-10 14:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 14:56:43 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Controllers\DataJemaat.php on line 85.
+ 1 APPPATH\Controllers\DataJemaat.php(85): json_decode(null, true)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postEditJemaatApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-10 16:29:25 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Controllers\DataJemaat.php on line 85.
+ 1 APPPATH\Controllers\DataJemaat.php(85): json_decode(null, true)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postEditJemaatApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-10 16:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 16:31:05 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Controllers\DataJemaat.php on line 85.
+ 1 APPPATH\Controllers\DataJemaat.php(85): json_decode(null, true)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postEditJemaatApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-10 16:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 16:31:45 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Controllers\DataJemaat.php on line 85.
+ 1 APPPATH\Controllers\DataJemaat.php(85): json_decode(null, true)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postEditJemaatApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-10 16:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 16:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 16:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 16:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 16:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 16:43:09 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Controllers\DataJemaat.php on line 85.
+ 1 APPPATH\Controllers\DataJemaat.php(85): json_decode(null, true)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postEditJemaatApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-10 16:43:56 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Controllers\DataJemaat.php on line 85.
+ 1 APPPATH\Controllers\DataJemaat.php(85): json_decode(null, true)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->postEditJemaatApi()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-10 16:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 16:44:08 --> Trying to access array offset on value of type null
+in APPPATH\Views\layouts\Template.php on line 195.
+ 1 APPPATH\Views\layouts\Template.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php', 195)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\gki_delima\\app\\Views\\layouts\\Template.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layouts/template.php', [], true)
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('DataJemaat.php', [], true)
+ 6 APPPATH\Controllers\DataJemaat.php(63): view('DataJemaat.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DataJemaat->getIndex()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataJemaat))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-10 16:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 16:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 16:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 16:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 16:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 17:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

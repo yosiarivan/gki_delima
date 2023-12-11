@@ -1,12 +1,48 @@
 <?= $this->extend('layouts/template.php'); ?>
 
 <?= $this->section('content'); ?>
+<style>
+    /* Gaya khusus untuk menyesuaikan ukuran teks dan tombol */
+    .fc-header-toolbar {
+        font-size: 12px;
+        /* Ubah ukuran teks tombol */
+    }
+
+    .fc-header-toolbar button {
+        padding: 5px;
+        /* Ubah ukuran tombol */
+    }
+
+    .fc-toolbar-title {
+        font-size: 16px;
+        /* Ubah ukuran teks judul kalender */
+    }
+
+    /* Gaya untuk memperbesar tampilan acara */
+    .fc-daygrid-event {
+        flex-grow: 1;
+        font-size: 12px;
+        /* Sesuaikan ukuran font */
+        padding: 4px 8;
+
+        /* Sesuaikan padding */
+    }
+
+    /* Gaya untuk memberikan jarak antar acara */
+    .fc-daygrid-event-harness {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+        /* Sesuaikan jarak antar acara */
+    }
+</style>
+
 <div class="main-content-container container-fluid px-4">
     <!-- Page Header -->
     <div class="page-header row no-gutters py-3">
         <div class="col-12 col-sm-2 text-sm-left mb-2">
-            <span class="text-uppercase page-subtitle">Dashboard</span>
-            <h3 class="page-title">Blog Overview</h3>
+            <span class="text-uppercase page-subtitle">Perlawatan GKI Delima</span>
+            <h3 class="page-title">Dashboard</h3>
         </div>
     </div>
     <!-- End Page Header -->
@@ -17,11 +53,10 @@
                 <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                         <div class="stats-small__data text-center">
-                            <span class="stats-small__label text-uppercase">Posts</span>
-                            <h6 class="stats-small__value count my-3">2,390</h6>
-                        </div>
-                        <div class="stats-small__data">
-                            <span class="stats-small__percentage stats-small__percentage--increase">4.7%</span>
+                            <span class="stats-small__label text-uppercase">Penjadwalan</span>
+                            <h6 class="stats-small__value count my-3">
+                                <?= $countJadwal; ?>
+                            </h6>
                         </div>
                     </div>
                     <canvas height="120" class="blog-overview-stats-small-1"></canvas>
@@ -33,11 +68,10 @@
                 <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                         <div class="stats-small__data text-center">
-                            <span class="stats-small__label text-uppercase">Pages</span>
-                            <h6 class="stats-small__value count my-3">182</h6>
-                        </div>
-                        <div class="stats-small__data">
-                            <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                            <span class="stats-small__label text-uppercase">Laporan</span>
+                            <h6 class="stats-small__value count my-3">
+                                <?= $countLaporan; ?>
+                            </h6>
                         </div>
                     </div>
                     <canvas height="120" class="blog-overview-stats-small-2"></canvas>
@@ -49,11 +83,10 @@
                 <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                         <div class="stats-small__data text-center">
-                            <span class="stats-small__label text-uppercase">Comments</span>
-                            <h6 class="stats-small__value count my-3">8,147</h6>
-                        </div>
-                        <div class="stats-small__data">
-                            <span class="stats-small__percentage stats-small__percentage--decrease">3.8%</span>
+                            <span class="stats-small__label text-uppercase">Jemaat</span>
+                            <h6 class="stats-small__value count my-3">
+                                <?= $countJemaat; ?>
+                            </h6>
                         </div>
                     </div>
                     <canvas height="120" class="blog-overview-stats-small-3"></canvas>
@@ -65,11 +98,10 @@
                 <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                         <div class="stats-small__data text-center">
-                            <span class="stats-small__label text-uppercase">Users</span>
-                            <h6 class="stats-small__value count my-3">2,413</h6>
-                        </div>
-                        <div class="stats-small__data">
-                            <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                            <span class="stats-small__label text-uppercase">Pelawat</span>
+                            <h6 class="stats-small__value count my-3">
+                                <?= $countPelawat; ?>
+                            </h6>
                         </div>
                     </div>
                     <canvas height="120" class="blog-overview-stats-small-4"></canvas>
@@ -81,11 +113,10 @@
                 <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                         <div class="stats-small__data text-center">
-                            <span class="stats-small__label text-uppercase">Subscribers</span>
-                            <h6 class="stats-small__value count my-3">17,281</h6>
-                        </div>
-                        <div class="stats-small__data">
-                            <span class="stats-small__percentage stats-small__percentage--decrease">2.4%</span>
+                            <span class="stats-small__label text-uppercase">Tim Pelawat</span>
+                            <h6 class="stats-small__value count my-3">
+                                <?= $countGroupPelawat; ?>
+                            </h6>
                         </div>
                     </div>
                     <canvas height="120" class="blog-overview-stats-small-5"></canvas>
@@ -99,12 +130,16 @@
         <div class="col-lg-8 col-md-12 col-sm-12 mb-4">
             <div class="card card-small">
                 <div class="card-header border-bottom">
-                    <h6 class="m-0">Users</h6>
+                    <h6 class="m-0">Jadwal Perlawatan</h6>
                 </div>
                 <div class="card-body pt-0">
-                    <div class="row border-bottom py-2 bg-light">
+                    <!-- <canvas height="130" style="max-width: 100% !important;" class="blog-overview-users"></canvas> -->
+                    <!-- Calendar Jadwal -->
+                    <div class="mt-3" id='calendar'></div>
+
+                    <div class="row border-top py-2 bg-light">
                         <div class="col-12 col-sm-6">
-                            <div id="blog-overview-date-range"
+                            <!-- <div id="blog-overview-date-range"
                                 class="input-daterange input-group input-group-sm my-auto ml-auto mr-auto ml-sm-auto mr-sm-0"
                                 style="max-width: 350px;">
                                 <input type="text" class="input-sm form-control" name="start" placeholder="Start Date"
@@ -116,15 +151,20 @@
                                         <i class="material-icons"></i>
                                     </span>
                                 </span>
-                            </div>
+                            </div> -->
+                            <select class="custom-select custom-select-sm" style="max-width: 130px;">
+                                <option selected>Last Week</option>
+                                <option value="1">Today</option>
+                                <option value="2">Last Month</option>
+                                <option value="3">Last Year</option>
+                            </select>
                         </div>
                         <div class="col-12 col-sm-6 d-flex mb-2 mb-sm-0">
                             <button type="button"
                                 class="btn btn-sm btn-white ml-auto mr-auto ml-sm-auto mr-sm-0 mt-3 mt-sm-0">View
-                                Full Report &rarr;</button>
+                                Full Penjadwalan &rarr;</button>
                         </div>
                     </div>
-                    <canvas height="130" style="max-width: 100% !important;" class="blog-overview-users"></canvas>
                 </div>
             </div>
         </div>
@@ -133,10 +173,32 @@
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="card card-small h-100">
                 <div class="card-header border-bottom">
-                    <h6 class="m-0">Users by device</h6>
+                    <h6 class="m-0">Tim Pelawat</h6>
                 </div>
                 <div class="card-body d-flex py-0">
-                    <canvas height="220" class="blog-users-by-device m-auto"></canvas>
+                    <!-- <canvas height="220" class="blog-users-by-device m-auto"></canvas> -->
+                    <table class="table display" id="table-jadwal" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Tim Pelawat</th>
+                                <!-- <th scope="col">Perlawatan</th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach($groupPelawat as $no => $gP) { ?>
+                                <tr>
+                                    <th scope="row">
+                                        <?= $no + 1; ?>
+                                    </th>
+                                    <td>
+                                        <?= $gP['text']; ?>
+                                    </td>
+                                    <!-- <td>2</td> -->
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="card-footer border-top">
                     <div class="row">
@@ -349,6 +411,48 @@
                 </div>
             </div>
         </div>
-        <!-- End Top Referrals Component -->
+        <div id="eventModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="eventTitle"></h2>
+                <p id="eventDescription"></p>
+            </div>
+        </div>
+
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
+        <script>
+            new DataTable('#table-jadwal', {
+                "searching": false,
+                "ordering": false,
+                "info": true,
+                "lengthChange": false,
+                "pageLength": 5
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var calendarEl = document.getElementById('calendar');
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    height: 300,
+                    headerToolbar: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'dayGridWeek,dayGridMonth'
+                    },
+                    initialView: 'dayGridWeek',
+                    // eventDisplay: 'popover',
+                    events: {
+                        url: '<?= base_url('dashboard/Jadwal'); ?>',
+                        method: 'GET',
+                        failure: function () {
+                            alert('There was an error while fetching events!');
+                        }
+                    },
+                    themeSystem: 'bootstrap4'
+                });
+
+                calendar.render();
+            });
+
+        </script>
 
         <?= $this->endSection(); ?>

@@ -10,21 +10,18 @@ use App\Models\JemaatModel;
 
 use App\Models\Api_Model;
 
-class Penjadwalan extends BaseController
-{
+class Penjadwalan extends BaseController {
     protected $PenjadwalanModel;
     protected $GroupPelawatModel;
     protected $JemaatModel;
     protected $Api_Model;
-    public function __construct()
-    {
+    public function __construct() {
         $this->PenjadwalanModel = new PenjadwalanModel();
         $this->GroupPelawatModel = new GroupPelawatModel();
         $this->JemaatModel = new JemaatModel();
         $this->Api_Model = new Api_Model();
     }
-    public function getIndex()
-    {
+    public function getIndex() {
         $data = [
             'activePage' => 'penjadwalan',
             'penjadwalan' => $this->PenjadwalanModel->getAllPenjadwalan(),
@@ -41,10 +38,11 @@ class Penjadwalan extends BaseController
             'master_pekerjaan' => $this->Api_Model->getToApi($endpoint = 'getPekerjaan'),
             'master_talenta' => $this->Api_Model->getToApi($endpoint = 'getTalenta'),
             'master_talentaLL' => $this->Api_Model->getToApi($endpoint = 'getTalentaLL'),
+            'master_metode_kunjungan' => $this->Api_Model->getToApi($endpoint = 'getMetodeKunjungan')
         ];
 
         $session = session();
-        if (!$session->has('sessionUser')) {
+        if(!$session->has('sessionUser')) {
             return redirect()->to('/login');
         }
         // return $this->response->setJSON($data);
@@ -53,8 +51,7 @@ class Penjadwalan extends BaseController
         // return $this->response->setJSON($data);
     }
 
-    public function postJadwalFromApi()
-    {
+    public function postJadwalFromApi() {
         $endpoint = 'getJadwal';
         $data = array(
             'tgl_dari' => $this->request->getVar('tgl_dari'),
@@ -65,8 +62,7 @@ class Penjadwalan extends BaseController
         return $this->response->setJSON($response);
     }
 
-    public function postInsertJadwalToApi()
-    {
+    public function postInsertJadwalToApi() {
         $endpoint = 'InsertJadwal';
         $session = session();
         $createdBy = $session->get('sessionUser')['kd_jemaat'];
@@ -84,8 +80,7 @@ class Penjadwalan extends BaseController
         return $this->response->setJSON($response);
     }
 
-    public function postFillEditFormFromApi()
-    {
+    public function postFillEditFormFromApi() {
         $endpoint = 'getDataJadwal';
         $data = array(
             'id_jadwal' => $this->request->getVar('id_jadwal'),
@@ -94,8 +89,7 @@ class Penjadwalan extends BaseController
         return $this->response->setJSON($editjadwal);
     }
 
-    public function postUpdateJadwalToApi()
-    {
+    public function postUpdateJadwalToApi() {
         $endpoint = 'insertJadwal';
         $session = session();
         $updateBy = $session->get('sessionUser')['kd_jemaat'];
@@ -115,8 +109,7 @@ class Penjadwalan extends BaseController
         return $this->response->setJSON($response);
     }
 
-    public function postKotaApi()
-    {
+    public function postKotaApi() {
         $endpoint = 'getKota';
         $data = array(
             'id_induk_wilayah' => $this->request->getVar('idProvinsi'),
@@ -126,8 +119,7 @@ class Penjadwalan extends BaseController
         return $this->response->setJSON($response);
     }
 
-    public function postKecamatanApi()
-    {
+    public function postKecamatanApi() {
         $endpoint = 'getKecamatan';
         $data = array(
             'id_induk_wilayah' => $this->request->getVar('idKota'),
@@ -136,8 +128,7 @@ class Penjadwalan extends BaseController
         return $this->response->setJSON($response);
     }
 
-    public function postDataJemaatApi()
-    {
+    public function postDataJemaatApi() {
         $endpoint = 'getDataJemaat';
         $data = array(
             'id' => $this->request->getVar('kd_jemaat'),
@@ -146,14 +137,133 @@ class Penjadwalan extends BaseController
         return $this->response->setJSON($response);
     }
 
-    public function postHistoryKunjunganApi()
-    {
+    public function postHistoryKunjunganApi() {
         $endpoint = 'getHistoryKunjungan';
         $data = array(
             'kd_jemaat' => $this->request->getVar('kd_jemaat'),
         );
         $response = $this->Api_Model->postToApi($endpoint, $data);
         return $this->response->setJSON($response);
+    }
+
+    public function postUpdateFeedbackApi() {
+        if(isset($_POST['kd_jadwal'])) {
+            $kd_jadwal = $this->request->getVar('kd_jadwal');
+            $rayon = $this->request->getVar('rayon');
+            $metode = $this->request->getVar('metode');
+            $info_tambah = $this->request->getVar('info_tambah');
+            $mas_eko = $this->request->getVar('mas_eko');
+            $mas_suami_istri = $this->request->getVar('mas_suami_istri');
+            $mas_kel_lain = $this->request->getVar('mas_kel_lain');
+            $mas_kes = $this->request->getVar('mas_kes');
+            $mas_hub_sos = $this->request->getVar('mas_hub_sos');
+            $mas_spi = $this->request->getVar('mas_spi');
+            $mas_lain = $this->request->getVar('mas_lain');
+            $rincian_mas = $this->request->getVar('rincian_mas');
+            $kondisi_baik = $this->request->getVar('kondisi_baik');
+            $rutin = $this->request->getVar('rutin');
+            $bantuan = $this->request->getVar('bantuan');
+
+            $session = session();
+            $user = $session->get('sessionUser')['kd_jemaat'];
+
+            $validation = \Config\Services::validation();
+            $input = $validation->setRules([
+                'username' => 'required',
+                'photo' => 'uploaded[file]|max_size[file,2048]|ext_in[file,jpeg,jpg,png,pdf,doc,docx],'
+            ]);
+            $apiUrl = 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback';
+            $apiKey = 'gki';
+            $client = \Config\Services::curlrequest();
+            // $file = $this->request->getFile('photo');
+            if($file = $this->request->getFile('photo')) {
+                $tempfile = $file->getTempName();
+                $filename = $file->getName();
+                $type = $file->getClientMimeType();
+
+                $cfile = curl_file_create($tempfile, $type, $filename);
+                $data = array(
+                    'photo' => $cfile,
+                    'user' => $user,
+                    'kd_jadwal' => $kd_jadwal,
+                    'rayon' => $rayon,
+                    'metode' => $metode,
+                    'info_tambah' => $info_tambah,
+                    'mas_eko' => $mas_eko,
+                    'mas_suami_istri' => $mas_suami_istri,
+                    'mas_kel_lain' => $mas_kel_lain,
+                    'mas_kes' => $mas_kes,
+                    'mas_hub_sos' => $mas_hub_sos,
+                    'mas_spi' => $mas_spi,
+                    'mas_lain' => $mas_lain,
+                    'rincian_mas' => $rincian_mas,
+                    'kondisi_baik' => $kondisi_baik,
+                    'rutin' => $rutin,
+                    'bantuan' => $bantuan,
+                );
+
+                // $response = $client->POST($apiUrl, ['debug' => true, 'multipart' => $data]);
+                $response = $client->request('POST', $apiUrl, [
+                    'debug' => true,
+                    'headers' => [
+                        'Authorization' => 'Bearer '.$apiKey,
+                    ],
+                    'multipart' => $data,
+                ]);
+                echo $response->getBody();
+            }
+            // var_dump($file);
+            // echo $file;
+            // echo $photo;
+            // $apiUrl = 'http://103.83.7.7/gki_api/public/api/jemaat/';
+            // $apiKey = 'gki';
+            // $url = 'http://103.83.7.7/gki_api/public/api/jemaat/updateFeedback';
+
+            // $client = \Config\Services::curlrequest();
+            // $response = $client->request('POST', $url, [
+            //     'headers' => [
+            //         'Content-Type' => 'multipart/form-data',
+            //         'Authorization' => 'Bearer '.$apiKey,
+            //     ],
+            //     'multipart' => [
+            //         'kd_jadwal' => $this->request->getVar('kd_jadwal'),
+            //         'rayon' => $this->request->getVar('rayon'),
+            //         'metode' => $this->request->getVar('metode'),
+            //         'info_tambah' => $this->request->getVar('info_tambah'),
+            //         'mas_eko' => $this->request->getVar('mas_eko'),
+            //         'mas_suami_istri' => $this->request->getVar('mas_suami_istri'),
+            //         'mas_kel_lain' => $this->request->getVar('mas_kel_lain'),
+            //         'mas_kes' => $this->request->getVar('mas_kes'),
+            //         'mas_hub_sos' => $this->request->getVar('mas_hub_sos'),
+            //         'mas_spi' => $this->request->getVar('mas_spi'),
+            //         'mas_lain' => $this->request->getVar('mas_lain'),
+            //         'rincian_mas' => $this->request->getVar('rincian_mas'),
+            //         'kondisi_baik' => $this->request->getVar('kondisi_baik'),
+            //         'rutin' => $this->request->getVar('rutin'),
+            //         'bantuan' => $this->request->getVar('bantuan'),
+            //         'photo' => $photo,
+            //     ],
+            // ]);
+            // Menyertakan file photo pada data yang akan dikirim
+            // $filePath = $_FILES['photo']['tmp_name'];
+            // $fileFieldName = 'photo'; // Sesuaikan dengan field name yang diharapkan oleh API
+            // $response = $this->Api_Model->postToApiFile($endpoint, $data);
+            // return $this->response->setJSON($response);
+            // echo $response;
+            // var_dump($photo);
+            // echo $response;
+
+
+            // if($file->isValid() && !$file->hasMoved()) {
+            //     $fileInfo = $file->getFileInfo();
+
+            // }
+            // return $response->getBody();
+            // var_dump($this->$response->getBody());
+
+        } else {
+            return $this->response->setJSON(['error' => 'Gagal, coba lagi nanti!']);
+        }
     }
 
 
@@ -193,8 +303,7 @@ class Penjadwalan extends BaseController
     //     // }
     // }
 
-    public function getAllDataJSON()
-    {
+    public function getAllDataJSON() {
         $data = [
             'penjadwalan' => $this->PenjadwalanModel->getAllPenjadwalan(),
             'group_pelawat' => $this->GroupPelawatModel->getAllGroupPelawat(),
@@ -204,8 +313,7 @@ class Penjadwalan extends BaseController
         return $this->response->setJSON($data);
     }
 
-    public function postJadwal()
-    {
+    public function postJadwal() {
         $data = [
             'penjadwalan' => $this->PenjadwalanModel->getAllPenjadwalan(),
         ];
@@ -235,8 +343,7 @@ class Penjadwalan extends BaseController
     //     return $this->response->setJSON($response);
     // }
 
-    public function postTambahJadwal()
-    {
+    public function postTambahJadwal() {
         $tanggal = $this->request->getPost('tanggal');
         $waktu = $this->request->getPost('waktu');
         $nama_jemaat = $this->request->getPost('nama_jemaat');
@@ -264,7 +371,7 @@ class Penjadwalan extends BaseController
 
         $modelResponse = $this->PenjadwalanModel->simpanData($data);
 
-        if ($modelResponse) {
+        if($modelResponse) {
             // Data berhasil disimpan
             return $this->response->setJSON(['status' => 'success']);
         } else {
@@ -273,14 +380,12 @@ class Penjadwalan extends BaseController
         }
     }
 
-    public function getJadwalById($id)
-    {
+    public function getJadwalById($id) {
         $jadwal = $this->PenjadwalanModel->getJadwalById($id);
         return $this->response->setJSON($jadwal);
     }
 
-    public function postUpdateJadwal()
-    {
+    public function postUpdateJadwal() {
         $id = $this->request->getPost('id');
         $tanggal = $this->request->getPost('tanggal');
         $waktu = $this->request->getPost('waktu');
@@ -314,8 +419,7 @@ class Penjadwalan extends BaseController
     }
 
 
-    public function postDeleteJadwal()
-    {
+    public function postDeleteJadwal() {
         $id = $this->request->getPost('id');
         $delete = $this->PenjadwalanModel->deleteJadwal($id);
 

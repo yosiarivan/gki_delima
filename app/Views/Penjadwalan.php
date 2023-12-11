@@ -58,13 +58,13 @@
                             </tr>
                         </thead>
                         <tbody id="tableBody">
-                            <?php foreach ($penjadwalan as $no => $p) { ?>
+                            <?php foreach($penjadwalan as $no => $p) { ?>
                                 <tr>
                                     <td>
                                         <?= $no + 1; ?>
                                     </td>
                                     <td>
-                                        <?= $p['tanggal'] . ' ' . $p['waktu']; ?>
+                                        <?= $p['tanggal'].' '.$p['waktu']; ?>
                                     </td>
                                     <td>
                                         <?= $p['nama_jemaat']; ?>
@@ -106,13 +106,9 @@
                         <thead class="bg-light">
                             <tr>
                                 <th>#</th>
-                                <th>Kode Jadwal</th>
                                 <th>Status</th>
                                 <th>Tanggal</th>
                                 <th>Waktu</th>
-                                <th>Latitude</th>
-                                <th>Longitude</th>
-                                <th>Kode Jemaat</th>
                                 <th>Nama Jemaat</th>
                                 <th>Action</th>
                             </tr>
@@ -149,7 +145,7 @@
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Nama Jemaat</label>
                             <select class="form-control select2" id="nama_jemaat" name="nama_jemaat" MultiSelectTag>
-                                <?php foreach ($jemaat as $j): ?>
+                                <?php foreach($jemaat as $j): ?>
                                     <option value="<?= $j['id']; ?>">
                                         <?= $j['id']; ?>
                                         <?= $j['nama']; ?>
@@ -161,7 +157,7 @@
                             <label for="recipient-name" class="col-form-label">Tim Pelawat</label>
                             <select class="form-control select2" id="tim_pelawat" name="tim_pelawat"
                                 data-live-search="true">
-                                <?php foreach ($group_pelawat as $gp): ?>
+                                <?php foreach($group_pelawat as $gp): ?>
                                     <option value="<?= $gp['id']; ?>">
                                         <?= $gp['id']; ?>
                                         <?= $gp['nm_group']; ?>
@@ -176,7 +172,7 @@
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Status Kunjungan</label>
                             <select class="form-control form-select-sm" id="status" name="status">
-                                <?php foreach ($status_kunjungan as $sk): ?>
+                                <?php foreach($status_kunjungan as $sk): ?>
                                     <option value="<?= $sk['id']; ?>">
                                         <?= $sk['id']; ?>
                                         <?= $sk['status']; ?>
@@ -222,7 +218,7 @@
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Nama Jemaat</label>
                             <select class="form-control select2" id="editNama_jemaat" name="editNama_jemaat">
-                                <?php foreach ($jemaat as $j): ?>
+                                <?php foreach($jemaat as $j): ?>
                                     <option value="<?= $j['id']; ?>">
                                         <?= $j['nama']; ?>
                                     </option>
@@ -232,7 +228,7 @@
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Tim Pelawat</label>
                             <select class="form-control select2" id="editTim_pelawat" name="editTim_pelawat">
-                                <?php foreach ($group_pelawat as $gp): ?>
+                                <?php foreach($group_pelawat as $gp): ?>
                                     <option value="<?= $gp['id']; ?>">
                                         <?= $gp['nm_group']; ?>
                                     </option>
@@ -324,7 +320,7 @@
                                     <label for="rayon">Rayon</label>
                                     <select class="form-control select2" id="rayon" name="rayon" disabled>
                                         <option selected disabled></option>
-                                        <?php foreach ($master_rayon as $mRayon): ?>
+                                        <?php foreach($master_rayon as $mRayon): ?>
                                             <option value="<?= $mRayon['id']; ?>">
                                                 <?= $mRayon['rayon']; ?>
                                             </option>
@@ -335,7 +331,7 @@
                                     <label for="lingkungan">Lingkungan</label>
                                     <select class="form-control select2" id="lingkungan" name="lingk" disabled>
                                         <option selected disabled></option>
-                                        <?php foreach ($master_lingkungan as $mLingkungan): ?>
+                                        <?php foreach($master_lingkungan as $mLingkungan): ?>
                                             <option value="<?= $mLingkungan['id']; ?>">
                                                 <?= $mLingkungan['lingkungan']; ?>
                                             </option>
@@ -346,7 +342,7 @@
                                     <label for="status_anggota">Status Anggota</label>
                                     <select class="form-control select2" id="status_anggota" name="stanggota" disabled>
                                         <option selected disabled></option>
-                                        <?php foreach ($master_stanggota as $mStanggota): ?>
+                                        <?php foreach($master_stanggota as $mStanggota): ?>
                                             <option value="<?= $mStanggota['id']; ?>">
                                                 <?= $mStanggota['status']; ?>
                                             </option>
@@ -387,7 +383,7 @@
                                     <label for="gender">Gender</label>
                                     <select class="form-control select2" id="gender" name="gender" disabled>
                                         <option selected disabled></option>
-                                        <?php foreach ($master_gender as $mGender): ?>
+                                        <?php foreach($master_gender as $mGender): ?>
                                             <option value="<?= $mGender['id']; ?>">
                                                 <?= $mGender['gender']; ?>
                                             </option>
@@ -425,7 +421,7 @@
                                     <label for="pekerjaan">Pekerjaan</label>
                                     <select class="form-control select2" id="pekerjaan" name="pekerjaan" disabled>
                                         <option selected disabled></option>
-                                        <?php foreach ($master_pekerjaan as $mPekerjaan): ?>
+                                        <?php foreach($master_pekerjaan as $mPekerjaan): ?>
                                             <option value="<?= $mPekerjaan['id']; ?>">
                                                 <?= $mPekerjaan['pekerjaan']; ?>
                                             </option>
@@ -436,7 +432,7 @@
                                     <label for="talenta">Talenta</label>
                                     <select class="form-control select2" id="talenta" name="talenta" disabled>
                                         <option selected disabled></option>
-                                        <?php foreach ($master_talenta as $mTalenta): ?>
+                                        <?php foreach($master_talenta as $mTalenta): ?>
                                             <option value="<?= $mTalenta['id']; ?>">
                                                 <?= $mTalenta['talenta']; ?>
                                             </option>
@@ -447,7 +443,7 @@
                                     <label for="talenta_lain">Talenta Lain-lain</label>
                                     <select class="form-control select2" id="talenta_lain" name="talenta_ll" disabled>
                                         <option selected disabled></option>
-                                        <?php foreach ($master_talentaLL as $mTalentaLL): ?>
+                                        <?php foreach($master_talentaLL as $mTalentaLL): ?>
                                             <option value="<?= $mTalentaLL['id']; ?>">
                                                 <?= $mTalentaLL['talenta_ll']; ?>
                                             </option>
@@ -498,9 +494,9 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="Provinsi">Propinsi</label>
-                                    <select class="form-control select2" id="selectProvinsi" name="propinsi">
+                                    <select class="form-control select2" id="selectProvinsi" name="propinsi" disabled>
                                         <option selected disabled></option>
-                                        <?php foreach ($dom_propinsi as $dp): ?>
+                                        <?php foreach($dom_propinsi as $dp): ?>
                                             <option value="<?= $dp['id_wil']; ?>">
                                                 <?= $dp['nm_wil']; ?>
                                             </option>
@@ -509,13 +505,13 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="kota">Kota</label>
-                                    <select class="form-control select2" id="selectKota" name="kota">
+                                    <select class="form-control select2" id="selectKota" name="kota" disabled>
                                         <!-- Tambahkan atribut disabled pada elemen select -->
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="kecamatan">Kecamatan</label>
-                                    <select class="form-control select2" id="selectKecamatan" name="camat">
+                                    <select class="form-control select2" id="selectKecamatan" name="camat" disabled>
                                         <!-- Tambahkan atribut disabled pada elemen select -->
                                     </select>
                                 </div>
@@ -662,35 +658,38 @@
         </div>
     </div>
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- Modal Laporan-->
+    <div class="modal fade" id="laporanModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Laporan Kunjungan</h5>
+                    <h5 class="modal-title" id="laporanModalLabel"></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form>
+                        <input type="hidden" id="LaporanKd_jadwal">
                         <div class="form-group">
                             <label for="rayon">Rayon</label>
-                            <select name="rayon" id="rayon" class="form-control">
-                                <option value="1">Test</option>
-                                <option value="2">Test2</option>
+                            <select name="rayon" id="rayonLaporan" class="form-control">
+                                <?php foreach($master_rayon as $mRayon): ?>
+                                    <option value="<?= $mRayon['id']; ?>">
+                                        <?= $mRayon['rayon']; ?>
+                                    </option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="metode">Metode</label>
                             <select name="metode" id="metode" class="form-control">
-                                <option value="1">test1</option>
+                                <?php foreach($master_metode_kunjungan as $mMetode): ?>
+                                    <option value="<?= $mMetode['id']; ?>">
+                                        <?= $mMetode['metode']; ?>
+                                    </option>
+                                <?php endforeach; ?>
                                 <option value="2">test2</option>
                             </select>
                         </div>
@@ -775,15 +774,18 @@
                         <div class="form-group">
                             <label for="photo">Foto hasil kunjungan</label>
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="inputGroupFile04">
-                                <label class="custom-file-label" for="inputGroupFile04">Pilih foto</label>
+                                <input type="file" class="custom-file-input" id="inputFile">
+                                <label class="custom-file-label" id="labelFile" for="inputGroupFile04">Pilih
+                                    foto</label>
                             </div>
+                            <small id="fileHelp" class="form-text text-muted">Hanya gambar yang diizinkan (JPG, JPEG,
+                                PNG).</small>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" id="submitLaporan">Submit</button>
                 </div>
             </div>
         </div>
@@ -799,16 +801,181 @@
                 $('.select2').select2();
             });
             $('#jemaatModal').on('shown.bs.modal', function () {
-                // Inisialisasi Select2 pada semua elemen di dalam tab yang aktif
                 $('.tab-content .tab-pane.active .select2').select2();
 
-                // Tambahkan event handler ketika tab diubah
                 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-                    // Inisialisasi ulang Select2 pada elemen di dalam tab yang baru aktif
+
                     $($(e.target).attr('href')).find('.select2').select2();
                 });
             });
         });
+
+        $(document).on('click', '#table-penjadwalan .jemaat-btn', function () {
+            var kd_jemaat = $(this).data('kd-jemaat');
+            fillDataJemaat(kd_jemaat);
+            // return false;
+        });
+
+        function fillDataJemaat(kd_jemaat) {
+            // console.log(kd_jemaat);
+            // Display loading SweetAlert
+            Swal.fire({
+                title: "Loading!",
+                html: "Data akan tebuka dalam waktu <b></b> milliseconds.",
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: () => {
+                    Swal.showLoading();
+                    const timer = Swal.getPopup().querySelector("b");
+                    timerInterval = setInterval(() => {
+                        timer.textContent = `${Swal.getTimerLeft()}`;
+                    }, 100);
+                },
+                willClose: () => {
+                    clearInterval(timerInterval);
+                }
+            }).then((result) => {
+                /* Read more about handling dismissals below */
+                if (result.dismiss === Swal.DismissReason.timer) {
+                    // console.log("I was closed by the timer");
+                    $('#jemaatModal').modal('show');
+                }
+            });
+
+            $.ajax({
+                url: '<?= base_url('penjadwalan/DataJemaatApi'); ?>',
+                method: 'POST',
+                data: { kd_jemaat: kd_jemaat },
+                success: function (response) {
+                    var dataJemaat = response[0];
+                    console.log(dataJemaat);
+                    // SECTION 1 DATA KEANGGOTAAN GEREJA
+                    $('#noa').val(dataJemaat.noa);
+                    $('#nokk').val(dataJemaat.nokk);
+                    $('#noa2').val(dataJemaat.noa2);
+                    $('#rayon').val(dataJemaat.rayon);
+                    $('#lingkungan').val(dataJemaat.lingk);
+                    $('#status_anggota').val(dataJemaat.stanggota);
+                    $('#keterangan_anggota').val(dataJemaat.ketanggota);
+                    $('#tanggal_aktif').val(dataJemaat.tglaktif);
+                    $('#tanggal_akhir').val(dataJemaat.tglakhir);
+
+                    // SECTION 2 DATA PRIBADI
+                    $('#dataNamaJemaat').val(dataJemaat.nama);
+                    $('#nickname_jemaat').val(dataJemaat.nickname);
+                    $('#gender').val(dataJemaat.gender);
+                    $('#tempat_lahir').val(dataJemaat.tmplhr);
+                    $('#tanggal_lahir').val(dataJemaat.tgllhr);
+                    $('#golongan_darah').val(dataJemaat.goldar);
+                    $('#stnikah').val(dataJemaat.stnikah);
+                    $('#tanggal_nikah').val(dataJemaat.tglnikah);
+                    $('#pendidikan').val(dataJemaat.pdidikan);
+                    $('#pekerjaan').val(dataJemaat.pekerjaan);
+                    $('#talenta').val(dataJemaat.talenta);
+                    $('#talenta_lain').val(dataJemaat.talenta_ll);
+                    $('#orang_tua1').val(dataJemaat.ortu1);
+                    $('#orang_tua2').val(dataJemaat.ortu2);
+                    $('#pasangan').val(dataJemaat.pasangan);
+
+                    // SECTION 3 DATA ALAMAT DAN KONTAK
+                    $('#alamat1').val(dataJemaat.alamat1);
+                    $('#rt').val(dataJemaat.rt);
+                    $('#kode_pos').val(dataJemaat.kodepos);
+                    $('#kelurahan').val(dataJemaat.lurah);
+                    $('#selectProvinsi').val(dataJemaat.propinsi);
+
+                    // $('#selectKota').val(dataJemaat.kota);
+                    // $('#selectKecamatan').val(dataJemaat.camat);
+                    $('#telp').val(dataJemaat.telp);
+                    $('#hp').val(dataJemaat.hp);
+                    $('#email').val(dataJemaat.email);
+
+                    // SECTION 4 DATA PDT DAN GEREJA
+                    $('#pdt_anak').val(dataJemaat.pdtanak);
+                    $('#tanggal_anak').val(dataJemaat.tglanak);
+                    $('#gereja_anak').val(dataJemaat.grjanak);
+                    $('#pdt_dewasa').val(dataJemaat.pdtdewasa);
+                    $('#tanggal_dewasa').val(dataJemaat.tgldewasa);
+                    $('#gereja_dewasa').val(dataJemaat.grjdewasa);
+                    $('#pdt_sidi').val(dataJemaat.pdtsidi);
+                    $('#tanggal_sidi').val(dataJemaat.tglsidi);
+                    $('#gereja_sidi').val(dataJemaat.grjsidi);
+
+                    // SECTION 5 DATA ATES
+                    $('#ates_asal').val(dataJemaat.ates_asal);
+                    $('#tgl_atesin').val(dataJemaat.tgl_atesin);
+                    $('#tgl_atesou').val(dataJemaat.tgl_atesou);
+                    $('#ket_atesin').val(dataJemaat.ket_atesin);
+                    $('#ket_atesou').val(dataJemaat.ket_atesou);
+                    $('#anggota').val(dataJemaat.anggota);
+                    $('#note1').val(dataJemaat.note1);
+                    $('#akhir').val(dataJemaat.akhir);
+
+                    $('#selectProvinsi').trigger('change');
+
+
+                    setTimeout(function () {
+                        $('#selectKota').val(dataJemaat.kota);
+                        $('#selectKota').trigger('change');
+                    }, 1000); // 500 milidetik = 0,5 detik
+                    setTimeout(function () {
+                        console.log(dataJemaat.camat);
+                        $('#selectKecamatan').val(dataJemaat.camat);
+                        console.log('berhasil harusnya camat')
+                    }, 3000);
+
+
+                },
+                error: function (err) {
+                    console.error('Error:', err);
+                }
+            });
+        }
+
+        $('#selectProvinsi').change(function () {
+            var idProvinsi = $(this).val();
+            $.ajax({
+                type: "POST",
+                url: "<?= base_url('penjadwalan/KotaApi'); ?>",
+                data: { idProvinsi: idProvinsi },
+                success: function (response) {
+                    // Mengisi form select kota
+                    $('#selectKota').empty(); // Kosongkan opsi kota
+                    $('#selectKecamatan').empty(); // Kosongkan opsi kecamatan
+                    console.log('kota berhasil')
+                    $.each(response, function (key, value) {
+                        $('#selectKota').append('<option value="' + value.id_wil + '">' + value.nm_wil + '</option>');
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.error("Terjadi kesalahan:", xhr.responseText);
+                }
+            });
+
+        });
+
+        $('#selectKota').change(function () {
+            var idKota = $(this).val();
+            $.ajax({
+                type: "POST",
+                url: "<?= base_url('penjadwalan/KecamatanApi'); ?>",
+                data: { idKota: idKota },
+                success: function (response) {
+                    $('#selectKecamatan').empty();
+                    console.log('camat berhasil');
+                    $.each(response, function (key, value) {
+                        $('#selectKecamatan').append('<option value="' + value.id_wil + '">' + value.nm_wil + '</option>');
+                    });
+
+                },
+                error: function (xhr, status, error) {
+                    console.error("Terjadi kesalahan:", xhr.responseText);
+                }
+            });
+        });
+
+
+
 
         window.onload = function () {
             const currentDate = new Date();
@@ -852,13 +1019,9 @@
                                         return meta.row + 1;
                                     }
                                 },
-                                { data: 'kd_jadwal' },
                                 { data: 'status' },
                                 { data: 'tanggal' },
                                 { data: 'waktu' },
-                                { data: 'latitude' },
-                                { data: 'longitude' },
-                                { data: 'kd_jemaat' },
                                 { data: 'nama_jemaat' },
                                 {
                                     // Column for action dropdown
@@ -868,11 +1031,11 @@
                                             '<button class="btn btn-primary dropdown-toggle" type="button" id="actionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">settings</i></button>' +
                                             '<div class="dropdown-menu" aria-labelledby="actionDropdown">' +
                                             // '<a class="dropdown-item" href="#" onclick="editAction(' + data + ')">Edit</a>' +
-                                            '<a class="dropdown-item edit-btn" href="#" data-kd-jadwal="' + data + '"><i class="material-icons">&#xE7FD;</i> Edit Jadwal</a>' +
-                                            '<a class="dropdown-item jemaat-btn" href="#" data-kd-jemaat="' + row.kd_jemaat + '"><i class="material-icons">account_box</i> Data Jemaat</a>' +
-                                            '<a class="dropdown-item location-btn" href="javascript:void(0);" data-latitude="' + row.latitude + '" data-longitude="' + row.longitude + '"><i class="material-icons">location_on</i> Location</a>' +
+                                            '<a class="dropdown-item edit-btn" href="" data-kd-jadwal="' + data + '"><i class="material-icons">&#xE7FD;</i> Edit Jadwal</a>' +
+                                            '<a class="dropdown-item jemaat-btn" href="javascript:void(0)" data-kd-jemaat="' + row.kd_jemaat + '"><i class="material-icons">account_box</i> Data Jemaat</a>' +
+                                            '<a class="dropdown-item location-btn" href="#" data-latitude="' + row.latitude + '" data-longitude="' + row.longitude + '"><i class="material-icons">location_on</i> Location</a>' +
                                             '<a class="dropdown-item history-btn" href="#" data-kd-jemaat="' + row.kd_jemaat + '"><i class="material-icons">history</i> History</a>' +
-                                            '<a class="dropdown-item laporan-btn" href="#" data-kd-jadwal="' + data + '"><i class="material-icons">summarize</i> Laporan</a>' +
+                                            '<a class="dropdown-item laporan-btn" href="#" data-kd-jadwal="' + data + '" data-nama-jemaat="' + row.nama_jemaat + '"><i class="material-icons">summarize</i> Laporan</a>' +
                                             '</div>' +
                                             '</div>';
                                     }
@@ -961,7 +1124,7 @@
             });
 
             $("#submitEdit").on('click', function () {
-                var kd_jadwal = $("#editId").val(); // Isi dengan nilai id yang akan diedit;
+                var kd_jadwal = $("#editId").val();
                 var tanggal = $("#editTanggal").val();
                 var waktu = $("#editWaktu").val();
                 var nama_jemaat = $("#editNama_jemaat").val();
@@ -1143,151 +1306,6 @@
             // });
 
 
-
-            $(document).on('click', '#table-penjadwalan .jemaat-btn', function () {
-                var kd_jemaat = $(this).data('kd-jemaat');
-                fillDataJemaat(kd_jemaat);
-                return false;
-            });
-
-            function fillDataJemaat(kd_jemaat) {
-                // console.log(kd_jemaat);
-                $.ajax({
-                    url: '<?= base_url('penjadwalan/DataJemaatApi'); ?>',
-                    method: 'POST',
-                    data: { kd_jemaat: kd_jemaat },
-                    success: function (response) {
-                        var dataJemaat = response[0];
-                        console.log(dataJemaat);
-                        // SECTION 1 DATA KEANGGOTAAN GEREJA
-                        $('#noa').val(dataJemaat.noa);
-                        $('#nokk').val(dataJemaat.nokk);
-                        $('#noa2').val(dataJemaat.noa2);
-                        $('#rayon').val(dataJemaat.rayon);
-                        $('#lingkungan').val(dataJemaat.lingk);
-                        $('#status_anggota').val(dataJemaat.stanggota);
-                        $('#keterangan_anggota').val(dataJemaat.ketanggota);
-                        $('#tanggal_aktif').val(dataJemaat.tglaktif);
-                        $('#tanggal_akhir').val(dataJemaat.tglakhir);
-
-                        // SECTION 2 DATA PRIBADI
-                        $('#dataNamaJemaat').val(dataJemaat.nama);
-                        $('#nickname_jemaat').val(dataJemaat.nickname);
-                        $('#gender').val(dataJemaat.gender);
-                        $('#tempat_lahir').val(dataJemaat.tmplhr);
-                        $('#tanggal_lahir').val(dataJemaat.tgllhr);
-                        $('#golongan_darah').val(dataJemaat.goldar);
-                        $('#stnikah').val(dataJemaat.stnikah);
-                        $('#tanggal_nikah').val(dataJemaat.tglnikah);
-                        $('#pendidikan').val(dataJemaat.pdidikan);
-                        $('#pekerjaan').val(dataJemaat.pekerjaan);
-                        $('#talenta').val(dataJemaat.talenta);
-                        $('#talenta_lain').val(dataJemaat.talenta_ll);
-                        $('#orang_tua1').val(dataJemaat.ortu1);
-                        $('#orang_tua2').val(dataJemaat.ortu2);
-                        $('#pasangan').val(dataJemaat.pasangan);
-
-                        // SECTION 3 DATA ALAMAT DAN KONTAK
-                        $('#alamat1').val(dataJemaat.alamat1);
-                        $('#rt').val(dataJemaat.rt);
-                        $('#kode_pos').val(dataJemaat.kodepos);
-                        $('#kelurahan').val(dataJemaat.lurah);
-                        $('#selectProvinsi').val(dataJemaat.propinsi);
-                        // $('#selectKota').val(dataJemaat.kota);
-                        // $('#selectKecamatan').val(dataJemaat.camat);
-                        $('#telp').val(dataJemaat.telp);
-                        $('#hp').val(dataJemaat.hp);
-                        $('#email').val(dataJemaat.email);
-
-                        // SECTION 4 DATA PDT DAN GEREJA
-                        $('#pdt_anak').val(dataJemaat.pdtanak);
-                        $('#tanggal_anak').val(dataJemaat.tglanak);
-                        $('#gereja_anak').val(dataJemaat.grjanak);
-                        $('#pdt_dewasa').val(dataJemaat.pdtdewasa);
-                        $('#tanggal_dewasa').val(dataJemaat.tgldewasa);
-                        $('#gereja_dewasa').val(dataJemaat.grjdewasa);
-                        $('#pdt_sidi').val(dataJemaat.pdtsidi);
-                        $('#tanggal_sidi').val(dataJemaat.tglsidi);
-                        $('#gereja_sidi').val(dataJemaat.grjsidi);
-
-                        // SECTION 5 DATA ATES
-                        $('#ates_asal').val(dataJemaat.ates_asal);
-                        $('#tgl_atesin').val(dataJemaat.tgl_atesin);
-                        $('#tgl_atesou').val(dataJemaat.tgl_atesou);
-                        $('#ket_atesin').val(dataJemaat.ket_atesin);
-                        $('#ket_atesou').val(dataJemaat.ket_atesou);
-                        $('#anggota').val(dataJemaat.anggota);
-                        $('#note1').val(dataJemaat.note1);
-                        $('#akhir').val(dataJemaat.akhir);
-
-                        $('#jemaatModal').modal('show');
-
-
-                        // Pemicu event 'change' pada #selectProvinsi untuk mengisi #selectKota
-                        $('#selectProvinsi').trigger('change');
-
-                        // Event 'change' pada #selectProvinsi untuk mengisi #selectKota
-                        $('#selectProvinsi').change(function () {
-                            var idProvinsi = $(this).val();
-
-                            $.ajax({
-                                type: "POST",
-                                url: "<?= base_url('penjadwalan/KotaApi'); ?>",
-                                data: { idProvinsi: idProvinsi },
-                                success: function (response) {
-                                    // Mengisi form select kota
-                                    $('#selectKota').empty(); // Kosongkan opsi kota
-                                    $('#selectKecamatan').empty(); // Kosongkan opsi kecamatan
-
-                                    $.each(response, function (key, value) {
-                                        $('#selectKota').append('<option value="' + value.id_wil + '">' + value.nm_wil + '</option>');
-                                    });
-
-                                    // Set nilai kota berdasarkan dataJemaat
-                                    $('#selectKota').val(dataJemaat.kota);
-
-                                    // Pemicu event 'change' pada #selectKota untuk mengisi #selectKecamatan
-                                    $('#selectKota').trigger('change');
-                                },
-                                error: function (xhr, status, error) {
-                                    console.error("Terjadi kesalahan:", xhr.responseText);
-                                }
-                            });
-                        });
-
-                        // $('#selectKota').trigger('change');
-                        // Event 'change' pada #selectKota untuk mengisi #selectKecamatan
-                        $('#selectKota').change(function () {
-                            var idKota = $(this).val();
-
-                            $.ajax({
-                                type: "POST",
-                                url: "<?= base_url('penjadwalan/KecamatanApi'); ?>",
-                                data: { idKota: idKota },
-                                success: function (response) {
-                                    // Mengisi form select kecamatan
-                                    $('#selectKecamatan').empty(); // Kosongkan opsi sebelum menambahkan yang baru
-
-                                    $.each(response, function (key, value) {
-                                        $('#selectKecamatan').append('<option value="' + value.id_wil + '">' + value.nm_wil + '</option>');
-                                    });
-
-                                    // Set nilai kecamatan berdasarkan dataJemaat
-                                    $('#selectKecamatan').val(dataJemaat.camat);
-                                },
-                                error: function (xhr, status, error) {
-                                    console.error("Terjadi kesalahan:", xhr.responseText);
-                                }
-                            });
-                        });
-
-                    },
-                    error: function (err) {
-                        console.error('Error:', err);
-                    }
-                });
-            }
-
             $(document).on('click', '#table-penjadwalan .history-btn', function () {
                 var kd_jemaat = $(this).data('kd-jemaat');
                 historyKunjungan(kd_jemaat);
@@ -1344,6 +1362,77 @@
                 });
             }
 
+        });
+
+        $(document).on('click', '#table-penjadwalan .laporan-btn', function () {
+            var id_jadwal = $(this).data('kd-jadwal');
+            var nama_jemaat = $(this).data('nama-jemaat');
+            var laporanModalLabel = document.getElementById('laporanModalLabel');
+            // var LaporanKd_jadwal = document.getElementById('LaporanKd_jadwal');
+            // var LaporanKd_jadwal = $('#LaporanKd_jadwal');
+            // console.log(id_jadwal);
+            laporanModalLabel.innerHTML = '';
+            $('#LaporanKd_jadwal').val('');
+            laporanModalLabel.innerHTML += 'Laporan Kunjungan - ' + nama_jemaat;
+            $('#LaporanKd_jadwal').val(id_jadwal);
+            $('#laporanModal').modal('show');
+            return false;
+        });
+
+        // Mendapatkan elemen input file
+        var inputFoto = document.getElementById('inputFile');
+
+        // Menambahkan event listener untuk perubahan nilai (file dipilih)
+        inputFoto.addEventListener('change', function () {
+            // Mendapatkan nama file yang dipilih
+            var fileName = inputFoto.files[0].name;
+
+            // Menampilkan nama file di label
+            var labelFoto = document.querySelector('#labelFile');
+            labelFoto.textContent = fileName;
+        });
+
+
+        $("#submitLaporan").on('click', function () {
+            // Mengumpulkan data dari formulir
+            var formData = new FormData();
+            formData.append('kd_jadwal', $("#LaporanKd_jadwal").val());
+            formData.append('rayon', $("#rayonLaporan").val());
+            formData.append('metode', $("#metode").val());
+            formData.append('info_tambah', $("#info_tambah").val());
+            formData.append('mas_eko', $("#mas_eko").val());
+            formData.append('mas_suami_istri', $("#mas_suami_istri").val());
+            formData.append('mas_ortu_anak', $("#mas_ortu_anak").val());
+            formData.append('mas_kel_lain', $("#mas_kel_lain").val());
+            formData.append('mas_kes', $("#mas_kes").val());
+            formData.append('mas_hub_sos', $("#mas_hub_sos").val());
+            formData.append('mas_spi', $("#mas_spi").val());
+            formData.append('mas_lain', $("#mas_lain").val());
+            formData.append('rincian_mas', $("#rincian_mas").val());
+            formData.append('kondisi_baik', $("input[name='kondisi_baik']:checked").val());
+            formData.append('rutin', $("input[name='rutin']:checked").val());
+            formData.append('bantuan', $("#bantuan").val());
+
+            // Mendapatkan file yang dipilih
+            var fileInput = document.getElementById('inputFile');
+            var file = fileInput.files[0];
+            formData.append('photo', file);
+
+            console.log(formData);
+
+            $.ajax({
+                type: "POST",
+                url: "<?= base_url('penjadwalan/updateFeedbackApi'); ?>",
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    console.log(response);
+                },
+                error: function () {
+                    console.log('error');
+                }
+            });
         });
 
 
