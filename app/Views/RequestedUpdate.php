@@ -1,61 +1,58 @@
-<?php $this->extend('layouts/template.php'); ?>
+<?= $this->extend('layouts/template.php'); ?>
 
-<?php $this->section('content') ?>
+<?= $this->section('content'); ?>
+
 <div class="main-content-container container-fluid px-4">
     <!-- Page Header -->
     <div class="page-header row no-gutters py-4">
         <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
             <span class="text-uppercase page-subtitle">Overview</span>
-            <h3 class="page-title">Laporan</h3>
+            <h3 class="page-title">Requested Update</h3>
         </div>
     </div>
-    <!-- End Page Header -->
-    <!-- Default Light Table -->
-    <div class="row">
-        <div class="col">
-            <div class="card card-small mb-4">
-                <div class="card-body p-4 pb-3 text-center table-responsive">
-                    <table id="table-request" class="table mb-0 table-striped table-bordered">
-                        <thead class="bg-light">
-                            <tr>
-                                <th scope="col" class="border-0">#</th>
-                                <th scope="col" class="border-0">ID</th>
-                                <th scope="col" class="border-0">Nama Jemaat</th>
-                                <th scope="col" class="border-0">Status</th>
-                                <th scope="col" class="border-0">View Data Request</th>
-                                <th scope="col" class="border-0">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach ($dataRequest as $no => $dR) { ?>
-                                <tr>
-                                    <td>
-                                        <?= $no + 1; ?>
-                                    </td>
-                                    <td>
-                                        <?= $dR['id']; ?>
-                                    </td>
-                                    <td>
-                                        <?= $dR['nama']; ?>
-                                    </td>
-                                    <td>
-                                        <?= $dR['status']; ?>
-                                    </td>
-                                    <td>
-                                        <div class="btn-group btn-group-sm">
-                                            <button class="btn btn-white view-btn" data-id="<?= $dR['id']; ?>"
-                                                data-nama="<?= $dR['nama']; ?>">View
-                                                Data</button>
-                                        </div>
+    <div class="card card-small mb-4">
+        <div class="card-body p-4 pb-3 text-center table-responsive">
+            <table id="table-request" class="table mb-0 table-striped table-bordered">
+                <thead class="bg-light">
+                    <tr>
+                        <th scope="col" class="border-0">#</th>
+                        <th scope="col" class="border-0">ID</th>
+                        <th scope="col" class="border-0">Nama Jemaat</th>
+                        <!-- <th scope="col" class="border-0">Status</th> -->
+                        <th scope="col" class="border-0">View Data Request</th>
+                        <th scope="col" class="border-0">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($dataRequest as $no => $dR) { ?>
+                        <tr>
+                            <td>
+                                <?= $no + 1; ?>
+                            </td>
+                            <td>
+                                <?= $dR['id']; ?>
+                            </td>
+                            <td>
+                                <?= $dR['nama']; ?>
+                            </td>
+                            <!-- <td>
+                                <?= $dR['status']; ?>
+                            </td> -->
+                            <td>
+                                <div class="btn-group btn-group-sm">
+                                    <button class="btn btn-white view-btn" data-id="<?= $dR['id']; ?>"
+                                        data-nama="<?= $dR['nama']; ?>">View
+                                        Data</button>
+                                </div>
 
-                                    </td>
-                                    <td>
-                                        <?php
-                                        $status = $dR['status'];
-                                        $timestamp = $dR['timestamp'];
-                                        $id_request = $dR['id'];
-                                        if ($status == 0) {
-                                            echo '<div class="btn-group btn-group-sm">
+                            </td>
+                            <td>
+                                <?php
+                                $status = $dR['status'];
+                                $timestamp = $dR['timestamp'];
+                                $id_request = $dR['id'];
+                                if ($status == 0) {
+                                    echo '<div class="btn-group btn-group-sm">
                             <button type="button" class="btn btn-white approve-btn" data-id="', $id_request, '">
                               <span class="text-success">
                                 <i class="material-icons">check</i>
@@ -64,27 +61,25 @@
                               <span class="text-danger">
                                 <i class="material-icons">clear</i>
                               </span> Reject </button></div>';
-                                        } elseif ($status == 1) {
-                                            echo '<span class="badge bg-success">', 'Approve on ', $timestamp, '</span>';
-                                        } elseif ($status == 2) {
-                                            echo '<span class="badge bg-danger">', 'Reject on ', $timestamp, '</span>';
-                                        } elseif ($status == 3) {
-                                            echo '<span class="badge bg-secondary">', 'Canceled on ', $timestamp, '</span>';
-                                        } else {
-                                            echo 'Tidak valid';
-                                        }
-                                        ?>
-                                    </td>
-
-                                </tr>
-                            <?php } ?>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                                } elseif ($status == 1) {
+                                    echo '<span class="badge bg-success">', 'Approve on ', $timestamp, '</span>';
+                                } elseif ($status == 2) {
+                                    echo '<span class="badge bg-danger">', 'Reject on ', $timestamp, '</span>';
+                                } elseif ($status == 3) {
+                                    echo '<span class="badge bg-secondary">', 'Canceled on ', $timestamp, '</span>';
+                                } else {
+                                    echo 'Tidak valid';
+                                }
+                                ?>
+                            </td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
+
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">

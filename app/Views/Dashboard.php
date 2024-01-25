@@ -35,6 +35,16 @@
         margin-bottom: 8px;
         /* Sesuaikan jarak antar acara */
     }
+
+    .larger-icon {
+        font-size: 49px;
+    }
+
+    .container-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 </style>
 
 <div class="main-content-container container-fluid px-4">
@@ -44,6 +54,29 @@
             <span class="text-uppercase page-subtitle">Perlawatan GKI Delima</span>
             <h3 class="page-title">Dashboard</h3>
         </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 mb-2 ml-auto">
+            <div class="card">
+                <div class="card-body p-2">
+                    <div class="d-flex flex-column m-auto">
+                        <!-- <h5 class="text-center">Filter data tahunan</h5> -->
+                        <span class="text-uppercase text-center mb-2" style="font-size: 17px;">Filter data
+                            rangkuman</span>
+                        <div class="text-center mb-2">
+                            <select id="filterdata" class="custom-select custom-select-sm form-control"
+                                style="max-width: 175px;">
+                                <option value="alltime" selected>All Time</option>
+                                <?php foreach ($years as $year => $value): ?>
+                                    <option value="<?= $year; ?>">
+                                        <?= $year; ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- End Page Header -->
     <!-- Small Stats Blocks -->
@@ -52,11 +85,21 @@
             <div class="stats-small stats-small--1 card card-small">
                 <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
-                        <div class="stats-small__data text-center">
-                            <span class="stats-small__label text-uppercase">Penjadwalan</span>
-                            <h6 class="stats-small__value count my-3">
-                                <?= $countJadwal; ?>
-                            </h6>
+                        <div class="row">
+                            <div class="col-4 container-icon">
+                                <span class="material-symbols-outlined larger-icon">
+                                    calendar_month
+                                </span>
+                            </div>
+                            <div class="col-8">
+                                <div class="stats-small__data text-center">
+                                    <span class="stats-small__label text-uppercase">Penjadwalan</span>
+                                    <h6 class="stats-small__value count my-3" id="countJadwal">
+                                        <!-- <div id="countJadwal"></div> -->
+                                    </h6>
+                                    <!-- <p class="text-xs text-danger">*2023</p> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <canvas height="120" class="blog-overview-stats-small-1"></canvas>
@@ -67,11 +110,18 @@
             <div class="stats-small stats-small--1 card card-small">
                 <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
-                        <div class="stats-small__data text-center">
-                            <span class="stats-small__label text-uppercase">Laporan</span>
-                            <h6 class="stats-small__value count my-3">
-                                <?= $countLaporan; ?>
-                            </h6>
+                        <div class="row">
+                            <div class="col-4 container-icon">
+                                <span class="material-symbols-outlined larger-icon">
+                                    description
+                                </span>
+                            </div>
+                            <div class="col-8">
+                                <div class="stats-small__data text-center">
+                                    <span class="stats-small__label text-uppercase">Laporan</span>
+                                    <h6 class="stats-small__value count my-3" id="countLaporan"></h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <canvas height="120" class="blog-overview-stats-small-2"></canvas>
@@ -82,11 +132,18 @@
             <div class="stats-small stats-small--1 card card-small">
                 <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
-                        <div class="stats-small__data text-center">
-                            <span class="stats-small__label text-uppercase">Jemaat</span>
-                            <h6 class="stats-small__value count my-3">
-                                <?= $countJemaat; ?>
-                            </h6>
+                        <div class="row">
+                            <div class="col-4 container-icon">
+                                <span class="material-symbols-outlined larger-icon">
+                                    person
+                                </span>
+                            </div>
+                            <div class="col-8">
+                                <div class="stats-small__data text-center">
+                                    <span class="stats-small__label text-uppercase">Jemaat</span>
+                                    <h6 class="stats-small__value count my-3" id="countJemaat"></h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <canvas height="120" class="blog-overview-stats-small-3"></canvas>
@@ -97,11 +154,18 @@
             <div class="stats-small stats-small--1 card card-small">
                 <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
-                        <div class="stats-small__data text-center">
-                            <span class="stats-small__label text-uppercase">Pelawat</span>
-                            <h6 class="stats-small__value count my-3">
-                                <?= $countPelawat; ?>
-                            </h6>
+                        <div class="row">
+                            <div class="col-4 container-icon">
+                                <span class="material-symbols-outlined larger-icon">
+                                    group
+                                </span>
+                            </div>
+                            <div class="col-8">
+                                <div class="stats-small__data text-center">
+                                    <span class="stats-small__label text-uppercase">Pelawat</span>
+                                    <h6 class="stats-small__value count my-3" id="countPelawat"></h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <canvas height="120" class="blog-overview-stats-small-4"></canvas>
@@ -112,11 +176,18 @@
             <div class="stats-small stats-small--1 card card-small">
                 <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
-                        <div class="stats-small__data text-center">
-                            <span class="stats-small__label text-uppercase">Tim Pelawat</span>
-                            <h6 class="stats-small__value count my-3">
-                                <?= $countGroupPelawat; ?>
-                            </h6>
+                        <div class="row">
+                            <div class="col-4 container-icon">
+                                <span class="material-symbols-outlined larger-icon">
+                                    diversity_1
+                                </span>
+                            </div>
+                            <div class="col-8">
+                                <div class="stats-small__data text-center">
+                                    <span class="stats-small__label text-uppercase">Tim Pelawat</span>
+                                    <h6 class="stats-small__value count my-3" id="countGroupPelawat"></h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <canvas height="120" class="blog-overview-stats-small-5"></canvas>
@@ -139,30 +210,11 @@
 
                     <div class="row border-top py-2 bg-light">
                         <div class="col-12 col-sm-6">
-                            <!-- <div id="blog-overview-date-range"
-                                class="input-daterange input-group input-group-sm my-auto ml-auto mr-auto ml-sm-auto mr-sm-0"
-                                style="max-width: 350px;">
-                                <input type="text" class="input-sm form-control" name="start" placeholder="Start Date"
-                                    id="blog-overview-date-range-1">
-                                <input type="text" class="input-sm form-control" name="end" placeholder="End Date"
-                                    id="blog-overview-date-range-2">
-                                <span class="input-group-append">
-                                    <span class="input-group-text">
-                                        <i class="material-icons"></i>
-                                    </span>
-                                </span>
-                            </div> -->
-                            <select class="custom-select custom-select-sm" style="max-width: 130px;">
-                                <option selected>Last Week</option>
-                                <option value="1">Today</option>
-                                <option value="2">Last Month</option>
-                                <option value="3">Last Year</option>
-                            </select>
+
                         </div>
                         <div class="col-12 col-sm-6 d-flex mb-2 mb-sm-0">
-                            <button type="button"
-                                class="btn btn-sm btn-white ml-auto mr-auto ml-sm-auto mr-sm-0 mt-3 mt-sm-0">View
-                                Full Penjadwalan &rarr;</button>
+                            <a class="btn btn-sm btn-white ml-auto mr-auto ml-sm-auto mr-sm-0 mt-3 mt-sm-0"
+                                href="<?= base_url('/penjadwalan'); ?>">More Penjadwalan &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -186,7 +238,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach($groupPelawat as $no => $gP) { ?>
+                            <?php foreach ($groupPelawat as $no => $gP) { ?>
                                 <tr>
                                     <th scope="row">
                                         <?= $no + 1; ?>
@@ -202,215 +254,18 @@
                 </div>
                 <div class="card-footer border-top">
                     <div class="row">
-                        <div class="col">
-                            <select class="custom-select custom-select-sm" style="max-width: 130px;">
-                                <option selected>Last Week</option>
-                                <option value="1">Today</option>
-                                <option value="2">Last Month</option>
-                                <option value="3">Last Year</option>
-                            </select>
-                        </div>
+
                         <div class="col text-right view-report">
-                            <a href="#">Full report &rarr;</a>
+                            <a href="<?= base_url('/pelawat'); ?>"
+                                class="btn btn-sm btn-white ml-auto mr-auto ml-sm-auto mr-sm-0 mt-3 mt-sm-0">More
+                                Pelawat
+                                &rarr;</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Users By Device Stats -->
-        <!-- New Draft Component -->
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <!-- Quick Post -->
-            <div class="card card-small h-100">
-                <div class="card-header border-bottom">
-                    <h6 class="m-0">New Draft</h6>
-                </div>
-                <div class="card-body d-flex flex-column">
-                    <form class="quick-post-form">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Brave New World">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control"
-                                placeholder="Words can be like X-rays if you use them properly..."></textarea>
-                        </div>
-                        <div class="form-group mb-0">
-                            <button type="submit" class="btn btn-accent">Create Draft</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <!-- End Quick Post -->
-        </div>
-        <!-- End New Draft Component -->
-        <!-- Discussions Component -->
-        <div class="col-lg-5 col-md-12 col-sm-12 mb-4">
-            <div class="card card-small blog-comments">
-                <div class="card-header border-bottom">
-                    <h6 class="m-0">Discussions</h6>
-                </div>
-                <div class="card-body p-0">
-                    <div class="blog-comments__item d-flex p-3">
-                        <div class="blog-comments__avatar mr-3">
-                            <img src="images/avatars/1.jpg" alt="User avatar" />
-                        </div>
-                        <div class="blog-comments__content">
-                            <div class="blog-comments__meta text-muted">
-                                <a class="text-secondary" href="#">James Johnson</a> on
-                                <a class="text-secondary" href="#">Hello World!</a>
-                                <span class="text-muted">– 3 days ago</span>
-                            </div>
-                            <p class="m-0 my-1 mb-2 text-muted">Well, the way they make shows is, they
-                                make one show ...</p>
-                            <div class="blog-comments__actions">
-                                <div class="btn-group btn-group-sm">
-                                    <button type="button" class="btn btn-white">
-                                        <span class="text-success">
-                                            <i class="material-icons">check</i>
-                                        </span> Approve </button>
-                                    <button type="button" class="btn btn-white">
-                                        <span class="text-danger">
-                                            <i class="material-icons">clear</i>
-                                        </span> Reject </button>
-                                    <button type="button" class="btn btn-white">
-                                        <span class="text-light">
-                                            <i class="material-icons">more_vert</i>
-                                        </span> Edit </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-comments__item d-flex p-3">
-                        <div class="blog-comments__avatar mr-3">
-                            <img src="images/avatars/2.jpg" alt="User avatar" />
-                        </div>
-                        <div class="blog-comments__content">
-                            <div class="blog-comments__meta text-muted">
-                                <a class="text-secondary" href="#">James Johnson</a> on
-                                <a class="text-secondary" href="#">Hello World!</a>
-                                <span class="text-muted">– 4 days ago</span>
-                            </div>
-                            <p class="m-0 my-1 mb-2 text-muted">After the avalanche, it took us a week
-                                to climb out. Now...</p>
-                            <div class="blog-comments__actions">
-                                <div class="btn-group btn-group-sm">
-                                    <button type="button" class="btn btn-white">
-                                        <span class="text-success">
-                                            <i class="material-icons">check</i>
-                                        </span> Approve </button>
-                                    <button type="button" class="btn btn-white">
-                                        <span class="text-danger">
-                                            <i class="material-icons">clear</i>
-                                        </span> Reject </button>
-                                    <button type="button" class="btn btn-white">
-                                        <span class="text-light">
-                                            <i class="material-icons">more_vert</i>
-                                        </span> Edit </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-comments__item d-flex p-3">
-                        <div class="blog-comments__avatar mr-3">
-                            <img src="images/avatars/3.jpg" alt="User avatar" />
-                        </div>
-                        <div class="blog-comments__content">
-                            <div class="blog-comments__meta text-muted">
-                                <a class="text-secondary" href="#">James Johnson</a> on
-                                <a class="text-secondary" href="#">Hello World!</a>
-                                <span class="text-muted">– 5 days ago</span>
-                            </div>
-                            <p class="m-0 my-1 mb-2 text-muted">My money's in that office, right? If she
-                                start giving me...</p>
-                            <div class="blog-comments__actions">
-                                <div class="btn-group btn-group-sm">
-                                    <button type="button" class="btn btn-white">
-                                        <span class="text-success">
-                                            <i class="material-icons">check</i>
-                                        </span> Approve </button>
-                                    <button type="button" class="btn btn-white">
-                                        <span class="text-danger">
-                                            <i class="material-icons">clear</i>
-                                        </span> Reject </button>
-                                    <button type="button" class="btn btn-white">
-                                        <span class="text-light">
-                                            <i class="material-icons">more_vert</i>
-                                        </span> Edit </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-top">
-                    <div class="row">
-                        <div class="col text-center view-report">
-                            <button type="submit" class="btn btn-white">View All Comments</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Discussions Component -->
-        <!-- Top Referrals Component -->
-        <div class="col-lg-3 col-md-12 col-sm-12 mb-4">
-            <div class="card card-small">
-                <div class="card-header border-bottom">
-                    <h6 class="m-0">Top Referrals</h6>
-                </div>
-                <div class="card-body p-0">
-                    <ul class="list-group list-group-small list-group-flush">
-                        <li class="list-group-item d-flex px-3">
-                            <span class="text-semibold text-fiord-blue">GitHub</span>
-                            <span class="ml-auto text-right text-semibold text-reagent-gray">19,291</span>
-                        </li>
-                        <li class="list-group-item d-flex px-3">
-                            <span class="text-semibold text-fiord-blue">Stack Overflow</span>
-                            <span class="ml-auto text-right text-semibold text-reagent-gray">11,201</span>
-                        </li>
-                        <li class="list-group-item d-flex px-3">
-                            <span class="text-semibold text-fiord-blue">Hacker News</span>
-                            <span class="ml-auto text-right text-semibold text-reagent-gray">9,291</span>
-                        </li>
-                        <li class="list-group-item d-flex px-3">
-                            <span class="text-semibold text-fiord-blue">Reddit</span>
-                            <span class="ml-auto text-right text-semibold text-reagent-gray">8,281</span>
-                        </li>
-                        <li class="list-group-item d-flex px-3">
-                            <span class="text-semibold text-fiord-blue">The Next Web</span>
-                            <span class="ml-auto text-right text-semibold text-reagent-gray">7,128</span>
-                        </li>
-                        <li class="list-group-item d-flex px-3">
-                            <span class="text-semibold text-fiord-blue">Tech Crunch</span>
-                            <span class="ml-auto text-right text-semibold text-reagent-gray">6,218</span>
-                        </li>
-                        <li class="list-group-item d-flex px-3">
-                            <span class="text-semibold text-fiord-blue">YouTube</span>
-                            <span class="ml-auto text-right text-semibold text-reagent-gray">1,218</span>
-                        </li>
-                        <li class="list-group-item d-flex px-3">
-                            <span class="text-semibold text-fiord-blue">Adobe</span>
-                            <span class="ml-auto text-right text-semibold text-reagent-gray">827</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card-footer border-top">
-                    <div class="row">
-                        <div class="col">
-                            <select class="custom-select custom-select-sm">
-                                <option selected>Last Week</option>
-                                <option value="1">Today</option>
-                                <option value="2">Last Month</option>
-                                <option value="3">Last Year</option>
-                            </select>
-                        </div>
-                        <div class="col text-right view-report">
-                            <a href="#">Full report &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div id="eventModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -449,9 +304,39 @@
                     },
                     themeSystem: 'bootstrap4'
                 });
-
                 calendar.render();
             });
+
+            $(document).ready(function () {
+
+
+                dataDashboard();
+
+                $('#filterdata').on('change', function () {
+                    dataDashboard();
+                });
+
+            });
+
+            function dataDashboard() {
+                var year = $('#filterdata').val();
+                console.log(year);
+                $.ajax({
+                    type: "POST",
+                    url: "<?= base_url('dashboard/FilterDashboard'); ?>",
+                    data: { year: year },
+                    success: function (response) {
+                        console.log(response);
+                        $('#countJadwal').text(response.countJadwal);
+                        $('#countLaporan').text(response.countLaporan);
+                        $('#countJemaat').text(response.countJemaat);
+                        $('#countPelawat').text(response.countPelawat);
+                        $('#countGroupPelawat').text(response.countGroupPelawat);
+
+                        $('.yearCount').text(response.year);
+                    }
+                });
+            }
 
         </script>
 

@@ -20,6 +20,98 @@ class RequestedUpdate extends BaseController
         return view('RequestedUpdate.php', $data);
     }
 
+    // public function postCompareDataReqApi()
+    // {
+    //     $data = array(
+    //         'id' => $this->request->getVar('id_request')
+    //     );
+    //     $dataReq = json_decode($this->Api_Model->postToApi($endpoint = 'getReqDataJemaat', $data), true);
+    //     $dataRaw = json_decode($this->Api_Model->postToApi($endpoint = 'getRawDataJemaat', $data), true);
+    //     // $dataArra = json_decode($dataRequest, true);
+    //     if ($dataReq && $dataRaw !== null) {
+    //         $dataNew = array_filter($dataReq[0], function ($value, $key) {
+    //             return !in_array($key, ['status', 'timestamp', 'tgl_edit']) && !empty($value);
+    //         }, ARRAY_FILTER_USE_BOTH);
+
+    //         if (!empty($dataRaw) && is_array($dataRaw) && !empty($dataNew)) {
+    //             $dataOld = array_map(function ($item) use ($dataNew) {
+    //                 // Mencocokkan kunci dan mengambil kunci dan nilainya dari $dataRaw
+    //                 return array_intersect_key($item, array_flip(array_keys($dataNew)));
+    //             }, $dataRaw);
+    //             $dataOld = array_values(array_filter($dataOld));
+    //             // $dataOld = array_filter($dataOld);
+    //             // $dataNew = array_filter($dataNew);
+
+    //             $responseArray = [
+    //                 'dataHasil' => $dataOld,
+    //                 'dataTerisi' => $dataNew,
+    //             ];
+
+    //             $responseCompare = [];
+
+    //             $columnsToCompare = [
+    //                 'pekerjaan' => 'getComparePekerjaan',
+    //                 'gender' => 'getCompareGender',
+    //                 'talenta' => 'getCompareTalenta',
+    //                 'talenta_ll' => 'getCompareTalentaLL'
+    //                 // Tambahkan kolom-kolom lainnya sesuai kebutuhan
+    //             ];
+
+    //             foreach ($columnsToCompare as $column => $apiEndpoint) {
+    //                 if (isset($dataOld['0'][$column]) && isset($dataNew[$column])) {
+    //                     $responseCompare[$column] = $this->compareColumn($dataOld, $dataNew, $column, $apiEndpoint);
+    //                 }
+    //             }
+
+    //             return $this->response->setJSON($responseCompare);
+
+    //             // $responseCompare = [
+    //             //     'dataOld' => $dataOldNamed,
+    //             //     'dataNew' => $dataNewNamed
+    //             // ];
+
+    //         } else {
+    //             // Data kosong atau tidak dapat di-decode
+    //             echo "Data kosong atau tidak dapat di-decode.";
+    //         }
+    //     } else {
+    //         // Handle jika dekoding gagal
+    //         echo "Gagal mendekode JSON.";
+    //     }
+    // }
+
+    // private function compareColumn($dataOld, $dataNew, $column, $apiEndpoint)
+    // {
+    //     if (!empty($dataOld) && is_array($dataOld) && !empty($dataNew) && isset($dataOld[0][$column]) && isset($dataNew[$column])) {
+    //         $data = ['id_old' => $dataOld[0][$column]];
+    //         $variableOld = $this->Api_Model->postToApi($apiEndpoint, $data);
+    //         $variableOldJson = json_decode($variableOld, true);
+    //         $variableOldName = isset($variableOldJson[0]['old']) ? $variableOldJson[0]['old'] : null;
+
+    //         // Update only the specific column in dataOld
+    //         foreach ($dataOld as &$barisOld) {
+    //             $barisOld[$column] = $variableOldName;
+    //         }
+    //         unset($barisOld);
+    //         unset($data);
+
+    //         $data = ['id_old' => $dataNew[$column]];
+    //         $variableNew = $this->Api_Model->postToApi($apiEndpoint, $data);
+    //         $variableNewJson = json_decode($variableNew, true);
+    //         $variableNewName = isset($variableNewJson[0]['old']) ? $variableNewJson[0]['old'] : null;
+
+    //         // Update only the specific column in dataNew
+    //         $dataNew[$column] = $variableNewName;
+
+    //         return [
+    //             'dataOld' => $dataOld,
+    //             'dataNew' => $dataNew
+    //         ];
+    //     }
+
+    //     return null;
+    // }
+
     public function postCompareDataReqApi()
     {
         $data = array(
@@ -66,36 +158,26 @@ class RequestedUpdate extends BaseController
         }
     }
 
-    private function compareData($dataOld, $dataNew, $columnName, $endpoint)
+
+    public function postApproveDataReqApi()
     {
-        // Mengecek apakah kolom ada di dalam dataOld dan dataNew
-        if (isset($dataOld[0][$columnName]) && isset($dataNew[$columnName])) {
-            // Mengambil nilai id_old dari dataOld
-            $data = ['id_old' => $dataOld[0][$columnName]];
-
-            // Mendapatkan data dari API
-            $response = $this->Api_Model->postToApi($endpoint, $data);
-            $responseJson = json_decode($response, true);
-
-            // Mengambil nilai yang diinginkan (dalam hal ini, 'old' dari API response)
-            $responseName = isset($responseJson[0]['old']) ? $responseJson[0]['old'] : 'null';
-
-            // Mengubah nilai kolom yang sesuai di dalam kedua set data
-            foreach ($dataOld as &$barisOld) {
-                $barisOld[$columnName] = $responseName;
-            }
-            unset($barisOld);
-
-            foreach ($dataNew as &$barisNew) {
-                $barisNew[$columnName] = $responseName;
-            }
-            unset($barisNew);
-        }
-
-        // Mengembalikan data yang telah dimodifikasi
-        return ['dataOld' => $dataOld, 'dataNew' => $dataNew];
+        $endpoint = "approveRequest";
+        $data = array(
+            'id' => $this->request->getVar('id'),
+        );
+        $response = $this->Api_Model->postToApi($endpoint, $data);
+        return $this->response->setJSON($response);
     }
 
+    public function postRejectDataReqApi()
+    {
+        $endpoint = 'rejectRequest';
+        $data = array(
+            'id' => $this->request->getVar('id'),
+        );
+        $response = $this->Api_Model->postToApi($endpoint, $data);
+        return $this->response->setJSON($response);
+    }
 
 
     private function compareKolom($dataOld, $dataNew)
@@ -149,26 +231,6 @@ class RequestedUpdate extends BaseController
             ];
         }
         // return $result;
-    }
-
-    public function postApproveDataReqApi()
-    {
-        $endpoint = "approveRequest";
-        $data = array(
-            'id' => $this->request->getVar('id'),
-        );
-        $response = $this->Api_Model->postToApi($endpoint, $data);
-        return $this->response->setJSON($response);
-    }
-
-    public function postRejectDataReqApi()
-    {
-        $endpoint = 'rejectRequest';
-        $data = array(
-            'id' => $this->request->getVar('id'),
-        );
-        $response = $this->Api_Model->postToApi($endpoint, $data);
-        return $this->response->setJSON($response);
     }
 
 }

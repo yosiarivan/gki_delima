@@ -1,203 +1,49 @@
 <?= $this->extend('layouts/template.php'); ?>
 
 <?= $this->section('content'); ?>
-<div class="main-content-container container-fluid px-4">
-    <div class="main-content-container container-fluid px-4">
-        <!-- Page Header -->
-        <div class="page-header row no-gutters py-4">
-            <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-                <span class="text-uppercase page-subtitle">Overview</span>
-                <h3 class="page-title">Pelawat</h3>
-            </div>
-        </div>
-        <!-- End Page Header -->
-        <!-- Default Light Table -->
-        <div class="row">
-            <div class="col">
-                <div class="card card-small mb-4">
-                    <div class="container mt-5">
-                        <ul class="nav nav-tabs nav-fill" id="myTabs" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab"
-                                    aria-controls="tab1" aria-selected="true">#1 Daftar Group Pelawat</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab"
-                                    aria-controls="tab2" aria-selected="false">
-                                    #2 Daftar Pelawat
-                                </a>
-                            </li>
-                        </ul>
 
-                        <div class="tab-content mt-2">
-                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
-                                <div class="card-body p-4 pb-3 text-center">
-                                    <div class="card-header border-bottom">
-                                        <div class="container mt-1">
-                                            <div class="row gx-5">
-                                                <div class="col-sm-6 col-md-9 text-center">
-                                                    <h5 class="m-0">#1 Daftar Group Pelawat</h5>
-                                                </div>
-                                                <div class="col-6 col-md-3 text-center">
-                                                    <button class="btn btn-primary" data-toggle="modal"
-                                                        data-target="#tambahGroup">Tambah Group Pelawat</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-4 pb-3 text-center">
-                                        <!-- TABEL GROUP -->
-                                        <table id="table-group" class="table mb-0 table-striped table-bordered">
-                                            <thead class="bg-light">
-                                                <tr>
-                                                    <th scope="col" class="border-0">#</th>
-                                                    <th scope="col" class="border-0">Nama Group</th>
-                                                    <th scope="col" class="border-0">Pelawat</th>
-                                                    <th scope="col" class="border-0">Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php foreach ($groupedPelawatDetail as $no => $gPD) { ?>
-                                                    <tr>
-                                                        <td>
-                                                            <?= $no + 1; ?>
-                                                        </td>
-                                                        <td>
-                                                            <?= $gPD['nm_group']; ?>
-                                                        </td>
-                                                        <td>
-                                                            <?= $gPD['tim_pelawat']; ?>
-                                                        </td>
-                                                        <td>
-                                                            <div class="dropdown">
-                                                                <button class="btn btn-primary dropdown-toggle"
-                                                                    type="button" id="dropdownMenuButton"
-                                                                    data-toggle="dropdown">
-                                                                    <i class="material-icons">settings</i>
-                                                                </button>
-                                                                <div class="dropdown-menu"
-                                                                    aria-labelledby="dropdownMenuButton">
-                                                                    <a class="dropdown-item" href="#" data-toggle="modal"
-                                                                        data-target="#editGroupModal"
-                                                                        data-id="<?= $gPD['id']; ?>"
-                                                                        data-nm-group="<?= $gPD['nm_group']; ?>">
-                                                                        <i class="material-icons">&#xE7FD;</i> Edit Group
-                                                                    </a>
-                                                                    <a class="dropdown-item" href="#"
-                                                                        onclick="confirmDeleteGroup(<?= $gPD['id']; ?>)">
-                                                                        <i class="material-icons"><span
-                                                                                class="material-icons-outlined">
-                                                                                delete_outline
-                                                                            </span></i>Delete Group</a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                <?php } ?>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
-                                <div class="card-body p-4 pb-3 text-center">
-                                    <div class="card-header border-bottom">
-                                        <div class="container mt-1">
-                                            <div class="row gx-5">
-                                                <div class="col-sm-6 col-md-9 text-center">
-                                                    <h5 class="m-0">#2 Daftar Pelawat</h5>
-                                                </div>
-                                                <div class="col-6 col-md-3 text-center">
-                                                    <button class="btn btn-primary" data-toggle="modal"
-                                                        data-target="#tambahPelawat">Tambah
-                                                        Pelawat</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-4 pb-3 text-center">
-                                        <!-- TABEL PELAWAT -->
-                                        <table id="table-pelawat" class="table mb-0 table-striped table-bordered">
-                                            <thead class="bg-light">
-                                                <tr>
-                                                    <th scope="col" class="border-0">#</th>
-                                                    <th scope="col" class="border-0">Nama Pelawat</th>
-                                                    <th scope="col" class="border-0">Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php foreach ($userTp as $no => $uTp) { ?>
-                                                    <tr>
-                                                        <td>
-                                                            <?= $no + 1; ?>
-                                                        </td>
-                                                        <td>
-                                                            <?= $uTp['nama']; ?>
-                                                        </td>
-                                                        <td>
-                                                            <div class="dropdown">
-                                                                <button class="btn btn-primary dropdown-toggle"
-                                                                    type="button" id="dropdownMenuButton"
-                                                                    data-toggle="dropdown">
-                                                                    <i class="material-icons">settings</i>
-                                                                </button>
-                                                                <div class="dropdown-menu"
-                                                                    aria-labelledby="dropdownMenuButton">
-                                                                    <a class="dropdown-item" href="javascript:void(0);"
-                                                                        onclick="openWhatsApp('<?= $uTp['phone']; ?>')">
-                                                                        <i class="material-icons">message</i> Whatsapp
-                                                                        Pelawat
-                                                                    </a>
-                                                                    <a class="dropdown-item" href=""
-                                                                        onclick="confirmDeletePelawat(<?= $uTp['id']; ?>)">
-                                                                        <i class="material-icons">delete_outline</i>Delete
-                                                                        Pelawat</a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                <?php } ?>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="main-content-container container-fluid px-4">
+    <!-- Page Header -->
+    <div class="page-header row no-gutters py-4">
+        <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+            <span class="text-uppercase page-subtitle">Overview</span>
+            <h3 class="page-title">Pelawat</h3>
         </div>
     </div>
-</div>
+    <div class="card card-small mb-4">
+        <div class="container mt-4">
+            <ul class="nav nav-tabs nav-fill" id="myTabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab"
+                        aria-controls="tab1" aria-selected="true">Daftar Group Pelawat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
+                        aria-selected="false">
+                        Daftar Pelawat
+                    </a>
+                </li>
+            </ul>
 
-<div class="main-content-container container-fluid px-4">
-    <div class="main-content-container container-fluid px-4">
-        <!-- Page Header -->
-        <div class="page-header row no-gutters py-4">
-            <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-                <span class="text-uppercase page-subtitle">Overview</span>
-                <h3 class="page-title">Pelawat</h3>
-            </div>
-        </div>
-        <!-- End Page Header -->
-        <!-- Default Light Table -->
-        <div class="row">
-            <div class="col-md-7">
-                <div class="card card-small mb-4">
-                    <div class="card-header border-bottom">
-                        <div class="row">
-                            <div class="col-sm-9">
-                                <h5 class="m-0">#1 Daftar Group Pelawat</h5>
-                            </div>
-                            <div class="col-sm-3">
-                                <button class="btn btn-primary" data-toggle="modal" data-target="#tambahGroup">Tambah
-                                    Group Pelawat</button>
+            <div class="tab-content mt-2">
+                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                    <div class="card-body p-4 pb-3 text-center">
+                        <div class="card-header border-bottom mb-4">
+                            <div class="container mt-1">
+                                <div class="row gx-5">
+                                    <div class="col-sm-6 col-md-9 text-center">
+                                        <h5 class="m-0">#1 Daftar Group Pelawat</h5>
+                                    </div>
+                                    <div class="col-6 col-md-3 text-center">
+                                        <button class="btn btn-primary" data-toggle="modal"
+                                            data-target="#tambahGroup">Tambah Group Pelawat</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body p-4 pb-3 text-center">
+
                         <!-- TABEL GROUP -->
-                        <table id="table-group" class="table mb-0 table-striped table-bordered">
+                        <table id="table-group" class="table mb-0 table-striped table-bordered table-responsive">
                             <thead class="bg-light">
                                 <tr>
                                     <th scope="col" class="border-0">#</th>
@@ -242,23 +88,26 @@
                                 <?php } ?>
                             </tbody>
                         </table>
+
                     </div>
                 </div>
-            </div>
-            <div class="col-md-5">
-                <div class="card card-small mb-4">
-                    <div class="card-header border-bottom">
-                        <div class="row">
-                            <div class="col-sm-7">
-                                <h5 class="m-0">#2 Daftar Pelawat</h5>
-                            </div>
-                            <div class="col-sm-3">
-                                <button class="btn btn-primary" data-toggle="modal" data-target="#tambahPelawat">Tambah
-                                    Pelawat</button>
+                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                    <div class="card-body p-4 pb-3 text-center">
+                        <div class="card-header border-bottom mb-4">
+                            <div class="container mt-1">
+                                <div class="row gx-5">
+                                    <div class="col-sm-6 col-md-9 text-center">
+                                        <h5 class="m-0">#2 Daftar Pelawat</h5>
+                                    </div>
+                                    <div class="col-6 col-md-3 text-center">
+                                        <button class="btn btn-primary" data-toggle="modal"
+                                            data-target="#tambahPelawat">Tambah
+                                            Pelawat</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body p-4 pb-3 text-center">
+
                         <!-- TABEL PELAWAT -->
                         <table id="table-pelawat" class="table mb-0 table-striped table-bordered">
                             <thead class="bg-light">
@@ -286,11 +135,13 @@
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                     <a class="dropdown-item" href="javascript:void(0);"
                                                         onclick="openWhatsApp('<?= $uTp['phone']; ?>')">
-                                                        <i class="material-icons">message</i> Whatsapp Pelawat
+                                                        <i class="material-icons">message</i> Whatsapp
+                                                        Pelawat
                                                     </a>
                                                     <a class="dropdown-item" href=""
                                                         onclick="confirmDeletePelawat(<?= $uTp['id']; ?>)">
-                                                        <i class="material-icons">delete_outline</i>Delete Pelawat</a>
+                                                        <i class="material-icons">delete_outline</i>Delete
+                                                        Pelawat</a>
                                                 </div>
                                             </div>
                                         </td>
@@ -298,12 +149,15 @@
                                 <?php } ?>
                             </tbody>
                         </table>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 <!-- Modal tambah group -->
 <div class="modal fade" id="tambahGroup" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
     style="overflow:hidden;">
@@ -404,7 +258,6 @@
                         <select id="kode_pelawat" class="form-control select2" name="kode_pelawat">
                             <?php foreach ($userJemaat as $uJ): ?>
                                 <option value="<?= $uJ['id']; ?>">
-                                    <?= $uJ['id']; ?>
                                     <?= $uJ['nama']; ?>
                                 </option>
                             <?php endforeach; ?>
@@ -414,7 +267,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" id="submitPelawat">Tambah Group</button>
+                <button type="submit" class="btn btn-primary" id="submitPelawat">Tambah Pelawat</button>
             </div>
         </div>
     </div>

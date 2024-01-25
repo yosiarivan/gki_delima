@@ -10,8 +10,12 @@
     <!-- Page Header -->
     <div class="page-header row no-gutters py-4">
         <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-            <span class="text-uppercase page-subtitle">Overview</span>
+            <span class="text-uppercase page-subtitle"> Overview</span>
             <h3 class="page-title">Laporan Detail</h3>
+            <button type="button" class="btn btn-outline-danger btn-sm" onclick="window.close();"><i
+                    class="material-icons">
+                    cancel
+                </i></button>
         </div>
     </div>
     <!-- End Page Header -->
@@ -20,7 +24,7 @@
         <div class="col">
             <div class="card card-small mb-4">
                 <div class="card-body p-4 pb-3">
-                    <div class="container mt-4 mb-4">
+                    <!-- <div class="container mt-4 mb-4">
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <button type="button" class="btn btn-primary btn-block btn-lg"
@@ -31,7 +35,7 @@
                                     data-laporan="<?= $detailLaporan->path_pdf; ?>">Download</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <button type="button" class="btn btn-accent btn-pill" onclick="window.history.back()">&larr;
                         GoBack</button> -->
                     <div class="row">
@@ -40,16 +44,16 @@
                             <div class="form-group">
                                 <label for="message-text" class="col-form-label">Foto Hasil Kunjungan</label>
                                 <br></br>
-                                <img src="http://103.83.7.7/gki_api/public/uploads/<?= $detailLaporan->path; ?>"
+                                <img src="http://103.78.24.206/gki_api/public/uploads/<?= $detailLaporan->path; ?>"
                                     id="fotoHasilKunjungan" style="max-width: 80%; height: auto;">
-                                <hr>
+                                <!-- <hr> -->
 
-                                <button type="button" class="btn btn-primary btn-block btn-lg"
+                                <!-- <button type="button" class="btn btn-primary btn-block btn-lg"
                                     onclick="window.close();">Back</button>
 
                                 <br>
                                 <button class="btn btn-success btn-block btn-lg download-btn"
-                                    data-laporan="<?= $detailLaporan->path_pdf; ?>">Download</button>
+                                    data-laporan="<?= $detailLaporan->path_pdf; ?>">Download</button> -->
                             </div>
 
                         </div>
@@ -161,6 +165,10 @@
                                         disabled><?= $detailLaporan->bantuan; ?></textarea>
                                 </div>
                             </form>
+                            <hr>
+                            <button class="btn btn-success btn-block btn-lg download-btn"
+                                data-laporan="<?= $detailLaporan->path_pdf; ?>">Download Laporan PDF</button>
+
                         </div>
                     </div>
 
@@ -170,16 +178,14 @@
     </div>
 </div>
 <script>
-    // JavaScript
     document.addEventListener('DOMContentLoaded', function () {
-        // Menambahkan event listener untuk tombol view detail
         var viewDetailButtons = document.querySelectorAll('.download-btn');
 
         viewDetailButtons.forEach(function (button) {
             button.addEventListener('click', function () {
                 var laporan = this.getAttribute('data-laporan');
 
-                var url = 'http://103.83.7.7/gki_api/public/laporan/' + laporan;
+                var url = 'http://103.78.24.206/gki_api/public/laporan/' + laporan;
                 window.open(url, '_blank');
             });
         });

@@ -62,16 +62,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 
     <!-- (Optional) Latest compiled and minified JavaScript translation files -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script> -->
     <script>$.fn.modal.Constructor.prototype._enforceFocus = function () { };</script>
 
 </head>
 
 <body class="h-100">
-    <div class="color-switcher-toggle animated pulse infinite">
-        <i class="material-icons" id="darkModeButton">settings</i>
-    </div>
-
     <div class="container-fluid">
         <div class="row">
             <!-- Main Sidebar -->
@@ -134,12 +130,6 @@
                                 <span>Requested Update</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="errors.html">
-                                <i class="material-icons">error</i>
-                                <span>Errors</span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </aside>
@@ -150,13 +140,13 @@
                     <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
                         <form action="#" class="main-navbar__search w-100 d-none d-md-flex d-lg-flex">
                             <div class="input-group input-group-seamless ml-3">
-                                <div class="input-group-prepend">
+                                <!-- <div class="input-group-prepend">
                                     <div class="input-group-text">
                                         <i class="fas fa-search"></i>
                                     </div>
                                 </div>
                                 <input class="navbar-search form-control" type="text"
-                                    placeholder="Search for something..." aria-label="Search">
+                                    placeholder="Search for something..." aria-label="Search"> -->
                             </div>
                         </form>
 

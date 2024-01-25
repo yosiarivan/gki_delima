@@ -1,0 +1,54 @@
+INFO - 2023-12-27 08:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 08:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 08:47:37 --> 28 : Failed to connect to 103.83.7.7 port 80 after 21026 ms: Timed out
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Failed to connect to 103.83.7.7 port 80 after 21026 ms: Timed out')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Controllers\Login.php(40): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 09:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 09:19:49 --> 28 : Failed to connect to 103.83.7.7 port 80 after 21027 ms: Timed out
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Failed to connect to 103.83.7.7 port 80 after 21027 ms: Timed out')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Controllers\Login.php(40): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 12:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 12:29:44 --> 28 : Failed to connect to 103.83.7.7 port 80 after 21046 ms: Timed out
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Failed to connect to 103.83.7.7 port 80 after 21046 ms: Timed out')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Controllers\Login.php(40): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-27 15:12:23 --> 28 : Failed to connect to 103.83.7.7 port 80 after 21035 ms: Timed out
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Failed to connect to 103.83.7.7 port 80 after 21035 ms: Timed out')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Controllers\Login.php(40): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-27 15:48:03 --> 28 : Failed to connect to 103.83.7.7 port 80 after 21038 ms: Timed out
+in SYSTEMPATH\HTTP\CURLRequest.php on line 691.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(691): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Failed to connect to 103.83.7.7 port 80 after 21038 ms: Timed out')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(385): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login')
+ 4 APPPATH\Controllers\Login.php(40): CodeIgniter\HTTP\CURLRequest->request('POST', 'http://103.83.7.7/gki_api/public/api/jemaat/login', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->postLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
