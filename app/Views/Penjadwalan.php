@@ -84,7 +84,8 @@
                     </div>
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Nama Jemaat</label>
-                        <select class="form-control select2" id="nama_jemaat" name="nama_jemaat" MultiSelectTag>
+                        <select class="form-control select2" id="nama_jemaat" name="nama_jemaat">
+                            <option value="" disabled selected>Pilih Jemaat</option>
                             <?php foreach ($jemaat as $j): ?>
                                 <option value="<?= $j['id']; ?>">
                                     <?= $j['nama']; ?>
@@ -96,9 +97,18 @@
                         <label for="recipient-name" class="col-form-label">Tim Pelawat</label>
                         <select class="form-control select2" id="tim_pelawat" name="tim_pelawat"
                             data-live-search="true">
+                            <option value="" disabled selected>Pilih Group Pelawat</option>
                             <?php foreach ($group_pelawat as $gp): ?>
                                 <option value="<?= $gp['id']; ?>">
                                     <?= $gp['nm_group']; ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                        <label for="recipient-name" class="col-form-label">Pelawat</label>
+                        <select class="form-control select2" id="pelawat_detail" name="pelawat_detail" multiple="multiple" data-live-search="true" disabled>
+                            <?php foreach ($pelawat_detail as $pd): ?>
+                                <option value="<?= $pd['id']; ?>">
+                                    <?= $pd['nama']; ?>
                                 </option>
                             <?php endforeach; ?>
                         </select>
@@ -164,6 +174,14 @@
                             <?php foreach ($group_pelawat as $gp): ?>
                                 <option value="<?= $gp['id']; ?>">
                                     <?= $gp['nm_group']; ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                        <label for="recipient-name" class="col-form-label">Pelawat</label>
+                        <select class="form-control select2" id="editPelawat_detail" name="editPelawat_detail" multiple="multiple" data-live-search="true">
+                            <?php foreach ($pelawat_detail as $pd): ?>
+                                <option value="<?= $pd['id']; ?>">
+                                    <?= $pd['nama']; ?>
                                 </option>
                             <?php endforeach; ?>
                         </select>
@@ -709,7 +727,10 @@
     // new DataTable('#table-penjadwalan');
     $(document).ready(function () {
         $('#tambahModal').on('shown.bs.modal', function () {
-            $('.select2').select2();
+            $('#nama_jemaat').select2();
+            $('#pelawat_detail').select2({
+                multiple: true
+            });
         });
         $('#editModal').on('shown.bs.modal', function () {
             $('.select2').select2();
@@ -721,6 +742,52 @@
 
                 $($(e.target).attr('href')).find('.select2').select2();
             });
+        });
+    });
+
+    $(document).on("change", "#tim_pelawat",function () {
+        $.ajax({
+            type: "POST",
+            url: "<?= base_url('penjadwalan/DetailTimPelawat'); ?>",
+            data: {id_group: $(this).val()},
+            dataType: "json",
+            success: function (response) {
+                $("#pelawat_detail").attr("disabled", false);
+                $("#pelawat_detail").val('');
+                if (response && Array.isArray(response)) {
+                    var selectedIds = response.map(function(value) {
+                        return value.id;
+                    });
+
+                    $('#pelawat_detail').val(selectedIds).trigger('change');
+                }
+            },
+            error: function () {
+                console.log('Terjadi kesalahan saat mengambil data');
+            }
+        });
+    });
+
+    $(document).on("change", "#editTim_pelawat",function () {
+        $.ajax({
+            type: "POST",
+            url: "<?= base_url('penjadwalan/DetailTimPelawat'); ?>",
+            data: {id_group: $(this).val()},
+            dataType: "json",
+            success: function (response) {
+                $("#editPelawat_detail").attr("disabled", false);
+                $("#editPelawat_detail").val('');
+                if (response && Array.isArray(response)) {
+                    var selectedIds = response.map(function(value) {
+                        return value.id;
+                    });
+
+                    $('#editPelawat_detail').val(selectedIds).trigger('change');
+                }
+            },
+            error: function () {
+                console.log('Terjadi kesalahan saat mengambil data');
+            }
         });
     });
 
@@ -972,8 +1039,8 @@
 
     // Tambah Modal
     $(document).ready(function () {
-        $('#submitTambah').on('click', function (e) {
-            e.preventDefault(); // Untuk mencegah reload halaman saat submit
+        $(document).on("click", "#submitTambah", function () {
+            // e.preventDefault(); // Untuk mencegah reload halaman saat submit
             var user = $('#user').val();
             var tanggal = $('#tanggal').val();
             var waktu = $('#waktu').val();
@@ -981,6 +1048,7 @@
             var tim_pelawat = $('#tim_pelawat').val();
             var catatan = $('#catatan').val();
             var status = $('#status').val();
+            var pelawat = $('#pelawat_detail').val();
 
             $.ajax({
                 url: '<?php echo base_url('penjadwalan/InsertJadwalToApi') ?>', // Ganti dengan URL Controller dan method yang sesuai
@@ -993,6 +1061,7 @@
                     tim_pelawat: tim_pelawat,
                     catatan: catatan,
                     status: status,
+                    pelawat: pelawat,
 
                 },
                 success: function (response) {
@@ -1011,7 +1080,6 @@
                     ).then(() => {
                         location.reload();
                     });
-
                 },
                 error: function (xhr, status, error) {
                     const swalWithBootstrapButtons = Swal.mixin({
@@ -1030,8 +1098,7 @@
                 }
             });
         });
-
-        $("#submitEdit").on('click', function () {
+        $(document).on("click", "#submitEdit",function () {
             var kd_jadwal = $("#editId").val();
             var tanggal = $("#editTanggal").val();
             var waktu = $("#editWaktu").val();
@@ -1039,6 +1106,7 @@
             var tim_pelawat = $("#editTim_pelawat").val();
             var catatan = $("#editCatatan").val();
             var status = $("#editStatus").val();
+            var pelawat = $("#editPelawat_detail").val();
 
             $.ajax({
                 type: "POST",
@@ -1050,7 +1118,8 @@
                     nama_jemaat: nama_jemaat,
                     tim_pelawat: tim_pelawat,
                     catatan: catatan,
-                    status: status
+                    status: status,
+                    pelawat: pelawat,
                 },
                 success: function (response) {
                     console.log(response);
@@ -1103,6 +1172,7 @@
                 data: { id_jadwal: id_jadwal },
                 success: function (response) {
                     var dataJadwal = response[0];
+                    var pelawat = response.pelawat;
                     $('#editId').val(dataJadwal.kd_jadwal);
                     $('#editTanggal').val(dataJadwal.tanggal);
                     $('#editWaktu').val(dataJadwal.waktu);
@@ -1110,6 +1180,14 @@
                     $('#editTim_pelawat').val(dataJadwal.tim_pelawat);
                     $('#editCatatan').val(dataJadwal.catatan);
                     $('#editStatus').val(dataJadwal.status);
+                    // console.log(pelawat);
+                    if (pelawat) {
+                        var selectedIds = pelawat.map(function(value) {
+                            return value.id;
+                        });
+
+                        $('#editPelawat_detail').val(selectedIds).trigger('change');
+                    }
 
                     $('#editModal').modal('show');
                 },

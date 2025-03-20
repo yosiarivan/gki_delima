@@ -18,6 +18,7 @@ class Penjadwalan extends BaseController
             'activePage' => 'penjadwalan',
             'jemaat' => $this->Api_Model->getToApi($endpoint = 'getJemaat'),
             'group_pelawat' => $this->Api_Model->getToApi($endpoint = 'getGroupPelawat'),
+            'pelawat_detail' => $this->Api_Model->getToApi($endpoint = 'getPelawat'),
             'status_kunjungan' => $this->Api_Model->getToApi($endpoint = 'getStatusKunjungan'),
             'dom_propinsi' => $this->Api_Model->getToApi($endpoint = 'getPropinsi'),
             'master_rayon' => $this->Api_Model->getToApi($endpoint = 'getRayon'),
@@ -35,6 +36,16 @@ class Penjadwalan extends BaseController
             return redirect()->to('/login');
         }
         return view('Penjadwalan.php', $data);
+    }
+
+    public function postDetailTimPelawat()
+    {
+        $data = array(
+            "id_group" => $this->request->getVar("id_group"),
+        );
+        $response = $this->Api_Model->postToApi($endpoint = 'getSelectedPelawatGroup', $data);
+
+        return $this->response->setJSON($response);
     }
 
     public function postJadwalFromApi()
@@ -60,8 +71,10 @@ class Penjadwalan extends BaseController
             'waktu' => $this->request->getVar('waktu'),
             'nama_jemaat' => $this->request->getVar('nama_jemaat'),
             'tim_pelawat' => $this->request->getVar('tim_pelawat'),
+            'pelawat' => $this->request->getVar('pelawat'),
             'catatan' => $this->request->getVar('catatan'),
             'status' => $this->request->getVar('status'),
+            'edit' => "false",
         );
 
         $response = $this->Api_Model->postToApi($endpoint, $data);
@@ -75,6 +88,10 @@ class Penjadwalan extends BaseController
             'id_jadwal' => $this->request->getVar('id_jadwal'),
         );
         $editjadwal = $this->Api_Model->postToApi($endpoint, $data);
+        $pelawat = $this->Api_Model->postToApi('getSelectedPelawat', $data);
+        $editjadwal = json_decode($editjadwal, true);
+        $pelawat = json_decode($pelawat, true);
+        $editjadwal['pelawat'] = $pelawat;
         return $this->response->setJSON($editjadwal);
     }
 
@@ -89,6 +106,7 @@ class Penjadwalan extends BaseController
             'waktu' => $this->request->getVar('waktu'),
             'tim_pelawat' => $this->request->getVar('tim_pelawat'),
             'nama_jemaat' => $this->request->getVar('nama_jemaat'),
+            'pelawat'=> $this->request->getVar('pelawat'),
             'catatan' => $this->request->getVar('catatan'),
             'status' => $this->request->getVar('status'),
             'user' => $updateBy,

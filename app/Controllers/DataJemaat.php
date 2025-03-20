@@ -34,6 +34,14 @@ class DataJemaat extends BaseController
         return view('DataJemaat.php', $data);
     }
 
+    public function postAddDataJemaat()
+    {
+        $endpoint = 'addDataJemaat';
+        $data = $this->request->getPost();
+        $response = $this->Api_Model->postToApi($endpoint, $data);
+        return $this->response->setJSON($response);
+    }
+
     public function postEditJemaatApi()
     {
         $endpoint = 'updateDataJemaat';

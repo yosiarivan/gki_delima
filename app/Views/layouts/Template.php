@@ -1,7 +1,20 @@
 <?php
-// $session = session();
-// $jemaatData = $session->get("jemaatData");
-// $namaJemaat = $jemaatData['nama'];
+$session = session();
+$sessionUser = $session->get("sessionUser");
+$path_id = $sessionUser['noa'] . '_' . $sessionUser['kd_jemaat'] . ".*";
+$dir = "assets/images/pp/";
+$f = $dir . $path_id;
+$fphoto = glob($f); //check if photo exist, base on noa and kd_jemaat, without extension
+if (!empty($fphoto)) {
+    $pp = $fphoto[0];
+} else {
+    $pp = $dir . "default.jpg";
+}
+
+// Set header untuk mencegah caching
+header("Cache-Control: no-cache, no-store, must-revalidate");
+header("Pragma: no-cache");
+header("Expires: 0");
 ?>
 <!doctype html>
 <html class="no-js h-100" lang="en">
@@ -65,7 +78,29 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script> -->
     <script>$.fn.modal.Constructor.prototype._enforceFocus = function () { };</script>
 
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
 </head>
+
+<style>
+    .photo-profile-change {
+    max-width: 100%; /* Pastikan kontainer tidak lebih lebar dari batas */
+    max-height: 300px; /* Batasi tinggi kontainer */
+    overflow: hidden; /* Menyembunyikan bagian gambar yang meluber */
+    display: flex; /* Untuk menempatkan gambar secara terpusat */
+    justify-content: center; /* Menyusun gambar di tengah secara horizontal */
+    align-items: center; /* Menyusun gambar di tengah secara vertikal */
+}
+
+#preview-pp {
+    max-width: 100%; /* Gambar tidak lebih lebar dari kontainer */
+    max-height: 100%; /* Gambar tidak lebih tinggi dari kontainer */
+    width: auto;  /* Gambar tetap proporsional */
+    height: auto; /* Gambar tetap proporsional */
+}
+</style>
 
 <body class="h-100">
     <div class="container-fluid">
@@ -180,12 +215,16 @@
                                 <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#"
                                     role="button" aria-haspopup="true" aria-expanded="false">
                                     <img class="user-avatar rounded-circle mr-2"
-                                        src="<?= base_url('assets/images/avatars/0.jpg'); ?>" alt="User Avatar">
+                                        src="<?= base_url($pp); ?>" alt="User Avatar">
                                     <span class="d-none d-md-inline-block" style="font-size: larger;">
                                         <?= session()->get('sessionUser')['nama']; ?>
                                     </span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-small">
+                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                        data-target="#changePP">
+                                        <i class="material-icons">&#xe3f4;</i> Change Photo Profile</a>
+                                    <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                         data-target="#changePasswordModal">
                                         <i class="material-icons">&#xE7FD;</i> Change Password</a>
@@ -251,6 +290,43 @@
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="changePP" tabindex="-1" role="dialog"
+                    aria-labelledby="changePPLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="changePPLabel">Change Password</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="text">
+                                    NAMA :
+                                    <p class="badge bg-primary">
+                                        <?= session()->get('sessionUser')['nama']; ?>
+                                    </p>
+                                </div>
+                                <div class="photo-profile-change img-thumbnail text-center mt-5 mb-5">
+                                    <img src="<?= base_url($pp) ?>" alt="photo" id="preview-pp">
+                                </div>
+                                <form id="pp-form">
+                                    <div class="input-group mb-3">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="input-pp" name="pp">
+                                            <label class="custom-file-label" for="input-pp">Choose file</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" id="submitChangePP" class="btn btn-primary">Save
+                                    changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <?= $this->renderSection('content'); ?>
             </main>
         </div>
@@ -283,6 +359,76 @@
 </body>
 <script>
     $(document).ready(function () {
+        $('#input-pp').on('change', function(event) {
+            var file = event.target.files[0];
+
+            if (file) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    $('#preview-pp').attr('src', e.target.result).show();
+                };
+
+                reader.readAsDataURL(file);
+            } else {
+                $('#preview-pp').hide();
+            }
+        });
+
+        $(document).on("click", "#submitChangePP",function () {
+            let formData = new FormData($('#pp-form')[0]);
+            Swal.fire({
+                title: 'Sedang upload...',
+                text: 'Harap tunggu sebentar',
+                allowOutsideClick: false,
+                showConfirmButton: false,
+                didOpen: () => {
+                    Swal.showLoading();
+                }
+            });
+            $.ajax({
+                type: "post",
+                url: "<?= base_url('Dashboard/ChangePP') ?>",
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (response) {
+                    if (response) {
+                        const swalWithBootstrapButtons = Swal.mixin({
+                            customClass: {
+                                confirmButton: 'btn btn-success mx-2',
+                                cancelButton: 'btn btn-danger'
+                            },
+                            buttonsStyling: false
+                        });
+
+                        swalWithBootstrapButtons.fire(
+                            'Berhasil!',
+                            'Foto sudah terganti.',
+                            'error'
+                        );
+                    } else {
+                        const swalWithBootstrapButtons = Swal.mixin({
+                            customClass: {
+                                confirmButton: 'btn btn-success mx-2',
+                                cancelButton: 'btn btn-danger'
+                            },
+                            buttonsStyling: false
+                        });
+
+                        swalWithBootstrapButtons.fire(
+                            'Gagal!',
+                            'Terjadi kesalahan.',
+                            'error'
+                        );
+                    }
+                    setTimeout(() => {
+                        Swal.close();
+                    }, 3000);
+                }
+            });
+        });
+
         $.ajax({
             type: "GET",
             url: "<?= base_url('dashboard/Notifications'); ?>",

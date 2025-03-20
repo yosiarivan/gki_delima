@@ -53,6 +53,7 @@ class Login extends BaseController
                 $responseData = explode(";", $body);
                 $session = session();
                 $sessionUser = [
+                    'noa' => $this->request->getVar('username'),
                     'nama' => $responseData[1],
                     'kd_jemaat' => $responseData[2],
                     'password' => $responseData[3],

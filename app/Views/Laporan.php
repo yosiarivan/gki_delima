@@ -14,6 +14,8 @@
     <div class="row">
         <div class="col">
             <div class="card card-small mb-4">
+                <div  class="p-3 ml-2">
+                    <button class="btn btn-success" type="button" data-toggle="modal" data-target="#modalExport" id="export-recap">Export Recap</button>
                 <div class="card-body p-4 pb-3 text-center  table-responsive">
                     <table id="table-laporan" class="table mb-0 table-striped table-bordered">
                         <thead class="bg-light">
@@ -61,12 +63,41 @@
     </div>
 </div>
 
+<div class="modal fade" id="modalExport" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Export Recap</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="form-export-recap">
+            <div class="form-group">
+                <label for="message-text" class="col-form-label">Tanggal Mulai</label>
+                <input type="date" class="form-control" id="startDate" name="startDate">
+            </div>
+            <div class="form-group">
+                <label for="message-text" class="col-form-label">Tanggal Selesai</label>
+                <input type="date" class="form-control" id="endDate" name="endDate">
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="submit-export">Export</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- @@ Modal-->
 <div class="modal fade" id="laporanModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="tambahModalLabel">Tambah Jadwal Kunjungan</h5>
+                <h5 class="modal-title" id="tambahModalLabel">Laporan</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -164,6 +195,57 @@
     new DataTable('#table-laporan');
 
     $(document).ready(function () {
+        $(document).on("click", "#submit-export", function () {
+            let startDate = $("#startDate").val();
+            let endDate = $("#endDate").val();
+
+            // Menambahkan data sebagai query string ke URL
+            let url = "<?= base_url('laporan/ExportRecap') ?>?startDate=" + startDate + "&endDate=" + endDate;
+            Swal.fire({
+                title: 'Sedang membuat recap...',
+                text: 'Harap tunggu sebentar',
+                allowOutsideClick: false,
+                showConfirmButton: false,
+                didOpen: () => {
+                    Swal.showLoading();
+                }
+            });
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: {
+                    startDate: startDate,
+                    endDate: endDate,
+                },
+                dataType: "json",
+                success: function (response) {
+                    if (response.status) {
+                        window.open(response.url, '_blank');
+                    } else {
+                        const swalWithBootstrapButtons = Swal.mixin({
+                            customClass: {
+                                confirmButton: 'btn btn-success mx-2',
+                                cancelButton: 'btn btn-danger'
+                            },
+                            buttonsStyling: false
+                        });
+
+                        swalWithBootstrapButtons.fire(
+                            'Gagal!',
+                            response.msg,
+                            'error'
+                        );
+                    }
+                    setTimeout(() => {
+                        Swal.close();
+                    }, 3000);
+                }
+            });
+        });
+
+
+
+
         $(document).on('click', '#table-laporan .data-laporan-btn', function () {
             var kd_jadwal = $(this).data('kd-jadwal');
             fillDataLaporan(kd_jadwal);

@@ -11,6 +11,9 @@
         </div>
     </div>
     <div class="card card-small mb-4">
+        <div class="col-2 position-relative mt-4">
+            <button type="button" class="btn btn-primary btn-block btn-rounded top-0 end-0" id="openModalTambah">TAMBAH DATA JEMAAT</button>
+        </div>
         <div class="card-body p-4 pb-3 text-center table-responsive">
             <table id="table-jemaat" class="table mb-0 table-striped table-bordered">
                 <thead class="bg-light">
@@ -125,7 +128,6 @@
             </div>
             <div class="modal-body">
                 <form id="editForm">
-
                     <!-- Tab Navigation -->
                     <ul class="nav nav-tabs nav-fill" id="myTabs" role="tablist">
                         <li class="nav-item">
@@ -499,6 +501,46 @@
         });
     });
 
+    $(document).on("click", "#openModalTambah",function () {
+        $("#largeModalLabel").text("Tambah Data Jemaat");
+        $(".modal-footer").append(`<button type="button" id="submit-tambah" class="btn btn-primary">Tambah Data</button>`);
+        $("#submit-edit").hide();
+        $('#jemaatModal').modal('show');
+    });
+
+    $(document).on("click", "#submit-tambah",function () {
+        var formData = $("#editForm").serializeArray();
+
+        $.ajax({
+            type: "POST",
+            url: "<?= base_url('datajemaat/AddDataJemaat'); ?>",
+            data: formData,
+            dataType: "json",
+            success: function (response) {
+                if (response.status) {
+                    const swalWithBootstrapButtons = Swal.mixin({
+                        customClass: {
+                            confirmButton: 'btn btn-success mx-2',
+                            cancelButton: 'btn btn-danger'
+                        },
+                        buttonsStyling: false
+                    });
+
+                    swalWithBootstrapButtons.fire(
+                        'Berhasil!',
+                        'Data Jemaat telah ditambah.',
+                        'success'
+                    ).then(() => {
+                        location.reload();
+                    });
+                }
+            },
+            error: function (err) {
+                console.error('Error:', err);
+            }
+        });
+    });
+
     $(document).on('click', '#table-jemaat .jemaat-btn', function () {
         var kd_jemaat = $(this).data('id');
         fillDataJemaat(kd_jemaat);
@@ -660,6 +702,7 @@
             }
         });
     });
+
     $(document).ready(function () {
         $("#submit-edit").on("click", function () {
             var formData = $("#editForm").serializeArray();
@@ -706,7 +749,6 @@
             data: { id: id },
             method: 'POST',
             success: function (response) {
-                console.log(response);
                 $('#id_jemaat').val(id);
                 $('#noa_role').val(noa_role);
                 $('#nama_role').val(nama_role);

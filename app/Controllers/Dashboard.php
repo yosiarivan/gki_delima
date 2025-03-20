@@ -25,15 +25,20 @@ class Dashboard extends BaseController
         );
         $responseJadwal = json_decode($responseJadwal, true);
 
+        // var_dump($responseJadwal[1]);
+        // die();
+
         foreach ($responseJadwal as $data) {
             $year = date('Y', strtotime($data['tanggal']));
             $uniqueYears[$year] = true; // Simpan tahun ke dalam array asosiatif untuk memastikan unik
         }
 
         $responseLaporan = $this->Api_Model->getToApi('getLaporan');
-        foreach ($responseLaporan as $data) {
-            $year = date('Y', strtotime($data['tanggal']));
-            $uniqueYears[$year] = true; // 
+        if ($responseLaporan) {
+            foreach ($responseLaporan as $data) {
+                $year = date('Y', strtotime($data['tanggal']));
+                $uniqueYears[$year] = true; // 
+            }
         }
 
         $responseJemaat = $this->Api_Model->getToApi('getJemaat');
@@ -179,5 +184,36 @@ class Dashboard extends BaseController
         }, $response);
 
         return $this->response->setJSON($dataJadwal);
+    }
+
+    public function postChangePP()
+    {
+        // var_dump($_FILES);
+        // die();
+        if ($_FILES['pp']['error'] == 0) 
+        {
+            $session = session();
+            $sessionUser = $session->get('sessionUser');
+            $file = $_FILES['pp'];
+            $fileInfo = pathinfo($file['name']);
+            $ext = strtolower($fileInfo['extension']);
+            $path_id = $sessionUser['noa'] . '_' . $sessionUser['kd_jemaat'];
+            $fileNameFinal = $path_id . '.' . $ext; 
+            $upload_dir = 'assets/images/pp/';
+            $f = $upload_dir . $fileNameFinal;
+
+            //check foto jika ada
+            $check_file_in_dir = glob($upload_dir . $path_id . '.*'); 
+            if ($check_file_in_dir)
+            {
+                unlink($check_file_in_dir[0]);
+            }
+
+            if (move_uploaded_file($file['tmp_name'], $f)){
+                echo json_encode(['status' => true]);
+            } else {
+                echo json_encode(['status' => false]);
+            }
+        }
     }
 }

@@ -28,6 +28,12 @@ class Pelawat extends BaseController
         return view('Pelawat.php', $data);
     }
 
+    public function postPelawat() 
+    {
+        $getUserTp = $this->Api_Model->getToApi('getPelawat');
+        return $this->response->setJSON($getUserTp);
+    }
+
     public function getGroupedApi()
     {
         $endpoint = 'getGroupPelawat';

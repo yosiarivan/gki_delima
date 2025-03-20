@@ -11,7 +11,9 @@ class Api_Model extends Model
     protected $apiKey;
     public function __construct()
     {
-        $this->apiUrl = 'http://103.78.24.206/gki_api/public/api/jemaat/';
+        // $this->apiUrl = 'http://103.78.24.206/gki_api/public/api/jemaat/';
+        // $this->apiKey = 'gki';
+        $this->apiUrl = 'http://localhost/gki_api/public/api/jemaat/';
         $this->apiKey = 'gki';
     }
 
